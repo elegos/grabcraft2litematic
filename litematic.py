@@ -1,6 +1,6 @@
 from litemapy import BlockState, Region
 
-from common import Coordinates, GenericDefinition, get_max_size
+from common import GenericDefinition, get_max_size
 
 
 def grabcraft2region(definition: GenericDefinition) -> Region:
@@ -9,11 +9,13 @@ def grabcraft2region(definition: GenericDefinition) -> Region:
 
     for coordinate, info in definition.blocks.items():
         # WIP: improve with BlockState properties
-        props = ['facing', 'half', 'type', 'open', 'half']
+        props = ['facing', 'half', 'type', 'open', 'hinge', 'part']
         extended_props = {}
         for prop in props:
             if prop in info:
                 extended_props[prop] = info[prop]
-        region.setblock(coordinate.x - 1, coordinate.y - 1, coordinate.z - 1, BlockState(info['name'], **extended_props))
+
+        block_state = BlockState(info['name'], **extended_props)
+        region.setblock(coordinate.x - 1, coordinate.y - 1, coordinate.z - 1, block_state)
     
     return region
