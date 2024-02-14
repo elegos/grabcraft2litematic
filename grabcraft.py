@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 import re
 import os
+from typing import Optional
 
 import requests
 
@@ -89,6 +90,50 @@ def grabcraft_to_minecraft_type(data: dict, use_cache: bool) -> str:
     blockmap = get_blockmap(use_cache)
     return blockmap[data['name']] if data['name'] in blockmap else f'GRABCRAFT:{data["name"]}'
 
+def grabcraft_to_minecraft_props(block: dict) -> dict[str, any]:
+    extended_args = {}
+
+    name = str(block['name']).lower()
+
+    # Orientation
+    if 'north' in name:
+        extended_args['facing'] = 'north'
+    elif 'south' in name:
+        extended_args['facing'] = 'south'
+    elif 'east' in name:
+        extended_args['facing'] = 'east'
+    elif 'west' in name:
+        extended_args['facing'] = 'west'
+    
+    # Stairs
+    if 'stairs' in name:
+        if 'upside-down' in name:
+            extended_args['half'] = 'top'
+        else:
+            extended_args['half'] = 'bottom'
+    
+    # Slabs
+    if 'slab' in name:
+        if 'bottom' in name:
+            extended_args['type'] = 'bottom'
+        elif 'top' in name:
+            extended_args['type'] = 'name'
+        elif 'double' in name:
+            extended_args['type'] = 'double'
+    
+    # Trap doors
+    if 'trapdoor' in name:
+        if 'closed' in name:
+            extended_args['open'] = 'false'
+        else:
+            extended_args['open'] = 'true'
+        if 'bottom-half' in name:
+            extended_args['half'] = 'bottom'
+        else:
+            extended_args['half'] = 'top'
+
+    return extended_args
+
 def get_definition(url: str, use_cache: bool):
     grab_def = download_definition(url)
     raw_blocks = get_grabcraft_blocks(grab_def.blocks_data)
@@ -98,6 +143,7 @@ def get_definition(url: str, use_cache: bool):
         blocks[coord] = {
             **block,
             'name': grabcraft_to_minecraft_type(block, use_cache),
+            **grabcraft_to_minecraft_props(block)
         }
 
     return GenericDefinition(title=grab_def.title, author=grab_def.author, blocks=blocks)
