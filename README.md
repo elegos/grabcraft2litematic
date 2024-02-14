@@ -18,7 +18,6 @@ Install the requirements (using pipenv) and either run the g2l_cmd.py command li
 Options:
 
     --url, -u: GrabCraft model URL (if not specified, it will be prompted)
-    --no-cache: force download a new version of blockmap.csv, even if it already exists
     --output-file-name, -o: custom output file name (default: {design's name}.litematic)
 
 **Note**: in case the output file already exists, it will be prompted if you want to override it; if not, the application will exit without saving.

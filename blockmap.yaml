@@ -1,0 +1,2532 @@
+version: 5
+blocks:
+  Acacia Door (Lower, Facing East, Closed):
+    name: minecraft:acacia_door
+    facing: north
+  Acacia Door (Lower, Facing East, Opened):
+    name: minecraft:acacia_door
+    facing: north
+  Acacia Door (Lower, Facing North, Closed):
+    name: minecraft:acacia_door
+    facing: west
+  Acacia Door (Lower, Facing North, Opened):
+    name: minecraft:acacia_door
+    facing: west
+  Acacia Door (Lower, Facing South, Closed):
+    name: minecraft:acacia_door
+    facing: east
+  Acacia Door (Lower, Facing South, Opened):
+    name: minecraft:acacia_door
+    facing: east
+  Acacia Door (Lower, Facing West, Closed):
+    name: minecraft:acacia_door
+    facing: south
+  Acacia Door (Lower, Facing West, Opened):
+    name: minecraft:acacia_door
+    facing: south
+  Acacia Door (Upper, Hinge Left, Powered):
+    name: minecraft:acacia_door
+    hinge: left
+  Acacia Door (Upper, Hinge Left, Unpowered):
+    name: minecraft:acacia_door
+    hinge: left
+  Acacia Door (Upper, Hinge Right, Unpowered):
+    name: minecraft:acacia_door
+    hinge: right
+  Acacia Fence:
+    name: minecraft:acacia_fence
+  Acacia Fence Gate (Facing North, Closed):
+    name: minecraft:acacia_fence_gate
+  Acacia Fence Gate (Facing West, Closed):
+    name: minecraft:acacia_fence_gate
+  Acacia Leaves:
+    name: minecraft:acacia_leaves
+  Acacia Leaves (No Decay):
+    name: minecraft:acacia_leaves
+  Acacia Leaves (No Decay and Check Decay):
+    name: minecraft:acacia_leaves
+  Acacia Wood, Facing North/South:
+    name: minecraft:acacia_log
+  Acacia Wood (No axis):
+    name: minecraft:acacia_log
+  Acacia Wood:
+    name: minecraft:acacia_log
+  Acacia Wood Plank:
+    name: minecraft:acacia_planks
+  Sapling (Acacia, Ready to grow):
+    name: minecraft:acacia_sapling
+  Double Acacia Wood Slab:
+    name: minecraft:acacia_slab
+  ' (Acacia Wood, Upper)':
+    name: minecraft:acacia_slab
+  ' (Acacia Wood, Bottom)':
+    name: minecraft:acacia_slab
+  Acacia Wood Stairs (East, Normal):
+    name: minecraft:acacia_stairs
+  Acacia Wood Stairs (East, Upside-down):
+    name: minecraft:acacia_stairs
+  Acacia Wood Stairs (North, Normal):
+    name: minecraft:acacia_stairs
+  Acacia Wood Stairs (North, Upside-down):
+    name: minecraft:acacia_stairs
+  Acacia Wood Stairs (South, Normal):
+    name: minecraft:acacia_stairs
+  Acacia Wood Stairs (South, Upside-down):
+    name: minecraft:acacia_stairs
+  Acacia Wood Stairs (West, Normal):
+    name: minecraft:acacia_stairs
+  Acacia Wood Stairs (West, Upside-down):
+    name: minecraft:acacia_stairs
+  Acacia Wood, Facing East/West:
+    name: minecraft:acacia_wood
+    axis: x
+  Activator Rail (Flat North-South, Not Active):
+    name: minecraft:activator_rail
+  Activator Rail (Flat West-East, Not Active):
+    name: minecraft:activator_rail
+  Allium:
+    name: minecraft:allium
+  Andesite:
+    name: minecraft:andesite
+  Very Damaged Anvil (East/West):
+    name: minecraft:anvil
+  Very Damaged Anvil (North/South):
+    name: minecraft:anvil
+  Very Damaged Anvil (South/North):
+    name: minecraft:anvil
+  Very Damaged Anvil (West/East):
+    name: minecraft:anvil
+  Slightly Damaged Anvil (East/West):
+    name: minecraft:anvil
+  Slightly Damaged Anvil (North/South):
+    name: minecraft:anvil
+  Slightly Damaged Anvil (South/North):
+    name: minecraft:anvil
+  Slightly Damaged Anvil (West/East):
+    name: minecraft:anvil
+  Anvil (East/West):
+    name: minecraft:anvil
+    facing: east
+  Anvil (North/South):
+    name: minecraft:anvil
+    facing: north
+  Anvil (South/North):
+    name: minecraft:anvil
+    facing: south
+  Anvil (West/East):
+    name: minecraft:anvil
+    facing: west
+  Azure Bluet:
+    name: minecraft:azure_bluet
+  Barrier:
+    name: minecraft:barrier
+  Beacon:
+    name: minecraft:beacon
+  Bedrock:
+    name: minecraft:bedrock
+  Birch Door (Lower, Facing East, Closed):
+    name: minecraft:birch_door
+    facing: north
+  Birch Door (Lower, Facing East, Opened):
+    name: minecraft:birch_door
+    facing: north
+  Birch Door (Lower, Facing North, Closed):
+    name: minecraft:birch_door
+    facing: west
+  Birch Door (Lower, Facing North, Opened):
+    name: minecraft:birch_door
+    facing: west
+  Birch Door (Lower, Facing South, Closed):
+    name: minecraft:birch_door
+    facing: east
+  Birch Door (Lower, Facing South, Opened):
+    name: minecraft:birch_door
+    facing: east
+  Birch Door (Lower, Facing West, Closed):
+    name: minecraft:birch_door
+    facing: south
+  Birch Door (Upper, Hinge Left, Powered):
+    name: minecraft:birch_door
+    hinge: left
+  Birch Door (Upper, Hinge Left, Unpowered):
+    name: minecraft:birch_door
+    hinge: left
+  Birch Door (Upper, Hinge Right, Powered):
+    name: minecraft:birch_door
+    hinge: right
+  Birch Door (Upper, Hinge Right, Unpowered):
+    name: minecraft:birch_door
+    hinge: right
+  Birch Fence:
+    name: minecraft:birch_fence
+  Birch Fence Gate (Facing East, Closed):
+    name: minecraft:birch_fence_gate
+  Birch Fence Gate (Facing North, Closed):
+    name: minecraft:birch_fence_gate
+  Birch Fence Gate (Facing South, Closed):
+    name: minecraft:birch_fence_gate
+  Birch Fence Gate (Facing West, Closed):
+    name: minecraft:birch_fence_gate
+  Birch Leaves:
+    name: minecraft:birch_leaves
+  Birch Leaves (No Decay):
+    name: minecraft:birch_leaves
+  Birch Leaves (No Decay and Check Decay):
+    name: minecraft:birch_leaves
+  Birch Wood:
+    name: minecraft:birch_log
+  Birch Wood (facing east/west):
+    name: minecraft:birch_log
+  Birch Wood (facing north/south):
+    name: minecraft:birch_log
+  Birch Wood (only bark):
+    name: minecraft:birch_log
+  Birch Wood Plank:
+    name: minecraft:birch_planks
+  Sapling (Birch, Ready to grow):
+    name: minecraft:birch_sapling
+  Double Birch Wood Slab:
+    name: minecraft:birch_slab
+    type: double
+  ' (Birch Wood, Upper)':
+    name: minecraft:birch_slab
+    type: top
+  ' (Birch Wood, Bottom)':
+    name: minecraft:birch_slab
+    type: bottom
+  Birch Wood Stairs (East, Normal):
+    name: minecraft:birch_stairs
+    half: bottom
+    facing: south
+  Birch Wood Stairs (East, Upside-down):
+    name: minecraft:birch_stairs
+    half: top
+    facing: south
+  Birch Wood Stairs (North, Normal):
+    name: minecraft:birch_stairs
+    half: bottom
+    facing: east
+  Birch Wood Stairs (North, Upside-down):
+    name: minecraft:birch_stairs
+    half: top
+    facing: east
+  Birch Wood Stairs (South, Normal):
+    name: minecraft:birch_stairs
+    half: bottom
+    facing: west
+  Birch Wood Stairs (South, Upside-down):
+    name: minecraft:birch_stairs
+    half: top
+    facing: west
+  Birch Wood Stairs (West, Normal):
+    name: minecraft:birch_stairs
+    half: bottom
+    facing: north
+  Birch Wood Stairs (West, Upside-down):
+    name: minecraft:birch_stairs
+    half: top
+    facing: north
+  Black Carpet:
+    name: minecraft:black_carpet
+  Black Stained Glass:
+    name: minecraft:black_stained_glass
+  Black Stained Glass Pane:
+    name: minecraft:black_stained_glass_pane
+  Black Stained Clay:
+    name: minecraft:black_terracotta
+  Black Wool:
+    name: minecraft:black_wool
+  Blue Carpet:
+    name: minecraft:blue_carpet
+  Blue Orchid:
+    name: minecraft:blue_orchid
+  Blue Stained Glass:
+    name: minecraft:blue_stained_glass
+  Blue Stained Glass Pane:
+    name: minecraft:blue_stained_glass_pane
+  Blue Stained Clay:
+    name: minecraft:blue_terracotta
+  Blue Wool:
+    name: minecraft:blue_wool
+  Bone Block (Oriented east-west):
+    name: minecraft:bone_block
+  Bone Block (Oriented north-south):
+    name: minecraft:bone_block
+  Bone Block (Oriented vertically):
+    name: minecraft:bone_block
+  Bookshelf:
+    name: minecraft:bookshelf
+  Brewing Stand (Slot 1 Active, Slot 2 Active, Slot 3 Active):
+    name: minecraft:brewing_stand
+  Brewing Stand (Slot 1 Active, Slot 2 Active, Slot 3 Unactive:
+    name: minecraft:brewing_stand
+  Brewing Stand (Slot 1 Active, Slot 2 Unactive, Slot 3 Active:
+    name: minecraft:brewing_stand
+  Brewing Stand (Slot 1 Active, Slot 2 Unactive, Slot 3 Unacti:
+    name: minecraft:brewing_stand
+  Brewing Stand (Slot 1 Unactive, Slot 2 Active, Slot 3 Active:
+    name: minecraft:brewing_stand
+  Brewing Stand (Slot 1 Unactive, Slot 2 Active, Slot 3 Unacti:
+    name: minecraft:brewing_stand
+  Brewing Stand (Slot 1 Unactive, Slot 2 Unactive, Slot 3 Acti:
+    name: minecraft:brewing_stand
+  Brewing Stand (Slot 1 Unactive, Slot 2 Unactive, Slot 3 Unac:
+    name: minecraft:brewing_stand
+  Double Brick Slab:
+    name: minecraft:brick_slab
+  Brick Slab:
+    name: minecraft:brick_slab
+  Bricks (Upper):
+    name: minecraft:brick_slab
+  Brick Stairs (East, Normal):
+    name: minecraft:brick_stairs
+    half: bottom
+    facing: south
+  Brick Stairs (East, Upside-down):
+    name: minecraft:brick_stairs
+    half: top
+    facing: south
+  Brick Stairs (North, Normal):
+    name: minecraft:brick_stairs
+    half: bottom
+    facing: east
+  Brick Stairs (North, Upside-down):
+    name: minecraft:brick_stairs
+    half: top
+    facing: east
+  Brick Stairs (South, Normal):
+    name: minecraft:brick_stairs
+    half: bottom
+    facing: west
+  Brick Stairs (South, Upside-down):
+    name: minecraft:brick_stairs
+    half: top
+    facing: west
+  Brick Stairs (West, Normal):
+    name: minecraft:brick_stairs
+    half: bottom
+    facing: north
+  Brick Stairs (West, Upside-down):
+    name: minecraft:brick_stairs
+    half: top
+    facing: north
+  Bricks:
+    name: minecraft:bricks
+  Brown Carpet:
+    name: minecraft:brown_carpet
+  Brown Mushroom:
+    name: minecraft:brown_mushroom
+  Brown Mushroom Block:
+    name: minecraft:brown_mushroom_block
+  Brown Mushroom Block Cap Texture on all 6 Sides:
+    name: minecraft:brown_mushroom_block
+  Brown Mushroom (Cap texture on top, east and south):
+    name: minecraft:brown_mushroom_block
+  Brown Mushroom (Cap texture on top, north and east):
+    name: minecraft:brown_mushroom_block
+  Brown Mushroom (Cap texture on top, south and west):
+    name: minecraft:brown_mushroom_block
+  Brown Mushroom (Cap texture on top, west and north):
+    name: minecraft:brown_mushroom_block
+  Brown Mushroom  (stem  6 sides):
+    name: minecraft:brown_mushroom_block
+  Brown Stained Glass:
+    name: minecraft:brown_stained_glass
+  Brown Stained Glass Pane:
+    name: minecraft:brown_stained_glass_pane
+  Brown Stained Clay:
+    name: minecraft:brown_terracotta
+  Brown Wool:
+    name: minecraft:brown_wool
+  Freshly Planted Cactus:
+    name: minecraft:cactus
+  Cactus (Age 1):
+    name: minecraft:cactus
+  Cactus (Age 10):
+    name: minecraft:cactus
+  Cactus (Age 11):
+    name: minecraft:cactus
+  Cactus (Age 12):
+    name: minecraft:cactus
+  Cactus (Age 13):
+    name: minecraft:cactus
+  Cactus (Age 15):
+    name: minecraft:cactus
+  Cactus (Age 2):
+    name: minecraft:cactus
+  Cactus (Age 3):
+    name: minecraft:cactus
+  Cactus (Age 4):
+    name: minecraft:cactus
+  Cactus (Age 5):
+    name: minecraft:cactus
+  Cactus (Age 6):
+    name: minecraft:cactus
+  Cactus (Age 7):
+    name: minecraft:cactus
+  Cactus (Age 8):
+    name: minecraft:cactus
+  Cactus (Age 9):
+    name: minecraft:cactus
+  Cake  (1 piece eaten):
+    name: minecraft:cake
+  Cake  (2 pieces eaten):
+    name: minecraft:cake
+  Cake Block:
+    name: minecraft:cake
+  Carrots (Growth level 4):
+    name: minecraft:carrots
+  Carrots (Growth level 7):
+    name: minecraft:carrots
+  Cauldron (Empty):
+    name: minecraft:cauldron
+  Cauldron (1/3 Filled):
+    name: minecraft:cauldron
+  Cauldron (2/3 Filled):
+    name: minecraft:cauldron
+  Cauldron (Fully Filled):
+    name: minecraft:cauldron
+  Chest:
+    name: minecraft:chest
+  Chest (East):
+    name: minecraft:chest
+    facing: north
+  Chest (North):
+    name: minecraft:chest
+    facing: north
+  Chest (South):
+    name: minecraft:chest
+    facing: north
+  Chest (West):
+    name: minecraft:chest
+    facing: north
+  Chiseled Quartz Block:
+    name: minecraft:chiseled_quartz_block
+  Chiseled Red Sandstone:
+    name: minecraft:chiseled_red_sandstone
+  Double Sandstone Slab Seamless:
+    name: minecraft:chiseled_sandstone
+  Chiseled Sandstone:
+    name: minecraft:chiseled_sandstone
+  Chiseled Stone Bricks:
+    name: minecraft:chiseled_stone_bricks
+  Clay:
+    name: minecraft:clay
+  Block of Coal:
+    name: minecraft:coal_block
+  Coal Ore:
+    name: minecraft:coal_ore
+  Coarse Dirt:
+    name: minecraft:coarse_dirt
+  Cobblestone:
+    name: minecraft:cobblestone
+  Double Cobblestone Slab:
+    name: minecraft:cobblestone_slab
+    type: double
+  Cobblestone (Upper):
+    name: minecraft:cobblestone_slab
+    type: top
+  Cobblestone Slab:
+    name: minecraft:cobblestone_slab
+    type: bottom
+  Cobblestone Stairs (East, Normal):
+    name: minecraft:cobblestone_stairs
+    half: bottom
+    facing: south
+  Cobblestone Stairs (East, Upside-down):
+    name: minecraft:cobblestone_stairs
+    half: top
+    facing: south
+  Cobblestone Stairs (North, Normal):
+    name: minecraft:cobblestone_stairs
+    half: bottom
+    facing: east
+  Cobblestone Stairs (North, Upside-down):
+    name: minecraft:cobblestone_stairs
+    half: top
+    facing: east
+  Cobblestone Stairs (South, Normal):
+    name: minecraft:cobblestone_stairs
+    half: bottom
+    facing: west
+  Cobblestone Stairs (South, Upside-down):
+    name: minecraft:cobblestone_stairs
+    half: top
+    facing: west
+  Cobblestone Stairs (West, Normal):
+    name: minecraft:cobblestone_stairs
+    half: bottom
+    facing: north
+  Cobblestone Stairs (West, Upside-down):
+    name: minecraft:cobblestone_stairs
+    half: top
+    facing: north
+  Cobblestone Wall:
+    name: minecraft:cobblestone_wall
+  Cobweb:
+    name: minecraft:cobweb
+  cocoa (Attached to the East, Third Stage):
+    name: minecraft:cocoa
+  cocoa (Attached to the North, Third Stage):
+    name: minecraft:cocoa
+  cocoa (Attached to the South, Third Stage):
+    name: minecraft:cocoa
+  cocoa (Attached to the West, Third Stage):
+    name: minecraft:cocoa
+  Command block (facing east):
+    name: minecraft:command_block
+  Command block (facing north):
+    name: minecraft:command_block
+  Command block (facing south):
+    name: minecraft:command_block
+  Command block (facing up):
+    name: minecraft:command_block
+  Command block (facing west):
+    name: minecraft:command_block
+  Redstone Comparator (Facing East, Unset, Powered):
+    name: minecraft:comparator
+  Redstone Comparator (Facing East, Unset, Unpowered ):
+    name: minecraft:comparator
+  Redstone Comparator (Facing North, Unset, Unpowered ):
+    name: minecraft:comparator
+  Redstone Comparator (Facing South, Unset, Unpowered ):
+    name: minecraft:comparator
+  Redstone Comparator (Facing West, Substraction mode, Powered:
+    name: minecraft:comparator
+  Cracked Stone Bricks:
+    name: minecraft:cracked_stone_bricks
+  Crafting Table:
+    name: minecraft:crafting_table
+  Cyan Carpet:
+    name: minecraft:cyan_carpet
+  Cyan Stained Glass:
+    name: minecraft:cyan_stained_glass
+  Cyan Stained Glass Pane:
+    name: minecraft:cyan_stained_glass_pane
+  Cyan Stained Clay:
+    name: minecraft:cyan_terracotta
+  Cyan Wool:
+    name: minecraft:cyan_wool
+  Dandelion:
+    name: minecraft:dandelion
+  Dark Oak Door (Lower, Facing East, Closed):
+    name: minecraft:dark_oak_door
+    facing: north
+  Dark Oak Door (Lower, Facing East, Opened):
+    name: minecraft:dark_oak_door
+    facing: north
+  Dark Oak Door (Lower, Facing North, Closed):
+    name: minecraft:dark_oak_door
+    facing: west
+  Dark Oak Door (Lower, Facing North, Opened):
+    name: minecraft:dark_oak_door
+    facing: west
+  Dark Oak Door (Lower, Facing South, Closed):
+    name: minecraft:dark_oak_door
+    facing: east
+  Dark Oak Door (Lower, Facing South, Opened):
+    name: minecraft:dark_oak_door
+    facing: east
+  Dark Oak Door (Lower, Facing West, Closed):
+    name: minecraft:dark_oak_door
+    facing: south
+  Dark Oak Door (Lower, Facing West, Opened):
+    name: minecraft:dark_oak_door
+    facing: south
+  Dark Oak Door (Upper, Hinge Left, Powered):
+    name: minecraft:dark_oak_door
+    hinge: left
+  Dark Oak Door (Upper, Hinge Left, Unpowered):
+    name: minecraft:dark_oak_door
+    hinge: left
+  Dark Oak Door (Upper, Hinge Right, Powered):
+    name: minecraft:dark_oak_door
+    hinge: right
+  Dark Oak Door (Upper, Hinge Right, Unpowered):
+    name: minecraft:dark_oak_door
+    hinge: right
+  Dark Oak Fence:
+    name: minecraft:dark_oak_fence
+  Dark Oak Fence Gate (Facing East, Closed):
+    name: minecraft:dark_oak_fence_gate
+  Dark Oak Fence Gate (Facing East, Opened):
+    name: minecraft:dark_oak_fence_gate
+  Dark Oak Fence Gate (Facing North, Closed):
+    name: minecraft:dark_oak_fence_gate
+  Dark Oak Fence Gate (Facing North, Opened):
+    name: minecraft:dark_oak_fence_gate
+  Dark Oak Fence Gate (Facing South, Closed):
+    name: minecraft:dark_oak_fence_gate
+  Dark Oak Fence Gate (Facing South, Opened):
+    name: minecraft:dark_oak_fence_gate
+  Dark Oak Fence Gate (Facing West, Closed):
+    name: minecraft:dark_oak_fence_gate
+  Dark Oak Fence Gate (Facing West, Opened):
+    name: minecraft:dark_oak_fence_gate
+  Dark Oak Leaves:
+    name: minecraft:dark_oak_leaves
+  Dark Oak Leaves (Check Decay and No Decay):
+    name: minecraft:dark_oak_leaves
+  Dark Oak Leaves (No Decay):
+    name: minecraft:dark_oak_leaves
+  Dark Oak Wood:
+    name: minecraft:dark_oak_log
+  Dark Oak Wood, Facing East/West:
+    name: minecraft:dark_oak_log
+  Dark Oak Wood, Facing North/South:
+    name: minecraft:dark_oak_log
+  Dark Oak Wood (No Axis):
+    name: minecraft:dark_oak_log
+  Dark Oak Wood Plank:
+    name: minecraft:dark_oak_planks
+  Sapling (Dark Oak, Ready to grow):
+    name: minecraft:dark_oak_sapling
+  Standing Sign (NorthEast):
+    name: minecraft:dark_oak_sign
+  Standing Sign (NorthWest):
+    name: minecraft:dark_oak_sign
+  Standing Sign (SouthEast):
+    name: minecraft:dark_oak_sign
+  Standing Sign (SouthWest):
+    name: minecraft:dark_oak_sign
+  Double Dark Oak Wood Slab:
+    name: minecraft:dark_oak_slab
+  ' Dark Oak Wood Slab (Bottom)':
+    name: minecraft:dark_oak_slab
+  ' Dark Oak Wood Slab (Upper)':
+    name: minecraft:dark_oak_slab
+    type: top
+  Dark Oak Wood Stairs (East, Normal):
+    name: minecraft:dark_oak_stairs
+    half: bottom
+    facing: south
+  Dark Oak Wood Stairs (East, Upside-down):
+    name: minecraft:dark_oak_stairs
+    half: top
+    facing: south
+  Dark Oak Wood Stairs (North, Normal):
+    name: minecraft:dark_oak_stairs
+    half: bottom
+    facing: east
+  Dark Oak Wood Stairs (North, Upside-down):
+    name: minecraft:dark_oak_stairs
+    half: top
+    facing: east
+  Dark Oak Wood Stairs (South, Normal):
+    name: minecraft:dark_oak_stairs
+    half: bottom
+    facing: west
+  Dark Oak Wood Stairs (South, Upside-down):
+    name: minecraft:dark_oak_stairs
+    half: top
+    facing: west
+  Dark Oak Wood Stairs (West, Normal):
+    name: minecraft:dark_oak_stairs
+    half: bottom
+    facing: north
+  Dark Oak Wood Stairs (West, Upside-down):
+    name: minecraft:dark_oak_stairs
+    half: top
+    facing: north
+  Dark Prismarine:
+    name: minecraft:dark_prismarine
+  Daylight Sensor (Power level 0):
+    name: minecraft:daylight_detector
+  Daylight Sensor (Power level 1):
+    name: minecraft:daylight_detector
+  Daylight Sensor (Power level 10):
+    name: minecraft:daylight_detector
+  Daylight Sensor (Power level 11):
+    name: minecraft:daylight_detector
+  Daylight Sensor (Power level 12):
+    name: minecraft:daylight_detector
+  Daylight Sensor (Power level 13):
+    name: minecraft:daylight_detector
+  Daylight Sensor (Power level 14):
+    name: minecraft:daylight_detector
+  Daylight Sensor (Power level 15):
+    name: minecraft:daylight_detector
+  Daylight Sensor (Power level 2):
+    name: minecraft:daylight_detector
+  Daylight Sensor (Power level 3):
+    name: minecraft:daylight_detector
+  Daylight Sensor (Power level 4):
+    name: minecraft:daylight_detector
+  Daylight Sensor (Power level 5):
+    name: minecraft:daylight_detector
+  Daylight Sensor (Power level 6):
+    name: minecraft:daylight_detector
+  Daylight Sensor (Power level 7):
+    name: minecraft:daylight_detector
+  Daylight Sensor (Power level 8):
+    name: minecraft:daylight_detector
+  Daylight Sensor (Power level 9):
+    name: minecraft:daylight_detector
+  Dead Shrub:
+    name: minecraft:dead_bush
+  Dead Bush:
+    name: minecraft:dead_bush
+  Detector Rail (Flat, North-South, Unactive):
+    name: minecraft:detector_rail
+  Detector Rail (Flat, West-East, Unactive):
+    name: minecraft:detector_rail
+  Diamond Block:
+    name: minecraft:diamond_block
+  Diamond Ore:
+    name: minecraft:diamond_ore
+  Diorite:
+    name: minecraft:diorite
+  Dirt:
+    name: minecraft:dirt
+  Dispenser (Facing Down, Activated):
+    name: minecraft:dispenser
+  Dispenser (Facing Down, Unactive):
+    name: minecraft:dispenser
+  Dispenser (Facing East, Unactive):
+    name: minecraft:dispenser
+  Dispenser (Facing North, Activated):
+    name: minecraft:dispenser
+  Dispenser (Facing South, Activated):
+    name: minecraft:dispenser
+  Dispenser (Facing Up, Unactive):
+    name: minecraft:dispenser
+  Dispenser (Facing West, Activated):
+    name: minecraft:dispenser
+  Dispenser (Facing West, Unactive):
+    name: minecraft:dispenser
+  Dispenser (Facing North, Unactive):
+    name: minecraft:dispenser
+  Dispenser (Facing South, Unactive):
+    name: minecraft:dispenser
+  Dragon Egg:
+    name: minecraft:dragon_egg
+  Dropper (Facing Down, Unactive):
+    name: minecraft:dropper
+  Dropper (Facing East, Activated):
+    name: minecraft:dropper
+  Dropper (Facing East, Unactive):
+    name: minecraft:dropper
+  Dropper (Facing North, Activated):
+    name: minecraft:dropper
+  Dropper (Facing North, Unactive):
+    name: minecraft:dropper
+  Dropper (Facing Up, Unactive):
+    name: minecraft:dropper
+  Dropper (Facing West, Activated):
+    name: minecraft:dropper
+  Dropper (Facing West, Unactive):
+    name: minecraft:dropper
+  Dropper (Facing South, Unactive):
+    name: minecraft:dropper
+  Emerald Block:
+    name: minecraft:emerald_block
+  Emerald Ore:
+    name: minecraft:emerald_ore
+  Enchantment Table:
+    name: minecraft:enchanting_table
+  End Portal:
+    name: minecraft:end_portal
+  End Portal Frame (Vectors to the East, Empty):
+    name: minecraft:end_portal_frame
+  End Portal Frame (Vectors to the North, Empty):
+    name: minecraft:end_portal_frame
+  End Portal Frame (Vectors to the West, Empty):
+    name: minecraft:end_portal_frame
+  End Portal Frame (Vectors to the East, Eye of Ender):
+    name: minecraft:end_portal_frame
+  End Portal Frame (Vectors to the North, Eye of Ender):
+    name: minecraft:end_portal_frame
+  End Portal Frame (Vectors to the South, Empty):
+    name: minecraft:end_portal_frame
+  End Portal Frame (Vectors to the South, Eye of Ender):
+    name: minecraft:end_portal_frame
+  End Portal Frame (Vectors to the West, Eye of Ender):
+    name: minecraft:end_portal_frame
+  End Rod (Facing Down):
+    name: minecraft:end_rod
+  End Rod (Facing East):
+    name: minecraft:end_rod
+  End Rod (Facing North):
+    name: minecraft:end_rod
+  End Rod (Facing South):
+    name: minecraft:end_rod
+  End Rod (Facing Up):
+    name: minecraft:end_rod
+  End Rod (Facing West):
+    name: minecraft:end_rod
+  End Stone:
+    name: minecraft:end_stone
+  End Stone Bricks:
+    name: minecraft:end_stone_bricks
+  Ender Chest (Facing East):
+    name: minecraft:ender_chest
+    facing: north
+  Ender Chest (Facing North):
+    name: minecraft:ender_chest
+    facing: north
+  Ender Chest (Facing South):
+    name: minecraft:ender_chest
+    facing: north
+  Ender Chest (Facing West):
+    name: minecraft:ender_chest
+    facing: north
+  Farmland (Dry Land):
+    name: minecraft:farmland
+    moisture: '0'
+  Farmland (Wet level 1):
+    name: minecraft:farmland
+    moisture: '1'
+  Farmland (Wet level 2):
+    name: minecraft:farmland
+    moisture: '2'
+  Farmland (Wet level 3):
+    name: minecraft:farmland
+    moisture: '3'
+  Farmland (Wet level 4):
+    name: minecraft:farmland
+    moisture: '4'
+  Farmland (Wet level 5):
+    name: minecraft:farmland
+    moisture: '5'
+  Farmland (Wet level 6):
+    name: minecraft:farmland
+    moisture: '6'
+  Farmland (Fully Hydrated):
+    name: minecraft:farmland
+    moisture: '7'
+  Fern:
+    name: minecraft:fern
+  Fire (Age 0):
+    name: minecraft:fire
+  Fire (Age 14):
+    name: minecraft:fire
+  Fire (Age 15):
+    name: minecraft:fire
+  Fire (Age 2):
+    name: minecraft:fire
+  Fire (Age 6):
+    name: minecraft:fire
+  Flower Pot:
+    name: minecraft:flower_pot
+  Burning Furnace ():
+    name: minecraft:furnace
+  Burning Furnace (Facing East):
+    name: minecraft:furnace
+    facing: east
+    lit: 'true'
+  Burning Furnace (Facing North):
+    name: minecraft:furnace
+    facing: north
+    lit: 'true'
+  Burning Furnace (Facing South):
+    name: minecraft:furnace
+    facing: south
+    lit: 'true'
+  Burning Furnace (Facing West):
+    name: minecraft:furnace
+    facing: west
+    lit: 'true'
+  Furnace (Facing East):
+    name: minecraft:furnace
+    facing: east
+    lit: 'false'
+  Furnace (Facing North):
+    name: minecraft:furnace
+    facing: north
+    lit: 'false'
+  Furnace (Facing South):
+    name: minecraft:furnace
+    facing: south
+    lit: 'false'
+  Furnace (Facing West):
+    name: minecraft:furnace
+    facing: west
+    lit: 'false'
+  Glass:
+    name: minecraft:glass
+  Glass Pane:
+    name: minecraft:glass_pane
+  Glowstone:
+    name: minecraft:glowstone
+  Gold Block:
+    name: minecraft:gold_block
+  Gold Ore:
+    name: minecraft:gold_ore
+  Granite:
+    name: minecraft:granite
+  Grass 1:
+    name: minecraft:grass
+  Grass 2:
+    name: minecraft:grass
+  Grass 3:
+    name: minecraft:grass
+  grass 6:
+    name: minecraft:grass
+  Grass 7:
+    name: minecraft:grass
+  Grass:
+    name: minecraft:grass_block
+  Grass Path:
+    name: minecraft:grass_path
+  Gravel:
+    name: minecraft:gravel
+  Gray Carpet:
+    name: minecraft:gray_carpet
+  Gray Stained Glass:
+    name: minecraft:gray_stained_glass
+  Gray Stained Glass Pane:
+    name: minecraft:gray_stained_glass_pane
+  Gray Stained Clay:
+    name: minecraft:gray_terracotta
+  Gray Wool:
+    name: minecraft:gray_wool
+  Green Carpet:
+    name: minecraft:green_carpet
+  Green Stained Glass:
+    name: minecraft:green_stained_glass
+  Green Stained Glass Pane:
+    name: minecraft:green_stained_glass_pane
+  Green Stained Clay:
+    name: minecraft:green_terracotta
+  Green Wool:
+    name: minecraft:green_wool
+  Hay Bale (Axis X):
+    name: minecraft:hay_block
+  Hay Bale (Axis Y):
+    name: minecraft:hay_block
+  Hay Bale (Axis Z):
+    name: minecraft:hay_block
+  Weighted Pressure Plate (heavy):
+    name: minecraft:heavy_weighted_pressure_plate
+  Hopper (Output Facing Down, Disabled):
+    name: minecraft:hopper
+  Hopper (Output Facing East, Disabled):
+    name: minecraft:hopper
+  Hopper (Output Facing North, Disabled):
+    name: minecraft:hopper
+  Hopper (Output Facing West, Disabled):
+    name: minecraft:hopper
+  Hopper (Output Facing Down, Activated):
+    name: minecraft:hopper
+  Hopper (Output Facing East, Activated):
+    name: minecraft:hopper
+  Hopper (Output Facing North, Activated):
+    name: minecraft:hopper
+  Hopper (Output Facing South, Activated):
+    name: minecraft:hopper
+  Hopper (Output Facing South, Disabled):
+    name: minecraft:hopper
+  Hopper (Output Facing West, Activated):
+    name: minecraft:hopper
+  Ice:
+    name: minecraft:ice
+  Chiseled Stone Brick Monster Egg:
+    name: minecraft:infested_chiseled_stone_bricks
+  Cobblestone Monster Egg:
+    name: minecraft:infested_cobblestone
+  Cracked Stone Brick Monster Egg:
+    name: minecraft:infested_cracked_stone_bricks
+  Mossy Stone Brick Monster Egg:
+    name: minecraft:infested_mossy_stone_bricks
+  Stone Monster Egg:
+    name: minecraft:infested_stone
+  Stone Brick Monster Egg:
+    name: minecraft:infested_stone_bricks
+  Iron Bars 1:
+    name: minecraft:iron_bars
+  Iron Bars:
+    name: minecraft:iron_bars
+  Iron Block:
+    name: minecraft:iron_block
+  Iron Door (Lower, Facing East, Opened):
+    name: minecraft:iron_door
+    facing: north
+  Iron Door (Lower, Facing North, Opened):
+    name: minecraft:iron_door
+    facing: west
+  Iron Door (Lower, Facing South, Closed):
+    name: minecraft:iron_door
+    facing: east
+  Iron Door (Lower, Facing South, Opened):
+    name: minecraft:iron_door
+    facing: east
+  Iron Door (Lower, Facing West, Opened):
+    name: minecraft:iron_door
+    facing: south
+  Iron Door (Upper, Hinge Left, Powered):
+    name: minecraft:iron_door
+    hinge: left
+  Iron Door (Upper, Hinge Right, Powered):
+    name: minecraft:iron_door
+    hinge: right
+  Iron Door (Lower, Facing East, Closed):
+    name: minecraft:iron_door
+  Iron Door (Lower, Facing West, Closed):
+    name: minecraft:iron_door
+  Iron Door (Lower, Facing North, Closed):
+    name: minecraft:iron_door
+  Iron Door (Upper, Hinge Right, Unpowered):
+    name: minecraft:iron_door
+    hinge: right
+  Iron Door (Upper, Hinge Left, Unpowered):
+    name: minecraft:iron_door
+    hinge: left
+  Iron Ore:
+    name: minecraft:iron_ore
+  Iron Trapdoor (East from block, Closed, Bottom half):
+    name: minecraft:iron_trapdoor
+  Iron Trapdoor (East from block, Closed, Top Half):
+    name: minecraft:iron_trapdoor
+  Iron Trapdoor (East from block, Open, Bottom half):
+    name: minecraft:iron_trapdoor
+  Iron Trapdoor (East from block, Open, Top Half):
+    name: minecraft:iron_trapdoor
+  Iron Trapdoor (North from block, Closed, Bottom half):
+    name: minecraft:iron_trapdoor
+  Iron Trapdoor (North from block, Closed, Top Half):
+    name: minecraft:iron_trapdoor
+  Iron Trapdoor (North from block, Open, Bottom half):
+    name: minecraft:iron_trapdoor
+  Iron Trapdoor (North from block, Open, Top Half):
+    name: minecraft:iron_trapdoor
+  Iron Trapdoor (South from block, Closed, Bottom half):
+    name: minecraft:iron_trapdoor
+  Iron Trapdoor (South from block, Closed, Top Half):
+    name: minecraft:iron_trapdoor
+  Iron Trapdoor (South from block, Open, Bottom half):
+    name: minecraft:iron_trapdoor
+  Iron Trapdoor (South from block, Open, Top Half):
+    name: minecraft:iron_trapdoor
+  Iron Trapdoor (West from block, Closed, Bottom half):
+    name: minecraft:iron_trapdoor
+  Iron Trapdoor (West from block, Closed, Top Half):
+    name: minecraft:iron_trapdoor
+  Iron Trapdoor (West from block, Open, Bottom half):
+    name: minecraft:iron_trapdoor
+  Iron Trapdoor (West from block, Open, Top Half):
+    name: minecraft:iron_trapdoor
+  Jack-o-Lantern (Facing East):
+    name: minecraft:jack_o_lantern
+  Jack-o-Lantern (Facing North):
+    name: minecraft:jack_o_lantern
+  Jack-o-Lantern (Facing South):
+    name: minecraft:jack_o_lantern
+  Jack-o-Lantern (Facing West):
+    name: minecraft:jack_o_lantern
+  Jukebox (Disc inside):
+    name: minecraft:jukebox
+  Jukebox:
+    name: minecraft:jukebox
+  Jungle Door (Lower, Facing East, Closed):
+    name: minecraft:jungle_door
+    facing: north
+  Jungle Door (Lower, Facing East, Opened):
+    name: minecraft:jungle_door
+    facing: north
+  Jungle Door (Lower, Facing North, Closed):
+    name: minecraft:jungle_door
+    facing: west
+  Jungle Door (Lower, Facing North, Opened):
+    name: minecraft:jungle_door
+    facing: west
+  Jungle Door (Lower, Facing South, Closed):
+    name: minecraft:jungle_door
+    facing: east
+  Jungle Door (Lower, Facing South, Opened):
+    name: minecraft:jungle_door
+    facing: east
+  Jungle Door (Lower, Facing West, Closed):
+    name: minecraft:jungle_door
+    facing: south
+  Jungle Door (Lower, Facing West, Opened):
+    name: minecraft:jungle_door
+    facing: south
+  Jungle Door (Upper, Hinge Left, Unpowered):
+    name: minecraft:jungle_door
+    hinge: left
+  Jungle Door (Upper, Hinge Right, Unpowered):
+    name: minecraft:jungle_door
+    hinge: right
+  Jungle Fence:
+    name: minecraft:jungle_fence
+  Jungle Fence Gate (Facing East, Closed):
+    name: minecraft:jungle_fence_gate
+  Jungle Fence Gate (Facing East, Opened):
+    name: minecraft:jungle_fence_gate
+  Jungle Fence Gate (Facing North, Closed):
+    name: minecraft:jungle_fence_gate
+  Jungle Fence Gate (Facing South, Closed):
+    name: minecraft:jungle_fence_gate
+  Jungle Fence Gate (Facing West, Closed):
+    name: minecraft:jungle_fence_gate
+  Jungle Fence Gate (Facing West, Opened):
+    name: minecraft:jungle_fence_gate
+  Jungle Leaves:
+    name: minecraft:jungle_leaves
+  Jungle Leaves (Check Decay):
+    name: minecraft:jungle_leaves
+  Jungle Leaves (No Decay):
+    name: minecraft:jungle_leaves
+  Jungle Leaves (No Decay and Check Decay):
+    name: minecraft:jungle_leaves
+  Jungle Wood Plank:
+    name: minecraft:jungle_planks
+  Sapling (Jungle, Ready to grow):
+    name: minecraft:jungle_sapling
+  Double Jungle Wood Slab:
+    name: minecraft:jungle_slab
+  ' (Jungle Wood, Bottom)':
+    name: minecraft:jungle_slab
+  ' (Jungle Wood, Upper)':
+    name: minecraft:jungle_slab
+  Jungle Wood Stairs (East, Normal):
+    name: minecraft:jungle_stairs
+  Jungle Wood Stairs (East, Upside-down):
+    name: minecraft:jungle_stairs
+  Jungle Wood Stairs (North, Normal):
+    name: minecraft:jungle_stairs
+  Jungle Wood Stairs (North, Upside-down):
+    name: minecraft:jungle_stairs
+  Jungle Wood Stairs (South, Normal):
+    name: minecraft:jungle_stairs
+  Jungle Wood Stairs (South, Upside-down):
+    name: minecraft:jungle_stairs
+  Jungle Wood Stairs (West, Normal):
+    name: minecraft:jungle_stairs
+  Jungle Wood Stairs (West, Upside-down):
+    name: minecraft:jungle_stairs
+  Jungle Wood (facing east/west):
+    name: minecraft:jungle_wood
+  Jungle Wood (facing north/south):
+    name: minecraft:jungle_wood
+  Jungle Wood (only bark):
+    name: minecraft:jungle_wood
+  Jungle Wood:
+    name: minecraft:jungle_wood
+  Ladder (facing east):
+    name: minecraft:ladder
+    facing: west
+  Ladder (facing north):
+    name: minecraft:ladder
+    facing: south
+  Ladder (facing south):
+    name: minecraft:ladder
+    facing: north
+  Ladder (facing west):
+    name: minecraft:ladder
+    facing: east
+  Lapis Lazuli Block:
+    name: minecraft:lapis_block
+  Lapis Lazuli Ore:
+    name: minecraft:lapis_ore
+  Flower (Large Fern, Lower):
+    name: minecraft:large_fern
+  Flower (Large Fern, Upper):
+    name: minecraft:large_fern
+  Lava (Height Level 2, Falling Lava):
+    name: minecraft:lava
+  Lava (Height Level 2, Still Lava):
+    name: minecraft:lava
+  Lava (Height Level 4, Falling Lava):
+    name: minecraft:lava
+  Lava (Height Level 4, Still Lava):
+    name: minecraft:lava
+  Lava (Height Level 6, Falling Lava):
+    name: minecraft:lava
+  Lava (Height Level 6, Still Lava):
+    name: minecraft:lava
+  Lava (Lava Source Block, Falling Lava):
+    name: minecraft:lava
+  Lava (Lava Source Block, Still Lava):
+    name: minecraft:lava
+  Lever (On Block Side Facing East, Active):
+    name: minecraft:lever
+  Lever (On Block Side Facing North, Active):
+    name: minecraft:lever
+  Lever (On Block Side Facing South, Active):
+    name: minecraft:lever
+  Lever (On Block Side Facing West, Active):
+    name: minecraft:lever
+  Lever (On Block Top Points East When Off, Active):
+    name: minecraft:lever
+  Lever (On Block Bottom Points East When Off, Active):
+    name: minecraft:lever
+  Lever (On Block Bottom Points East When Off, Not Active):
+    name: minecraft:lever
+  Lever (On Block Bottom Points South When Off, Active):
+    name: minecraft:lever
+  Lever (On Block Bottom Points South When Off, Not Active):
+    name: minecraft:lever
+  Lever (On Block Side Facing East, Not Active):
+    name: minecraft:lever
+  Lever (On Block Side Facing North, Not Active):
+    name: minecraft:lever
+  Lever (On Block Side Facing South, Not Active):
+    name: minecraft:lever
+  Lever (On Block Side Facing West, Not Active):
+    name: minecraft:lever
+  Lever (On Block Top Points East When Off, Not Active):
+    name: minecraft:lever
+  Lever (On Block Top Points South When Off, Active):
+    name: minecraft:lever
+  Lever (On Block Top Points South When Off, Not Active):
+    name: minecraft:lever
+  Light Blue Carpet:
+    name: minecraft:light_blue_carpet
+  Light Blue Stained Glass:
+    name: minecraft:light_blue_stained_glass
+  Light Blue Stained Glass Pane:
+    name: minecraft:light_blue_stained_glass_pane
+  Light Blue Stained Clay:
+    name: minecraft:light_blue_terracotta
+  Light Blue Wool:
+    name: minecraft:light_blue_wool
+  Light Gray Carpet:
+    name: minecraft:light_gray_carpet
+  Light Gray Stained Glass:
+    name: minecraft:light_gray_stained_glass
+  Light Gray Stained Glass Pane:
+    name: minecraft:light_gray_stained_glass_pane
+  Light Gray Stained Clay:
+    name: minecraft:light_gray_terracotta
+  Light Gray Wool:
+    name: minecraft:light_gray_wool
+  Weighted Pressure Plate (light):
+    name: minecraft:light_weighted_pressure_plate
+  Flower (Lilac, Lower):
+    name: minecraft:lilac
+  Flower (Lilac, Upper):
+    name: minecraft:lilac
+  Lily Pad:
+    name: minecraft:lily_pad
+  Lime Carpet:
+    name: minecraft:lime_carpet
+  Lime Stained Glass:
+    name: minecraft:lime_stained_glass
+  Lime Stained Glass Pane:
+    name: minecraft:lime_stained_glass_pane
+  Lime Stained Clay:
+    name: minecraft:lime_terracotta
+  Lime Wool:
+    name: minecraft:lime_wool
+  Magenta Carpet:
+    name: minecraft:magenta_carpet
+  Magenta Stained Glass:
+    name: minecraft:magenta_stained_glass
+  Magenta Stained Glass Pane:
+    name: minecraft:magenta_stained_glass_pane
+  Magenta Stained Clay:
+    name: minecraft:magenta_terracotta
+  Magenta Wool:
+    name: minecraft:magenta_wool
+  Magma block:
+    name: minecraft:magma_block
+  Melon Block:
+    name: minecraft:melon
+  Melon Stem (Fifth stage of growth):
+    name: minecraft:melon_stem
+  Melon Stem (First stage of growth):
+    name: minecraft:melon_stem
+  Melon Stem (Fourth stage of growth):
+    name: minecraft:melon_stem
+  Melon Stem (Second stage of growth):
+    name: minecraft:melon_stem
+  Melon Stem (Seventh stage of growth):
+    name: minecraft:melon_stem
+  Melon Stem (Sixth stage of growth):
+    name: minecraft:melon_stem
+  Melon Stem (Third stage of growth):
+    name: minecraft:melon_stem
+  Moss Stone:
+    name: minecraft:mossy_cobblestone
+  Mossy Cobblestone Wall:
+    name: minecraft:mossy_cobblestone_wall
+  Mossy Stone Bricks:
+    name: minecraft:mossy_stone_bricks
+  Mycelium:
+    name: minecraft:mycelium
+  Nether Brick Fence:
+    name: minecraft:nether_brick_fence
+  Double Nether Brick Slab:
+    name: minecraft:nether_brick_slab
+  Nether Brick Slab:
+    name: minecraft:nether_brick_slab
+  Nether Brick Slab (Upper):
+    name: minecraft:nether_brick_slab
+  Nether Brick Stairs (East, Normal):
+    name: minecraft:nether_brick_stairs
+  Nether Brick Stairs (East, Upside-down):
+    name: minecraft:nether_brick_stairs
+  Nether Brick Stairs (North, Normal):
+    name: minecraft:nether_brick_stairs
+  Nether Brick Stairs (North, Upside-down):
+    name: minecraft:nether_brick_stairs
+  Nether Brick Stairs (South, Normal):
+    name: minecraft:nether_brick_stairs
+  Nether Brick Stairs (South, Upside-down):
+    name: minecraft:nether_brick_stairs
+  Nether Brick Stairs (West, Normal):
+    name: minecraft:nether_brick_stairs
+  Nether Brick Stairs (West, Upside-down):
+    name: minecraft:nether_brick_stairs
+  Nether Brick:
+    name: minecraft:nether_bricks
+  Nether Portal (Axis X - Oriented East-West):
+    name: minecraft:nether_portal
+  Nether Portal (Axis Z - Oriented North-South):
+    name: minecraft:nether_portal
+  Nether Quartz Ore:
+    name: minecraft:nether_quartz_ore
+  Nether Wart ():
+    name: minecraft:nether_wart
+  Nether Wart Block:
+    name: minecraft:nether_wart_block
+  Netherrack:
+    name: minecraft:netherrack
+  Note Block:
+    name: minecraft:note_block
+  Wooden Button (Facing Down, Inactive):
+    name: minecraft:oak_button
+  Wooden Button (Facing Up, Inactive):
+    name: minecraft:oak_button
+  Wooden Button (Facing East, Inactive):
+    name: minecraft:oak_button
+    face: wall
+    facing: west
+  Wooden Button (Facing North, Inactive):
+    name: minecraft:oak_button
+    face: wall
+    facing: south
+  Wooden Button (Facing South, Inactive):
+    name: minecraft:oak_button
+    face: wall
+    facing: north
+  Wooden Button (Facing West, Inactive):
+    name: minecraft:oak_button
+    face: wall
+    facing: east
+  Oak Door (Facing East, Opened):
+    name: minecraft:oak_door
+    facing: north
+  Oak Door (Facing North, Opened):
+    name: minecraft:oak_door
+    facing: west
+  Oak Door (Facing South, Opened):
+    name: minecraft:oak_door
+    facing: east
+  Oak Door (Hinge Left, Powered, Upper):
+    name: minecraft:oak_door
+    hinge: left
+  Oak Door (Hinge Right, Powered, Upper ):
+    name: minecraft:oak_door
+    hinge: right
+  Oak Door (Hinge Right, Powered, Upper):
+    name: minecraft:oak_door
+    hinge: right
+  Oak Door (Facing East, Closed, Lower):
+    name: minecraft:oak_door
+    facing: north
+  Oak Door (Facing East, Opened, Lower):
+    name: minecraft:oak_door
+    facing: north
+  Oak Door (Facing North, Opened, Lower):
+    name: minecraft:oak_door
+    facing: west
+  Oak Door (Facing South, Opened, Lower):
+    name: minecraft:oak_door
+    facing: east
+  Oak Door (Facing West, Opened, Lower):
+    name: minecraft:oak_door
+    facing: south
+  Oak Door (Facing North, Closed, Lower):
+    name: minecraft:oak_door
+    facing: west
+  Oak Door (Facing South, Closed, Lower):
+    name: minecraft:oak_door
+    facing: east
+  Oak Door (Facing West, Closed, Lower):
+    name: minecraft:oak_door
+    facing: south
+  Oak Door (Hinge Left, Unpowered, Upper:
+    name: minecraft:oak_door
+    hinge: left
+  Oak Door (Hinge Right, Unpowered, Upper):
+    name: minecraft:oak_door
+    hinge: right
+  Oak Fence:
+    name: minecraft:oak_fence
+  Oak Fence Gate (Facing East, Opened):
+    name: minecraft:oak_fence_gate
+  Oak Fence Gate (Facing North, Opened):
+    name: minecraft:oak_fence_gate
+  Oak Fence Gate (Facing South, Opened):
+    name: minecraft:oak_fence_gate
+  Oak Fence Gate (Facing West, Opened):
+    name: minecraft:oak_fence_gate
+  Oak Fence Gate (Facing East, Closed):
+    name: minecraft:oak_fence_gate
+    facing: west
+    open: 'false'
+  Oak Fence Gate (Facing North, Closed):
+    name: minecraft:oak_fence_gate
+    facing: south
+    open: 'false'
+  Oak Fence Gate (Facing South, Closed):
+    name: minecraft:oak_fence_gate
+    facing: north
+    open: 'false'
+  Oak Fence Gate (Facing West, Closed):
+    name: minecraft:oak_fence_gate
+    facing: east
+    open: 'false'
+  Oak Leaves:
+    name: minecraft:oak_leaves
+  Oak Leaves (No Decay):
+    name: minecraft:oak_leaves
+  Oak Leaves (Check Decay):
+    name: minecraft:oak_leaves
+  Oak Leaves (No Decay and Check Decay):
+    name: minecraft:oak_leaves
+  Oak Wood:
+    name: minecraft:oak_log
+    axis: y
+  Oak Wood (facing east/west):
+    name: minecraft:oak_log
+    axis: x
+  Oak Wood (facing north/south):
+    name: minecraft:oak_log
+    axis: z
+  Oak Wood Plank:
+    name: minecraft:oak_planks
+  Wooden Pressure Plate (Active):
+    name: minecraft:oak_pressure_plate
+  Wooden Pressure Plate (Unactive):
+    name: minecraft:oak_pressure_plate
+  Sapling (Oak, ):
+    name: minecraft:oak_sapling
+  Sapling (Oak, Ready to grow):
+    name: minecraft:oak_sapling
+  Standing Sign (East):
+    name: minecraft:oak_sign
+  Standing Sign (East-NorthEast):
+    name: minecraft:oak_sign
+  Standing Sign (East-SouthEast):
+    name: minecraft:oak_sign
+  Standing Sign (North):
+    name: minecraft:oak_sign
+  Standing Sign (North-NorthEast):
+    name: minecraft:oak_sign
+  Standing Sign (North-NorthWest):
+    name: minecraft:oak_sign
+  Standing Sign (South):
+    name: minecraft:oak_sign
+  Standing Sign (South-SouthEast):
+    name: minecraft:oak_sign
+  Standing Sign (South-SouthWest):
+    name: minecraft:oak_sign
+  Standing Sign (West):
+    name: minecraft:oak_sign
+  Standing Sign (West-NorthWest):
+    name: minecraft:oak_sign
+  Standing Sign (West-Southwest):
+    name: minecraft:oak_sign
+  Wooden Slab:
+    name: minecraft:oak_slab
+  Oak Wood Slab (Bottom):
+    name: minecraft:oak_slab
+    type: bottom
+  ' Oak Wood Slab (Upper)':
+    name: minecraft:oak_slab
+    type: top
+  Double Wooden Slab:
+    name: minecraft:oak_slab
+    type: double
+  Double Oak Wood Slab:
+    name: minecraft:oak_slab
+    type: double
+  Oak Wood Stairs (East, Normal):
+    name: minecraft:oak_stairs
+    half: bottom
+    facing: south
+  Oak Wood Stairs (East, Upside-down):
+    name: minecraft:oak_stairs
+    half: top
+    facing: south
+  Oak Wood Stairs (North, Normal):
+    name: minecraft:oak_stairs
+    half: bottom
+    facing: east
+  Oak Wood Stairs (North, Upside-down):
+    name: minecraft:oak_stairs
+    half: top
+    facing: east
+  Oak Wood Stairs (South, Normal):
+    name: minecraft:oak_stairs
+    half: bottom
+    facing: west
+  Oak Wood Stairs (South, Upside-down):
+    name: minecraft:oak_stairs
+    half: top
+    facing: west
+  Oak Wood Stairs (West, Normal):
+    name: minecraft:oak_stairs
+    half: bottom
+    facing: north
+  Oak Wood Stairs (West, Upside-down):
+    name: minecraft:oak_stairs
+    half: top
+    facing: north
+  Wooden Trapdoor (East from block, Closed, Bottom half):
+    name: minecraft:oak_trapdoor
+    half: bottom
+    facing: east
+  Wooden Trapdoor (East from block, Closed, Top Half):
+    name: minecraft:oak_trapdoor
+    half: top
+    facing: east
+  Wooden Trapdoor (East from block, Open, Bottom half):
+    name: minecraft:oak_trapdoor
+    half: bottom
+    facing: east
+  Wooden Trapdoor (East from block, Open, Top Half):
+    name: minecraft:oak_trapdoor
+    half: top
+    facing: east
+  Wooden Trapdoor (North from block, Closed, Bottom half):
+    name: minecraft:oak_trapdoor
+    half: bottom
+    facing: west
+  Wooden Trapdoor (North from block, Closed, Top Half):
+    name: minecraft:oak_trapdoor
+    half: top
+    facing: west
+  Wooden Trapdoor (North from block, Open, Bottom half):
+    name: minecraft:oak_trapdoor
+    half: bottom
+    facing: west
+  Wooden Trapdoor (North from block, Open, Top Half):
+    name: minecraft:oak_trapdoor
+    half: top
+    facing: west
+  Wooden Trapdoor (South from block, Closed, Bottom half):
+    name: minecraft:oak_trapdoor
+    half: bottom
+    facing: north
+  Wooden Trapdoor (South from block, Closed, Top Half):
+    name: minecraft:oak_trapdoor
+    half: top
+    facing: north
+  Wooden Trapdoor (South from block, Open, Bottom half):
+    name: minecraft:oak_trapdoor
+    half: bottom
+    facing: north
+  Wooden Trapdoor (South from block, Open, Top Half):
+    name: minecraft:oak_trapdoor
+    half: top
+    facing: north
+  Wooden Trapdoor (West from block, Closed, Bottom half):
+    name: minecraft:oak_trapdoor
+    half: bottom
+    facing: south
+  Wooden Trapdoor (West from block, Closed, Top Half):
+    name: minecraft:oak_trapdoor
+    half: top
+    facing: south
+  Wooden Trapdoor (West from block, Open, Bottom half):
+    name: minecraft:oak_trapdoor
+    half: bottom
+    facing: south
+  Wooden Trapdoor (West from block, Open, Top Half):
+    name: minecraft:oak_trapdoor
+    half: top
+    facing: south
+  Wall Sign, north:
+    name: minecraft:oak_wall_sign
+    facing: south
+  Wall Sign, south:
+    name: minecraft:oak_wall_sign
+    facing: north
+  Wall Sign, west:
+    name: minecraft:oak_wall_sign
+    facing: east
+  Wall-mounted Sign Block west-northwest:
+    name: minecraft:oak_wall_sign
+    facing: west
+  Oak Wood (only bark):
+    name: minecraft:oak_wood
+  Obsidian:
+    name: minecraft:obsidian
+  Orange Carpet:
+    name: minecraft:orange_carpet
+  Orange Stained Glass:
+    name: minecraft:orange_stained_glass
+  Orange Stained Glass Pane:
+    name: minecraft:orange_stained_glass_pane
+  Orange Stained Clay:
+    name: minecraft:orange_terracotta
+  Orange Tulip:
+    name: minecraft:orange_tulip
+  Orange Wool:
+    name: minecraft:orange_wool
+  Oxeye Daisy:
+    name: minecraft:oxeye_daisy
+  Packed Ice:
+    name: minecraft:packed_ice
+  Flower (Peony, Lower):
+    name: minecraft:peony
+  Pink Carpet:
+    name: minecraft:pink_carpet
+  Pink Stained Glass:
+    name: minecraft:pink_stained_glass
+  Pink Stained Glass Pane:
+    name: minecraft:pink_stained_glass_pane
+  Pink Stained Clay:
+    name: minecraft:pink_terracotta
+  Pink Tulip:
+    name: minecraft:pink_tulip
+  Pink Wool:
+    name: minecraft:pink_wool
+  Piston (Facing east, Not Extended):
+    name: minecraft:piston
+  Piston (Facing west, Not Extended):
+    name: minecraft:piston
+  Piston (Facing down, Extended):
+    name: minecraft:piston
+  Piston (Facing down, Not Extended):
+    name: minecraft:piston
+  Piston (Facing east, Extended):
+    name: minecraft:piston
+  Piston (Facing north, Extended):
+    name: minecraft:piston
+  Piston (Facing north, Not Extended):
+    name: minecraft:piston
+  Piston (Facing south, Extended):
+    name: minecraft:piston
+  Piston (Facing south, Not Extended):
+    name: minecraft:piston
+  Piston (Facing up, Extended):
+    name: minecraft:piston
+  Piston (Facing up, Not Extended):
+    name: minecraft:piston
+  Piston (Facing west, Extended):
+    name: minecraft:piston
+  Piston Head (Facing down, Extended):
+    name: minecraft:piston_head
+  Piston Head (Facing down, Not Extended):
+    name: minecraft:piston_head
+  Piston Head (Facing east, Extended):
+    name: minecraft:piston_head
+  Piston Head (Facing east, Not Extended):
+    name: minecraft:piston_head
+  Piston Head (Facing north, Extended):
+    name: minecraft:piston_head
+  Piston Head (Facing north, Not Extended):
+    name: minecraft:piston_head
+  Piston Head (Facing south, Extended):
+    name: minecraft:piston_head
+  Piston Head (Facing south, Not Extended):
+    name: minecraft:piston_head
+  Piston Head (Facing up, Extended):
+    name: minecraft:piston_head
+  Piston Head (Facing up, Not Extended):
+    name: minecraft:piston_head
+  Piston Head (Facing west, Extended):
+    name: minecraft:piston_head
+  Piston Head (Facing west, Not Extended):
+    name: minecraft:piston_head
+  Piston (6-sided piston2, Extended):
+    name: minecraft:piston_head
+  Piston Extension (Facing up, Extended):
+    name: minecraft:piston_head
+  Piston Extension (Facing up, Not Extended):
+    name: minecraft:piston_head
+  Piston Extension (Facing down, Not Extended):
+    name: minecraft:piston_head
+  Mob Head ():
+    name: minecraft:player_head
+  Mob Head (On a Wall Facing East):
+    name: minecraft:player_head
+  Mob Head (On a Wall Facing North):
+    name: minecraft:player_head
+  Mob Head (On a Wall Facing South):
+    name: minecraft:player_head
+  Mob Head (On a Wall Facing West):
+    name: minecraft:player_head
+  Mob Head (On The Floor):
+    name: minecraft:player_head
+  Podzol:
+    name: minecraft:podzol
+  Polished Andesite:
+    name: minecraft:polished_andesite
+  Polished Diorite:
+    name: minecraft:polished_diorite
+  Polished Granite:
+    name: minecraft:polished_granite
+  Poppy:
+    name: minecraft:poppy
+  Potatoes (Growth level 0):
+    name: minecraft:potatoes
+  Potatoes (Growth level 1):
+    name: minecraft:potatoes
+  Potatoes (Growth level 2):
+    name: minecraft:potatoes
+  Potatoes (Growth level 3):
+    name: minecraft:potatoes
+  Potatoes (Growth level 4):
+    name: minecraft:potatoes
+  Potatoes (Growth level 5):
+    name: minecraft:potatoes
+  Potatoes (Growth level 6):
+    name: minecraft:potatoes
+  Potatoes (Growth level 7):
+    name: minecraft:potatoes
+  Acacia sapling Flower Pot:
+    name: minecraft:potted_acacia_sapling
+  Birch sapling Flower Pot:
+    name: minecraft:potted_birch_sapling
+  Brown mushroom Flower Pot:
+    name: minecraft:potted_brown_mushroom
+  Cactus Flower Pot:
+    name: minecraft:potted_cactus
+  Dandelion Flower Pot:
+    name: minecraft:potted_dandelion
+  Dead bush Flower Pot:
+    name: minecraft:potted_dead_bush
+  Fern Flower Pot:
+    name: minecraft:potted_fern
+  Jungle sapling Flower Pot:
+    name: minecraft:potted_jungle_sapling
+  Oak sapling Flower Pot:
+    name: minecraft:potted_oak_sapling
+  Poppy Flower Pot:
+    name: minecraft:potted_poppy
+  Red mushroom Flower Pot:
+    name: minecraft:potted_red_mushroom
+  Spruce sapling Flower Pot:
+    name: minecraft:potted_spruce_sapling
+  Powered Rail (Flat North-South, Active):
+    name: minecraft:powered_rail
+  Powered Rail (Flat North-South, Not Active):
+    name: minecraft:powered_rail
+  Powered Rail (Flat West-East, Active):
+    name: minecraft:powered_rail
+  Powered Rail (Flat West-East, Not Active):
+    name: minecraft:powered_rail
+  Powered Rail (Sloped, Ascending to the East, Not Active):
+    name: minecraft:powered_rail
+  Powered Rail (Sloped, Ascending to the West, Not Active):
+    name: minecraft:powered_rail
+  Prismarine:
+    name: minecraft:prismarine
+  Prismarine Bricks:
+    name: minecraft:prismarine_bricks
+  Pumpkin (Facing North):
+    name: minecraft:pumpkin
+  Pumpkin (Facing West):
+    name: minecraft:pumpkin
+  Pumpkin (Facing East):
+    name: minecraft:pumpkin
+  Pumpkin (Facing South):
+    name: minecraft:pumpkin
+  Pumpkin Stem (Seventh Stage of Growth):
+    name: minecraft:pumpkin_stem
+  Purple Carpet:
+    name: minecraft:purple_carpet
+  Purple Stained Glass:
+    name: minecraft:purple_stained_glass
+  Purple Stained Glass Pane:
+    name: minecraft:purple_stained_glass_pane
+  Purple Stained Clay:
+    name: minecraft:purple_terracotta
+  Purple Wool:
+    name: minecraft:purple_wool
+  Purpur Block:
+    name: minecraft:purpur_block
+  Purpur Double Slab:
+    name: minecraft:purpur_slab
+  Purpur Slab:
+    name: minecraft:purpur_slab
+  Purpur Stairs (East, Normal:
+    name: minecraft:purpur_stairs
+  Purpur Stairs (East, Normal):
+    name: minecraft:purpur_stairs
+  Purpur Stairs (South, Normal):
+    name: minecraft:purpur_stairs
+  Purpur Stairs (West, Normal):
+    name: minecraft:purpur_stairs
+  Quartz Block:
+    name: minecraft:quartz_block
+  Pillar Quartz Block:
+    name: minecraft:quartz_pillar
+  Pillar Quartz Block (east-west):
+    name: minecraft:quartz_pillar
+  Pillar Quartz Block (north-south):
+    name: minecraft:quartz_pillar
+  Quartz Slab:
+    name: minecraft:quartz_slab
+    type: bottom
+  Quartz Slab (Upper):
+    name: minecraft:quartz_slab
+    type: top
+  Double Quartz Slab:
+    name: minecraft:quartz_slab
+    type: double
+  Quartz Stairs (East, Normal):
+    name: minecraft:quartz_stairs
+    half: bottom
+    facing: south
+  Quartz Stairs (East, Upside-down):
+    name: minecraft:quartz_stairs
+    half: top
+    facing: south
+  Quartz Stairs (North, Normal):
+    name: minecraft:quartz_stairs
+    half: bottom
+    facing: east
+  Quartz Stairs (North, Upside-down):
+    name: minecraft:quartz_stairs
+    half: top
+    facing: east
+  Quartz Stairs (South, Normal):
+    name: minecraft:quartz_stairs
+    half: bottom
+    facing: west
+  Quartz Stairs (South, Upside-down):
+    name: minecraft:quartz_stairs
+    half: top
+    facing: west
+  Quartz Stairs (West, Normal):
+    name: minecraft:quartz_stairs
+    half: bottom
+    facing: north
+  Quartz Stairs (West, Upside-down):
+    name: minecraft:quartz_stairs
+    half: top
+    facing: north
+  Rail:
+    name: minecraft:rail
+  Rail (curved; north and east):
+    name: minecraft:rail
+  Rail (curved; north and west):
+    name: minecraft:rail
+  Rail (curved; south and east):
+    name: minecraft:rail
+  Rail (curved; south and west):
+    name: minecraft:rail
+  Rail (sloped, ascending to north):
+    name: minecraft:rail
+  Rail (sloped, ascending to east):
+    name: minecraft:rail
+  Rail (sloped, ascending to south):
+    name: minecraft:rail
+  Rail (sloped, ascending to west):
+    name: minecraft:rail
+  Rail (straight; east and west):
+    name: minecraft:rail
+  Red  Carpet:
+    name: minecraft:red_carpet
+  Red mushroom:
+    name: minecraft:red_mushroom
+  Red Mushroom Block (Cap and stem):
+    name: minecraft:red_mushroom_block
+  Red Mushroom Block (Cap texture on all six sides):
+    name: minecraft:red_mushroom_block
+  Red Mushroom Block (Cap texture on top):
+    name: minecraft:red_mushroom_block
+  Red Mushroom Block (Cap texture on top and east):
+    name: minecraft:red_mushroom_block
+  Red Mushroom Block (Cap texture on top and north):
+    name: minecraft:red_mushroom_block
+  Red Mushroom Block (Cap texture on top and south):
+    name: minecraft:red_mushroom_block
+  Red Mushroom Block (Cap texture on top and west):
+    name: minecraft:red_mushroom_block
+  Red Mushroom Block (Cap texture on top, east and south):
+    name: minecraft:red_mushroom_block
+  Red Mushroom Block (Cap texture on top, north and east):
+    name: minecraft:red_mushroom_block
+  Red Mushroom Block (Cap texture on top, south and west):
+    name: minecraft:red_mushroom_block
+  Red Mushroom Block (Cap texture on top, west and north ):
+    name: minecraft:red_mushroom_block
+  Red Mushroom Block (Pores on all sides):
+    name: minecraft:red_mushroom_block
+  Red Mushroom Block (Stem texture on all sides, pores on top and b):
+    name: minecraft:red_mushroom_block
+  Red Mushroom Block (Stem texture on all six sides):
+    name: minecraft:red_mushroom_block
+  Red Sand:
+    name: minecraft:red_sand
+  Red Sandstone:
+    name: minecraft:red_sandstone
+  Double Red Sandstone Slab:
+    name: minecraft:red_sandstone_slab
+  Red Sandstone Slab, Bottom:
+    name: minecraft:red_sandstone_slab
+  Red Sandstone Slab, Upper:
+    name: minecraft:red_sandstone_slab
+  Red Sandstone Stairs (East, Normal):
+    name: minecraft:red_sandstone_stairs
+  Red Sandstone Stairs (East, Upside-down):
+    name: minecraft:red_sandstone_stairs
+  Red Sandstone Stairs (North, Normal):
+    name: minecraft:red_sandstone_stairs
+  Red Sandstone Stairs (North, Upside-down):
+    name: minecraft:red_sandstone_stairs
+  Red Sandstone Stairs (South, Normal):
+    name: minecraft:red_sandstone_stairs
+  Red Sandstone Stairs (South, Upside-down):
+    name: minecraft:red_sandstone_stairs
+  Red Sandstone Stairs (West, Normal):
+    name: minecraft:red_sandstone_stairs
+  Red Sandstone Stairs (West, Upside-down):
+    name: minecraft:red_sandstone_stairs
+  Red Stained Glass:
+    name: minecraft:red_stained_glass
+  Red Stained Glass Pane:
+    name: minecraft:red_stained_glass_pane
+  Red Stained Clay:
+    name: minecraft:red_terracotta
+  Red Tulip:
+    name: minecraft:red_tulip
+  Red Wool:
+    name: minecraft:red_wool
+  Redstone Block:
+    name: minecraft:redstone_block
+  Redstone Lamp (active):
+    name: minecraft:redstone_lamp
+  Redstone Lamp (inactive):
+    name: minecraft:redstone_lamp
+  Redstone Ore:
+    name: minecraft:redstone_ore
+  Redstone Torch (off) (Facing East):
+    name: minecraft:redstone_torch
+  Redstone Torch (off) (Facing North):
+    name: minecraft:redstone_torch
+  Redstone Torch (off) (Facing South):
+    name: minecraft:redstone_torch
+  Redstone Torch (off) (Facing Up):
+    name: minecraft:redstone_torch
+  Redstone Torch (off) (Facing West):
+    name: minecraft:redstone_torch
+  Redstone Torch (on) ():
+    name: minecraft:redstone_torch
+  Redstone Torch (on) (Facing East):
+    name: minecraft:redstone_torch
+  Redstone Torch (on) (Facing North):
+    name: minecraft:redstone_torch
+  Redstone Torch (on) (Facing South):
+    name: minecraft:redstone_torch
+  Redstone Torch (on) (Facing Up):
+    name: minecraft:redstone_torch
+  Redstone Torch (on) (Facing West):
+    name: minecraft:redstone_torch
+  Redstone Wire (Power:0):
+    name: minecraft:redstone_wire
+  Redstone Wire (Power:10):
+    name: minecraft:redstone_wire
+  Redstone Wire (Power:11):
+    name: minecraft:redstone_wire
+  Redstone Wire (Power:12):
+    name: minecraft:redstone_wire
+  Redstone Wire (Power:13):
+    name: minecraft:redstone_wire
+  Redstone Wire (Power:14):
+    name: minecraft:redstone_wire
+  Redstone Wire (Power:15):
+    name: minecraft:redstone_wire
+  Redstone Wire (Power:1):
+    name: minecraft:redstone_wire
+  Redstone Wire (Power:2):
+    name: minecraft:redstone_wire
+  Redstone Wire (Power:3):
+    name: minecraft:redstone_wire
+  Redstone Wire (Power:4):
+    name: minecraft:redstone_wire
+  Redstone Wire (Power:5):
+    name: minecraft:redstone_wire
+  Redstone Wire (Power:6):
+    name: minecraft:redstone_wire
+  Redstone Wire (Power:7):
+    name: minecraft:redstone_wire
+  Redstone Wire (Power:8):
+    name: minecraft:redstone_wire
+  Redstone Wire (Power:9):
+    name: minecraft:redstone_wire
+  Redstone Repeater Block (off) (Facing East, Delay of 1 tick):
+    name: minecraft:repeater
+  Redstone Repeater Block (off) (Facing East, Delay of 2 ticks:
+    name: minecraft:repeater
+  Redstone Repeater Block (off) (Facing East, Delay of 3 ticks:
+    name: minecraft:repeater
+  Redstone Repeater Block (off) (Facing East, Delay of 4 ticks:
+    name: minecraft:repeater
+  Redstone Repeater Block (off) (Facing North, Delay of 1 tick:
+    name: minecraft:repeater
+  Redstone Repeater Block (off) (Facing North, Delay of 2 tick:
+    name: minecraft:repeater
+  Redstone Repeater Block (off) (Facing North, Delay of 3 tick:
+    name: minecraft:repeater
+  Redstone Repeater Block (off) (Facing North, Delay of 4 tick:
+    name: minecraft:repeater
+  Redstone Repeater Block (off) (Facing South, Delay of 1 tick:
+    name: minecraft:repeater
+  Redstone Repeater Block (off) (Facing South, Delay of 2 tick:
+    name: minecraft:repeater
+  Redstone Repeater Block (off) (Facing South, Delay of 3 tick:
+    name: minecraft:repeater
+  Redstone Repeater Block (off) (Facing South, Delay of 4 tick:
+    name: minecraft:repeater
+  Redstone Repeater Block (off) (Facing West, Delay of 1 tick):
+    name: minecraft:repeater
+  Redstone Repeater Block (off) (Facing West, Delay of 2 ticks:
+    name: minecraft:repeater
+  Redstone Repeater Block (off) (Facing West, Delay of 3 ticks:
+    name: minecraft:repeater
+  Redstone Repeater Block (off) (Facing West, Delay of 4 ticks:
+    name: minecraft:repeater
+  Redstone Repeater Block (on) (Facing East, Delay of 1 tick):
+    name: minecraft:repeater
+  Redstone Repeater Block (on) (Facing East, Delay of 3 ticks):
+    name: minecraft:repeater
+  Redstone Repeater Block (on) (Facing East, Delay of 4 ticks):
+    name: minecraft:repeater
+  Redstone Repeater Block (on) (Facing North, Delay of 1 tick):
+    name: minecraft:repeater
+  Redstone Repeater Block (on) (Facing North, Delay of 2 ticks:
+    name: minecraft:repeater
+  Redstone Repeater Block (on) (Facing North, Delay of 3 ticks:
+    name: minecraft:repeater
+  Redstone Repeater Block (on) (Facing North, Delay of 4 ticks:
+    name: minecraft:repeater
+  Redstone Repeater Block (on) (Facing South, Delay of 1 tick):
+    name: minecraft:repeater
+  Redstone Repeater Block (on) (Facing South, Delay of 3 ticks:
+    name: minecraft:repeater
+  Redstone Repeater Block (on) (Facing South, Delay of 4 ticks:
+    name: minecraft:repeater
+  Redstone Repeater Block (on) (Facing West, Delay of 1 tick):
+    name: minecraft:repeater
+  Redstone Repeater Block (on) (Facing West, Delay of 2 ticks):
+    name: minecraft:repeater
+  Redstone Repeater Block (on) (Facing West, Delay of 3 ticks):
+    name: minecraft:repeater
+  Redstone Repeater Block (on) (Facing West, Delay of 4 ticks):
+    name: minecraft:repeater
+  Flower (Rose Bush, Lower):
+    name: minecraft:rose_bush
+  Sand:
+    name: minecraft:sand
+  Sandstone:
+    name: minecraft:sandstone
+  Sandstone Slab:
+    name: minecraft:sandstone_slab
+    type: bottom
+  Sandstone Slab (Upper):
+    name: minecraft:sandstone_slab
+    type: top
+  Double Sandstone Slab:
+    name: minecraft:sandstone_slab
+    type: double
+  Sandstone Stairs (East, Normal):
+    name: minecraft:sandstone_stairs
+    half: bottom
+    facing: south
+  Sandstone Stairs (East, Upside-down):
+    name: minecraft:sandstone_stairs
+    half: top
+    facing: south
+  Sandstone Stairs (North, Normal):
+    name: minecraft:sandstone_stairs
+    half: bottom
+    facing: east
+  Sandstone Stairs (North, Upside-down):
+    name: minecraft:sandstone_stairs
+    half: top
+    facing: east
+  Sandstone Stairs (South, Normal):
+    name: minecraft:sandstone_stairs
+    half: bottom
+    facing: west
+  Sandstone Stairs (South, Upside-down):
+    name: minecraft:sandstone_stairs
+    half: top
+    facing: west
+  Sandstone Stairs (West, Normal):
+    name: minecraft:sandstone_stairs
+    half: bottom
+    facing: north
+  Sandstone Stairs (West, Upside-down):
+    name: minecraft:sandstone_stairs
+    half: top
+    facing: north
+  Sea Lantern:
+    name: minecraft:sea_lantern
+  Slime Block:
+    name: minecraft:slime_block
+  Smooth Red Sandstone:
+    name: minecraft:smooth_red_sandstone
+  Smooth Sandstone:
+    name: minecraft:smooth_sandstone
+  Smooth Double Stone Slab:
+    name: minecraft:smooth_stone_slab
+    type: double
+  Snow  (One Layer):
+    name: minecraft:snow
+  Snow  (Two Layers):
+    name: minecraft:snow
+  Snow  (Eight Layers):
+    name: minecraft:snow
+  Snow  (Five Layers):
+    name: minecraft:snow
+  Snow  (Four Layers):
+    name: minecraft:snow
+  Snow  (Seven Layers):
+    name: minecraft:snow
+  Snow  (Six Layers):
+    name: minecraft:snow
+  Snow  (Three Layers):
+    name: minecraft:snow
+  Snow Block:
+    name: minecraft:snow_block
+  Soul Sand:
+    name: minecraft:soul_sand
+  Monster Spawner:
+    name: minecraft:spawner
+  Sponge:
+    name: minecraft:sponge
+  Spruce Door (Upper, Hinge left, Powered):
+    name: minecraft:spruce_door
+    hinge: left
+  Spruce Door (Upper, Hinge left, Unpowered):
+    name: minecraft:spruce_door
+    hinge: left
+  Spruce Door (Upper, Hinge right, Powered):
+    name: minecraft:spruce_door
+    hinge: right
+  Spruce Door (Upper, Hinge right, Unpowered):
+    name: minecraft:spruce_door
+    hinge: right
+  Spruce Foor (Lower, Facing East, Closed):
+    name: minecraft:spruce_door
+    facing: south
+  Spruce Foor (Lower, Facing East, Opened):
+    name: minecraft:spruce_door
+    facing: south
+  Spruce Foor (Lower, Facing North, Closed):
+    name: minecraft:spruce_door
+    facing: east
+  Spruce Foor (Lower, Facing North, Opened):
+    name: minecraft:spruce_door
+    facing: east
+  Spruce Foor (Lower, Facing South, Closed):
+    name: minecraft:spruce_door
+    facing: west
+  Spruce Foor (Lower, Facing South, Opened):
+    name: minecraft:spruce_door
+    facing: west
+  Spruce Foor (Lower, Facing West, Closed):
+    name: minecraft:spruce_door
+    facing: north
+  Spruce Foor (Lower, Facing West, Opened):
+    name: minecraft:spruce_door
+    facing: north
+  Spruce Fence:
+    name: minecraft:spruce_fence
+  Spruce Fence Gate (Facing East, Closed):
+    name: minecraft:spruce_fence_gate
+  Spruce Fence Gate (Facing East, Opened):
+    name: minecraft:spruce_fence_gate
+  Spruce Fence Gate (Facing North, Closed):
+    name: minecraft:spruce_fence_gate
+  Spruce Fence Gate (Facing North, Opened):
+    name: minecraft:spruce_fence_gate
+  Spruce Fence Gate (Facing South, Closed):
+    name: minecraft:spruce_fence_gate
+  Spruce Fence Gate (Facing South, Opened):
+    name: minecraft:spruce_fence_gate
+  Spruce Fence Gate (Facing West, Closed):
+    name: minecraft:spruce_fence_gate
+  Spruce Fence Gate (Facing West, Opened):
+    name: minecraft:spruce_fence_gate
+  Spruce Fence Gate (In Wall, Facing North, Opened):
+    name: minecraft:spruce_fence_gate
+  Spruce Leaves:
+    name: minecraft:spruce_leaves
+  Spruce Leaves (No Decay):
+    name: minecraft:spruce_leaves
+  Spruce Leaves (No Decay and Check Decay):
+    name: minecraft:spruce_leaves
+  Spruce Wood Plank:
+    name: minecraft:spruce_planks
+  Sapling (Spruce, Ready to grow):
+    name: minecraft:spruce_sapling
+  ' Spruce Wood Slab (Bottom)':
+    name: minecraft:spruce_slab
+    type: bottom
+  ' Spruce Wood Slab (Upper)':
+    name: minecraft:spruce_slab
+    type: top
+  Double Spruce Wood Slab:
+    name: minecraft:spruce_slab
+    type: double
+  Spruce Wood Stairs (East, Normal):
+    name: minecraft:spruce_stairs
+    half: bottom
+    facing: south
+  Spruce Wood Stairs (East, Upside-down):
+    name: minecraft:spruce_stairs
+    half: top
+    facing: south
+  Spruce Wood Stairs (North, Normal):
+    name: minecraft:spruce_stairs
+    half: bottom
+    facing: east
+  Spruce Wood Stairs (North, Upside-down):
+    name: minecraft:spruce_stairs
+    half: top
+    facing: east
+  Spruce Wood Stairs (South, Normal):
+    name: minecraft:spruce_stairs
+    half: bottom
+    facing: west
+  Spruce Wood Stairs (South, Upside-down):
+    name: minecraft:spruce_stairs
+    half: top
+    facing: west
+  Spruce Wood Stairs (West, Normal):
+    name: minecraft:spruce_stairs
+    half: bottom
+    facing: north
+  Spruce Wood Stairs (West, Upside-down):
+    name: minecraft:spruce_stairs
+    half: top
+    facing: north
+  Spruce Wood:
+    name: minecraft:spruce_wood
+  'Spruce wood (facing east/west) ':
+    name: minecraft:spruce_wood
+  Spruce Wood (facing north/south):
+    name: minecraft:spruce_wood
+  Spruce Wood (only bark):
+    name: minecraft:spruce_wood
+  Sticky Piston (Facing down, Extended):
+    name: minecraft:sticky_piston
+  Sticky Piston (Facing down, Not Extended):
+    name: minecraft:sticky_piston
+  Sticky Piston (Facing east, Extended):
+    name: minecraft:sticky_piston
+  Sticky Piston (Facing east, Not Extended):
+    name: minecraft:sticky_piston
+  Sticky Piston (Facing north, Extended):
+    name: minecraft:sticky_piston
+  Sticky Piston (Facing north, Not Extended):
+    name: minecraft:sticky_piston
+  Sticky Piston (Facing south, Extended):
+    name: minecraft:sticky_piston
+  Sticky Piston (Facing south, Not Extended):
+    name: minecraft:sticky_piston
+  Sticky Piston (Facing up, Extended):
+    name: minecraft:sticky_piston
+  Sticky Piston (Facing up, Not Extended):
+    name: minecraft:sticky_piston
+  Sticky Piston (Facing west, Extended):
+    name: minecraft:sticky_piston
+  Sticky Piston (Facing west, Not Extended):
+    name: minecraft:sticky_piston
+  Stone:
+    name: minecraft:stone
+  Stone Brick Slab (Upper):
+    name: minecraft:stone_brick_slab
+    type: top
+  Stone Brick Slab:
+    name: minecraft:stone_brick_slab
+    type: bottom
+  Double Stone Brick Slab:
+    name: minecraft:stone_brick_slab
+    type: double
+  Stone Brick Stairs (East):
+    name: minecraft:stone_brick_stairs
+    half: bottom
+    facing: south
+  Stone Brick Stairs (East, Upside-down):
+    name: minecraft:stone_brick_stairs
+    half: top
+    facing: south
+  Stone Brick Stairs (North, Normal):
+    name: minecraft:stone_brick_stairs
+    half: bottom
+    facing: east
+  Stone Brick Stairs (North, Upside-down):
+    name: minecraft:stone_brick_stairs
+    half: top
+    facing: east
+  Stone Brick Stairs (South, Normal):
+    name: minecraft:stone_brick_stairs
+    half: bottom
+    facing: west
+  Stone Brick Stairs (South, Upside-down):
+    name: minecraft:stone_brick_stairs
+    half: top
+    facing: west
+  Stone Brick Stairs (West):
+    name: minecraft:stone_brick_stairs
+    half: bottom
+    facing: north
+  Stone Brick Stairs (West, Upside-down):
+    name: minecraft:stone_brick_stairs
+    half: top
+    facing: north
+  Stone Bricks:
+    name: minecraft:stone_bricks
+  Stone Button (Facing Down, Inactive):
+    name: minecraft:stone_button
+  Stone Button (Facing Up, Active):
+    name: minecraft:stone_button
+  Stone Button (Facing Up, Inactive):
+    name: minecraft:stone_button
+  Stone Button (Facing East, Inactive):
+    name: minecraft:stone_button
+    face: wall
+    facing: west
+  Stone Button (Facing North, Inactive):
+    name: minecraft:stone_button
+    face: wall
+    facing: south
+  Stone Button (Facing South, Inactive):
+    name: minecraft:stone_button
+    face: wall
+    facing: north
+  Stone Button (Facing West, Inactive):
+    name: minecraft:stone_button
+    face: wall
+    facing: east
+  Stone Pressure Plate (Active):
+    name: minecraft:stone_pressure_plate
+  Stone Pressure Plate (Unactive):
+    name: minecraft:stone_pressure_plate
+  Stone Slab:
+    name: minecraft:stone_slab
+    type: bottom
+  (Stone) Wooden Slab (Upper):
+    name: minecraft:stone_slab
+  Stone Slab (Upper):
+    name: minecraft:stone_slab
+    type: top
+  Double Stone Slab:
+    name: minecraft:stone_slab
+    type: double
+  Sugar Canes (Eigth stage of growth):
+    name: minecraft:sugar_cane
+  Sugar Canes (Eleventh stage of growth):
+    name: minecraft:sugar_cane
+  Sugar Canes (Fifteenth stage of growth):
+    name: minecraft:sugar_cane
+  Sugar Canes (Fifth stage of growth):
+    name: minecraft:sugar_cane
+  Sugar Canes (First stage of growth):
+    name: minecraft:sugar_cane
+  Sugar Canes (Fourteenth stage of growth):
+    name: minecraft:sugar_cane
+  Sugar Canes (Fourth stage of growth):
+    name: minecraft:sugar_cane
+  Sugar Canes (Freshly Planted Cane):
+    name: minecraft:sugar_cane
+  Sugar Canes (Ninth stage of growth):
+    name: minecraft:sugar_cane
+  Sugar Canes (Second stage of growth):
+    name: minecraft:sugar_cane
+  Sugar Canes (Seventh stage of growth):
+    name: minecraft:sugar_cane
+  Sugar Canes (Sixth stage of growth):
+    name: minecraft:sugar_cane
+  Sugar Canes (Tenth stage of growth):
+    name: minecraft:sugar_cane
+  Sugar Canes (Third stage of growth):
+    name: minecraft:sugar_cane
+  Sugar Canes (Thirteenth stage of growth):
+    name: minecraft:sugar_cane
+  Flower (Sunflower, Lower):
+    name: minecraft:sunflower
+  Flower (Sunflower, Upper):
+    name: minecraft:sunflower
+  Flower (Double Tallgrass, Lower):
+    name: minecraft:tall_grass
+  Flower (Double Tallgrass, Upper):
+    name: minecraft:tall_grass
+  Hardened Clay:
+    name: minecraft:terracotta
+  TNT:
+    name: minecraft:tnt
+  Torch (Facing East):
+    name: minecraft:torch
+  Torch (Facing North):
+    name: minecraft:torch
+  Torch (Facing South):
+    name: minecraft:torch
+  Torch (Facing Up):
+    name: minecraft:torch
+  Torch (Facing West):
+    name: minecraft:torch
+  Trapped Chest (Facing East):
+    name: minecraft:trapped_chest
+    facing: north
+  Trapped Chest (Facing North):
+    name: minecraft:trapped_chest
+    facing: north
+  Trapped Chest (Facing South):
+    name: minecraft:trapped_chest
+    facing: north
+  Trapped Chest (Facing West):
+    name: minecraft:trapped_chest
+    facing: north
+  Tripwire (Unactive, In the Air, Attached to a Circuit, Armed:
+    name: minecraft:tripwire
+  Tripwire (Unactive, In the Air, Unattached, Armed):
+    name: minecraft:tripwire
+  Tripwire (Unactive, On a Block, Unattached, Armed):
+    name: minecraft:tripwire
+  Tripwire Hook (Facing East):
+    name: minecraft:tripwire_hook
+  Tripwire Hook (Facing West):
+    name: minecraft:tripwire_hook
+  Tripwire Hook:
+    name: minecraft:tripwire_hook
+  Tripwire hook (Facing East, Ready, Middle Pos):
+    name: minecraft:tripwire_hook
+  Tripwire Hook (Facing North):
+    name: minecraft:tripwire_hook
+  Tripwire Hook (Facing North, Ready, Middle Pos):
+    name: minecraft:tripwire_hook
+  Tripwire Hook (Facing West, Ready, Middle Pos):
+    name: minecraft:tripwire_hook
+  Tripwire Hook (Ready, Middle Pos):
+    name: minecraft:tripwire_hook
+  Vines ():
+    name: minecraft:vine
+  Vines (Above):
+    name: minecraft:vine
+  Vines (East):
+    name: minecraft:vine
+  Vines (multiple sides):
+    name: minecraft:vine
+  Vines (multiple sides 1):
+    name: minecraft:vine
+  Vines (multiple sides 2):
+    name: minecraft:vine
+  Vines (multiple sides 3):
+    name: minecraft:vine
+  Vines (multiple sides 4):
+    name: minecraft:vine
+  Vines (multiple sides 5):
+    name: minecraft:vine
+  Vines (multiple sides 6):
+    name: minecraft:vine
+  Vines (North):
+    name: minecraft:vine
+  Vines (North & East):
+    name: minecraft:vine
+  Vines (North&West):
+    name: minecraft:vine
+  Vines (South):
+    name: minecraft:vine
+  Vines (South & East):
+    name: minecraft:vine
+  Vines (West):
+    name: minecraft:vine
+  Water (Water level Max - 3):
+    name: minecraft:water
+  Water (Water level Max - 4):
+    name: minecraft:water
+  Water (Water level Max - 4, Falling):
+    name: minecraft:water
+  Water (Water level Max - 5, Falling):
+    name: minecraft:water
+  Water (Water level Min):
+    name: minecraft:water
+  Water (Water level Min + 1):
+    name: minecraft:water
+  Water (Water level Min +1, Falling):
+    name: minecraft:water
+  Water (Water level Min, Falling):
+    name: minecraft:water
+  Water (Water level Max):
+    name: minecraft:water
+  Water (Water level Max - 1):
+    name: minecraft:water
+  Water (Water level Max - 1, Falling):
+    name: minecraft:water
+  Water (Water level Max - 2):
+    name: minecraft:water
+  Water (Water level Max - 2, Falling):
+    name: minecraft:water
+  Water (Water level Max - 3, Falling):
+    name: minecraft:water
+  Water (Water level Max, Falling):
+    name: minecraft:water
+  Still Water:
+    name: minecraft:water
+  Wet Sponge:
+    name: minecraft:wet_sponge
+  Wheat (Age 0):
+    name: minecraft:wheat
+    age: '0'
+  Wheat (Age 1):
+    name: minecraft:wheat
+    age: '0'
+  Wheat (Age 2):
+    name: minecraft:wheat
+    age: '0'
+  Wheat (Age 3):
+    name: minecraft:wheat
+    age: '0'
+  Wheat (Age 4):
+    name: minecraft:wheat
+    age: '0'
+  Wheat (Age 5):
+    name: minecraft:wheat
+    age: '0'
+  Wheat (Age 6):
+    name: minecraft:wheat
+    age: '0'
+  Wheat (Age 7):
+    name: minecraft:wheat
+    age: '0'
+  Bed (North, Empty, Foot of the bed):
+    name: minecraft:white_bed
+  Bed (North, Empty, Head of the bed):
+    name: minecraft:white_bed
+  Bed (South, Empty, Foot of the bed):
+    name: minecraft:white_bed
+  Bed (South, Empty, Head of the bed):
+    name: minecraft:white_bed
+  Bed (East, Empty, Foot of the bed):
+    name: minecraft:white_bed
+  Bed (East, Empty, Head of the bed):
+    name: minecraft:white_bed
+  Bed (West, Empty, Foot of the bed):
+    name: minecraft:white_bed
+  Bed (West, Empty, Head of the bed):
+    name: minecraft:white_bed
+  White Carpet:
+    name: minecraft:white_carpet
+  White Stained Glass:
+    name: minecraft:white_stained_glass
+  White Stained Glass Pane:
+    name: minecraft:white_stained_glass_pane
+  White Stained Clay:
+    name: minecraft:white_terracotta
+  White Tulip:
+    name: minecraft:white_tulip
+  White Wool:
+    name: minecraft:white_wool
+  Yellow Carpet:
+    name: minecraft:yellow_carpet
+  Yellow Stained Glass:
+    name: minecraft:yellow_stained_glass
+  Yellow Stained Glass Pane:
+    name: minecraft:yellow_stained_glass_pane
+  Yellow Stained Clay:
+    name: minecraft:yellow_terracotta
+  Yellow Wool:
+    name: minecraft:yellow_wool

@@ -5,6 +5,7 @@ import re
 import os
 
 import requests
+import yaml
 
 from common import Coordinates, GenericDefinition
 
@@ -16,32 +17,26 @@ class GrabcraftDefinition:
 
 _BLOCKMAP = None
 
-def get_blockmap(use_cache: bool):
+def get_blockmap():
     global _BLOCKMAP
 
     if _BLOCKMAP is None:
-        cache_file = Path(os.getcwd()).joinpath('', 'blockmap.csv')
-        if not cache_file.exists() or not use_cache:
-            response = requests.get('https://raw.githubusercontent.com/gbl/GrabcraftLitematic/master/blockmap.csv')
-            if (response.status_code > 299):
-                raise Exception(f"Failed to download blockmap: {response.status_code}")
-            cache_file.write_text(response.text)
-        
-        raw_map = cache_file.read_text().split('\n')
-        _BLOCKMAP = {}
-        for line in raw_map:
-            if line.strip() == '' or line.startswith('\t'):
-                continue
+        blockmap_file = Path(os.getcwd()).joinpath('', 'blockmap.yaml')
+        data = yaml.load(blockmap_file.read_text(), Loader=yaml.loader.BaseLoader)
 
-            line_data = line.split('\t')
-            grabcraft = line_data[0]
-            minecraft = line_data[1]
-            attributes = {}
-            for i in range(2, len(line_data) - 2, 2):
-                if line_data[i] != '':
-                    attributes[line_data[i]] = line_data[i+1]
+        # WIP fixes
+        if data['version'] != '5':
+            for name, block in data['blocks'].items():
+                if 'chest' in name.lower() and 'facing' in block:
+                    if block['facing'] == 'north': block['facing'] = 'east'
+                    if block['facing'] == 'east': block['facing'] = 'south'
+                    if block['facing'] == 'south': block['facing'] = 'west'
+                    if block['facing'] == 'west': block['facing'] = 'north'
 
-            _BLOCKMAP[grabcraft] = minecraft
+            data['version'] = 5
+            yaml.dump(data, blockmap_file.open('w'), sort_keys=False)
+
+        _BLOCKMAP = data['blocks']
 
     return _BLOCKMAP
 
@@ -90,10 +85,10 @@ def get_grabcraft_blocks(schema: dict) -> dict[Coordinates, dict]:
     
     return dict(sorted(result.items(), key=lambda tpl: f'{tpl[0].y:3d}{tpl[0].x:3d}{tpl[0].z:3d}'))
 
-def grabcraft_to_minecraft_type(data: dict, use_cache: bool) -> str:
-    blockmap = get_blockmap(use_cache)
+def grabcraft_blockmap_data(data: dict) -> str:
+    blockmap = get_blockmap()
 
-    return blockmap[data['name']] if data['name'] in blockmap else f'GRABCRAFT:{data["name"]}'
+    return blockmap[data['name']] if data['name'] in blockmap else { 'name': f'GRABCRAFT:{data["name"]}' }
 
 def grabcraft_to_minecraft_orientation(block_name: str) -> dict[str, any]:
     if 'north' in block_name:
@@ -175,35 +170,33 @@ def grabcraft_to_minecraft_wallsigns(block_name: str) -> dict[str, any]:
 def grabcraft_to_minecraft_props(block: dict) -> dict[str, any]:
     name = str(block['name']).lower()
     return {
-        **grabcraft_to_minecraft_orientation(name),
-        **grabcraft_to_minecraft_stairs(name),
-        **grabcraft_to_minecraft_slabs(name),
-        **grabcraft_to_minecraft_trapdoors(name),
+        # **grabcraft_to_minecraft_orientation(name),
+        # **grabcraft_to_minecraft_stairs(name),
+        # **grabcraft_to_minecraft_slabs(name),
+        # **grabcraft_to_minecraft_trapdoors(name),
     }
 
-def fix_door_facing(block: dict, blocks: dict[Coordinates, dict]):
+def fix_door_facing(coord: Coordinates, block: dict, blocks: dict[Coordinates, dict]):
     name = block['_grabcraft_name'].lower()
     if 'door' in name and 'upper' in name:
-        lower_block = blocks.get(Coordinates(x=int(block['x']), y=int(block['y']) - 1, z=int(block['z'])))
+        lower_block = blocks.get(Coordinates(x=coord.x, y=coord.y - 1, z=coord.z))
         if lower_block is None:
             return
         block['facing'] = lower_block.get('facing')
 
-def get_definition(url: str, use_cache: bool):
+def get_definition(url: str):
     grab_def = download_definition(url)
     raw_blocks = get_grabcraft_blocks(grab_def.blocks_data)
 
     blocks = {}
     for coord, block in raw_blocks.items():
         blocks[coord] = {
-            **block,
             '_grabcraft_name': block['name'],
-            'name': grabcraft_to_minecraft_type(block, use_cache),
-            **grabcraft_to_minecraft_props(block)
+            **grabcraft_blockmap_data(block),
         }
     
     # second run to fix missing data
     for coord, block in blocks.items():
-        fix_door_facing(block, blocks)
+        fix_door_facing(coord, block, blocks)
 
     return GenericDefinition(title=grab_def.title, author=grab_def.author, blocks=blocks)

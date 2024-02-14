@@ -18,7 +18,7 @@ async def g2l(grabcraft_url: str, response: Response):
         response.status_code = status.HTTP_400_BAD_REQUEST
         return {'error': 'Invalid URL'}
 
-    definition = get_definition(grabcraft_url, use_cache=True)
+    definition = get_definition(grabcraft_url)
     region = grabcraft2region(definition)
     output = BytesIO()
     region \

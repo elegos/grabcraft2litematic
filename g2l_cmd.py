@@ -10,7 +10,6 @@ from litematic import grabcraft2region
 
 args = ArgumentParser()
 args.add_argument('--url', '-u', help='GrabCraft model URL', required=False)
-args.add_argument('--no-cache', action='store_true', help='Ignore existing blockmap.csv')
 args.add_argument('--output-file-name', '-o', help='Output file name (default: {design name}.litematic)')
 args = args.parse_args()
 
@@ -19,7 +18,7 @@ url = args.url
 while not url or gc_url_re.match(url) is None:
     url = input('Enter GrabCraft model URL: ')
 
-definition = grabcraft.get_definition(url, use_cache=not args.no_cache)
+definition = grabcraft.get_definition(url)
 design_size = get_max_size(definition.blocks.keys())
 
 print('')
