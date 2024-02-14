@@ -3,7 +3,6 @@ import json
 from pathlib import Path
 import re
 import os
-from typing import Optional
 
 import requests
 
@@ -19,6 +18,7 @@ _BLOCKMAP = None
 
 def get_blockmap(use_cache: bool):
     global _BLOCKMAP
+
     if _BLOCKMAP is None:
         cache_file = Path(os.getcwd()).joinpath('', 'blockmap.csv')
         if not cache_file.exists() or not use_cache:
@@ -30,12 +30,16 @@ def get_blockmap(use_cache: bool):
         raw_map = cache_file.read_text().split('\n')
         _BLOCKMAP = {}
         for line in raw_map:
-            if line == '':
+            if line.strip() == '' or line.startswith('\t'):
                 continue
 
             line_data = line.split('\t')
-            grabcraft = line_data[0] or ''
-            minecraft = line_data[1] or ''
+            grabcraft = line_data[0]
+            minecraft = line_data[1]
+            attributes = {}
+            for i in range(2, len(line_data) - 2, 2):
+                if line_data[i] != '':
+                    attributes[line_data[i]] = line_data[i+1]
 
             _BLOCKMAP[grabcraft] = minecraft
 
@@ -88,51 +92,102 @@ def get_grabcraft_blocks(schema: dict) -> dict[Coordinates, dict]:
 
 def grabcraft_to_minecraft_type(data: dict, use_cache: bool) -> str:
     blockmap = get_blockmap(use_cache)
+
     return blockmap[data['name']] if data['name'] in blockmap else f'GRABCRAFT:{data["name"]}'
 
-def grabcraft_to_minecraft_props(block: dict) -> dict[str, any]:
+def grabcraft_to_minecraft_orientation(block_name: str) -> dict[str, any]:
+    if 'north' in block_name:
+        return { 'facing': 'east' }
+    elif 'south' in block_name:
+        return { 'facing': 'west' }
+    elif 'east' in block_name:
+        return { 'facing': 'south' }
+    elif 'west' in block_name:
+        return { 'facing': 'north' }
+
+    return {}
+
+def grabcraft_to_minecraft_stairs(block_name: str) -> dict[str, any]:
     extended_args = {}
-
-    name = str(block['name']).lower()
-
-    # Orientation
-    if 'north' in name:
-        extended_args['facing'] = 'north'
-    elif 'south' in name:
-        extended_args['facing'] = 'south'
-    elif 'east' in name:
-        extended_args['facing'] = 'east'
-    elif 'west' in name:
-        extended_args['facing'] = 'west'
-    
-    # Stairs
-    if 'stairs' in name:
-        if 'upside-down' in name:
+    if 'stairs' in block_name:
+        if 'upside-down' in block_name:
             extended_args['half'] = 'top'
         else:
             extended_args['half'] = 'bottom'
+        
+        if 'west' in block_name:
+            extended_args['facing'] = 'south'
+        elif 'east' in block_name:
+            extended_args['facing'] = 'north'
     
-    # Slabs
-    if 'slab' in name:
-        if 'bottom' in name:
+    return extended_args
+
+def grabcraft_to_minecraft_slabs(block_name: str) -> dict[str, any]:
+    extended_args = {}
+    if 'slab' in block_name:
+        if 'bottom' in block_name:
             extended_args['type'] = 'bottom'
-        elif 'top' in name:
+        elif 'top' in block_name:
             extended_args['type'] = 'name'
-        elif 'double' in name:
+        elif 'double' in block_name:
             extended_args['type'] = 'double'
     
-    # Trap doors
-    if 'trapdoor' in name:
-        if 'closed' in name:
+    return extended_args
+
+def grabcraft_to_minecraft_trapdoors(block_name: str) -> dict[str, any]:
+    extended_args = {}
+    if 'trapdoor' in block_name:
+        if 'closed' in block_name:
             extended_args['open'] = 'false'
         else:
             extended_args['open'] = 'true'
-        if 'bottom-half' in name:
+        
+        if 'bottom half' in block_name:
             extended_args['half'] = 'bottom'
         else:
             extended_args['half'] = 'top'
-
+        
+        if 'west from block' in block_name:
+            extended_args['facing'] = 'south'
+        elif 'east from block' in block_name:
+            extended_args['facing'] = 'east'
+        elif 'north from block' in block_name:
+            extended_args['facing'] = 'west'
+        elif 'south from block' in block_name:
+            extended_args['facing'] = 'north'
+    
     return extended_args
+
+def grabcraft_to_minecraft_wallsigns(block_name: str) -> dict[str, any]:
+    extended_args = {}
+    if 'wall sign' in block_name:
+        if 'north' in block_name:
+            extended_args['facing'] = 'south'
+        elif 'south' in block_name:
+            extended_args['facing'] = 'north'
+        elif 'east' in block_name:
+            extended_args['facing'] = 'west'
+        elif 'west' in block_name:
+            extended_args['facing'] = 'east'
+    
+    return extended_args
+
+def grabcraft_to_minecraft_props(block: dict) -> dict[str, any]:
+    name = str(block['name']).lower()
+    return {
+        **grabcraft_to_minecraft_orientation(name),
+        **grabcraft_to_minecraft_stairs(name),
+        **grabcraft_to_minecraft_slabs(name),
+        **grabcraft_to_minecraft_trapdoors(name),
+    }
+
+def fix_door_facing(block: dict, blocks: dict[Coordinates, dict]):
+    name = block['_grabcraft_name'].lower()
+    if 'door' in name and 'upper' in name:
+        lower_block = blocks.get(Coordinates(x=int(block['x']), y=int(block['y']) - 1, z=int(block['z'])))
+        if lower_block is None:
+            return
+        block['facing'] = lower_block.get('facing')
 
 def get_definition(url: str, use_cache: bool):
     grab_def = download_definition(url)
@@ -142,8 +197,13 @@ def get_definition(url: str, use_cache: bool):
     for coord, block in raw_blocks.items():
         blocks[coord] = {
             **block,
+            '_grabcraft_name': block['name'],
             'name': grabcraft_to_minecraft_type(block, use_cache),
             **grabcraft_to_minecraft_props(block)
         }
+    
+    # second run to fix missing data
+    for coord, block in blocks.items():
+        fix_door_facing(block, blocks)
 
     return GenericDefinition(title=grab_def.title, author=grab_def.author, blocks=blocks)
