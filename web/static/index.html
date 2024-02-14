@@ -73,8 +73,8 @@
             <div class="logo"><img src="./img/logo.webp" alt="GrabCraft 2 Litematic logo" /></div>
             <div class="main_action">
                 <fieldset>
-                    <button class="mc-button mc-common get_schema">Get the schematic</button>
-                    <input name="grabcraft_url" class="mc-common url_input" type="url" placeholder="https://www.grabcraft.com/minecraft/..." />
+                    <button id="schem_get" class="mc-button mc-common get_schema">Get the schematic</button>
+                    <input id="grabcraft_url" class="mc-common url_input" type="url" placeholder="https://www.grabcraft.com/minecraft/..." />
                 </fieldset>
                 <div class="links">
                     <a class="mc-button mc-common" href="https://www.grabcraft.com/" target="_blank">GrabCraft</a>
@@ -83,5 +83,47 @@
                 </div>
             </div>
         </section>
+        <script type="application/javascript">
+            const button = document.querySelector('#schem_get')
+            const input = document.querySelector('#grabcraft_url')
+            const download_anchor = document.createElement('a')
+            const litematic_regex = /"(.*.litematic)"/
+
+            document.body.appendChild(download_anchor)
+
+            button.addEventListener('click', async () => {
+                if (button.disabled) {
+                    return
+                }
+
+                button.disabled = true
+                try {
+                    const response = await fetch('/api/convert?' + new URLSearchParams({
+                        grabcraft_url: input.value
+                    }))
+                    if (!response.ok) {
+                        const data = await response.json()
+                        throw new Error(`Conversion error: ${data.error}`)
+                    }
+                    const blob = await response.blob()
+                    const url = window.URL.createObjectURL(blob)
+
+                    const content_disposition = response.headers.get('content-disposition')
+                    if (!litematic_regex.test(content_disposition)) {
+                        throw new Error("Can't find file name")
+                    }
+                    const filename = content_disposition.match(litematic_regex)[1]
+
+                    download_anchor.href = url
+                    download_anchor.download = filename
+                    download_anchor.click()
+                    window.URL.revokeObjectURL(url)
+                } catch (exception) {
+                    alert(exception.message)
+                } finally {
+                    button.disabled = false
+                }
+            })
+        </script>
     </body>
 </html>
