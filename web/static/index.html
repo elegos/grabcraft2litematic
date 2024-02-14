@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Grabcraft Litematic downloader</title>
+        <style>
+            body {
+                background: url('./img/background.webp') no-repeat center center fixed;
+                background-size: cover;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                box-sizing: border-box;
+            }
+            #main-block {
+                background-color: rgba(0, 0, 0, .2);
+                width: 80vw;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                box-sizing: border-box;
+                padding: 20px;
+            }
+            .logo {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+                position: relative;
+            }
+            .logo img {
+                width: 50%;
+            }
+            .main_action {
+                display: flex;
+                flex-direction: column;
+            }
+            .main_action > * {
+                border: none;
+                font-size: 1.1em;
+                box-sizing: border-box;
+                padding: .2em;
+                display: flex;
+                width: 100%;
+            }
+            .mc-common {
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bold;
+                padding: 10px 15px;
+                font-size: 1.1em;
+                border-radius: 0;
+                border: 1px solid transparent;
+                text-decoration: none;
+                color: black;
+            }
+            .mc-button {
+                background-color: #858585;
+                border-color: #a1a1a1;
+                text-transform: uppercase;
+            }
+            .mc-button:active {
+                background-color:#a0a0a0;
+            }
+            input.url_input {
+                flex-grow: 2;
+            }
+            .spacer {
+                width: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="main-block">
+            <div class="logo"><img src="./img/logo.webp" alt="GrabCraft 2 Litematic logo" /></div>
+            <div class="main_action">
+                <fieldset>
+                    <button class="mc-button mc-common get_schema">Get the schematic</button>
+                    <input name="grabcraft_url" class="mc-common url_input" type="url" placeholder="https://www.grabcraft.com/minecraft/..." />
+                </fieldset>
+                <div class="links">
+                    <a class="mc-button mc-common" href="https://www.grabcraft.com/" target="_blank">GrabCraft</a>
+                    <div class="spacer"></div>
+                    <a class="mc-button mc-common" href="https://www.curseforge.com/minecraft/mc-mods/litematica" target="_blank">Litematica mod</a>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
