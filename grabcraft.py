@@ -25,15 +25,17 @@ def get_blockmap():
         data = yaml.load(blockmap_file.read_text(), Loader=yaml.loader.BaseLoader)
 
         # WIP fixes
-        if data['version'] != '5':
+        if data['version'] != '8':
             for name, block in data['blocks'].items():
                 if 'chest' in name.lower() and 'facing' in block:
-                    if block['facing'] == 'north': block['facing'] = 'east'
-                    if block['facing'] == 'east': block['facing'] = 'south'
-                    if block['facing'] == 'south': block['facing'] = 'west'
-                    if block['facing'] == 'west': block['facing'] = 'north'
+                    block['facing'] = {
+                        'south': 'north',
+                        'north': 'south',
+                        'west': 'east',
+                        'east': 'west',
+                    }[block['facing']]
 
-            data['version'] = 5
+            data['version'] = 8
             yaml.dump(data, blockmap_file.open('w'), sort_keys=False)
 
         _BLOCKMAP = data['blocks']
@@ -167,15 +169,6 @@ def grabcraft_to_minecraft_wallsigns(block_name: str) -> dict[str, any]:
     
     return extended_args
 
-def grabcraft_to_minecraft_props(block: dict) -> dict[str, any]:
-    name = str(block['name']).lower()
-    return {
-        # **grabcraft_to_minecraft_orientation(name),
-        # **grabcraft_to_minecraft_stairs(name),
-        # **grabcraft_to_minecraft_slabs(name),
-        # **grabcraft_to_minecraft_trapdoors(name),
-    }
-
 def fix_door_facing(coord: Coordinates, block: dict, blocks: dict[Coordinates, dict]):
     name = block['_grabcraft_name'].lower()
     if 'door' in name and 'upper' in name:
@@ -183,6 +176,8 @@ def fix_door_facing(coord: Coordinates, block: dict, blocks: dict[Coordinates, d
         if lower_block is None:
             return
         block['facing'] = lower_block.get('facing')
+        block['half'] = 'upper'
+        lower_block['hinge'] = block['hinge']
 
 def get_definition(url: str):
     grab_def = download_definition(url)

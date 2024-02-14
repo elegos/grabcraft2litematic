@@ -1,4 +1,4 @@
-version: 5
+version: 8
 blocks:
   Acacia Door (Lower, Facing East, Closed):
     name: minecraft:acacia_door
@@ -390,13 +390,13 @@ blocks:
     name: minecraft:chest
   Chest (East):
     name: minecraft:chest
-    facing: north
+    facing: south
   Chest (North):
     name: minecraft:chest
-    facing: north
+    facing: east
   Chest (South):
     name: minecraft:chest
-    facing: north
+    facing: west
   Chest (West):
     name: minecraft:chest
     facing: north
@@ -760,13 +760,13 @@ blocks:
     name: minecraft:end_stone_bricks
   Ender Chest (Facing East):
     name: minecraft:ender_chest
-    facing: north
+    facing: south
   Ender Chest (Facing North):
     name: minecraft:ender_chest
-    facing: north
+    facing: east
   Ender Chest (Facing South):
     name: minecraft:ender_chest
-    facing: north
+    facing: west
   Ender Chest (Facing West):
     name: minecraft:ender_chest
     facing: north
@@ -961,10 +961,13 @@ blocks:
     hinge: right
   Iron Door (Lower, Facing East, Closed):
     name: minecraft:iron_door
+    facing: north
   Iron Door (Lower, Facing West, Closed):
     name: minecraft:iron_door
+    facing: south
   Iron Door (Lower, Facing North, Closed):
     name: minecraft:iron_door
+    facing: west
   Iron Door (Upper, Hinge Right, Unpowered):
     name: minecraft:iron_door
     hinge: right
@@ -1105,16 +1108,16 @@ blocks:
     name: minecraft:jungle_wood
   Ladder (facing east):
     name: minecraft:ladder
-    facing: west
+    facing: south
   Ladder (facing north):
     name: minecraft:ladder
-    facing: south
+    facing: east
   Ladder (facing south):
     name: minecraft:ladder
-    facing: north
+    facing: west
   Ladder (facing west):
     name: minecraft:ladder
-    facing: east
+    facing: north
   Lapis Lazuli Block:
     name: minecraft:lapis_block
   Lapis Lazuli Ore:
@@ -1542,13 +1545,16 @@ blocks:
     facing: south
   Wall Sign, north:
     name: minecraft:oak_wall_sign
-    facing: south
+    facing: east
   Wall Sign, south:
     name: minecraft:oak_wall_sign
-    facing: north
+    facing: west
   Wall Sign, west:
     name: minecraft:oak_wall_sign
-    facing: east
+    facing: north
+  Wall Sign, east:
+    name: minecraft:oak_wall_sign
+    facing: south
   Wall-mounted Sign Block west-northwest:
     name: minecraft:oak_wall_sign
     facing: west
@@ -2360,20 +2366,25 @@ blocks:
     name: minecraft:tnt
   Torch (Facing East):
     name: minecraft:torch
+    facing: south
   Torch (Facing North):
     name: minecraft:torch
+    facing: west
   Torch (Facing South):
     name: minecraft:torch
+    facing: east
   Torch (Facing Up):
     name: minecraft:torch
+    facing: north
   Torch (Facing West):
     name: minecraft:torch
+    facing: south
   Trapped Chest (Facing East):
     name: minecraft:trapped_chest
     facing: north
   Trapped Chest (Facing North):
     name: minecraft:trapped_chest
-    facing: north
+    facing: west
   Trapped Chest (Facing South):
     name: minecraft:trapped_chest
     facing: north
