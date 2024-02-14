@@ -744,16 +744,22 @@ blocks:
     name: minecraft:end_portal_frame
   End Rod (Facing Down):
     name: minecraft:end_rod
+    facing: down
   End Rod (Facing East):
     name: minecraft:end_rod
+    facing: south
   End Rod (Facing North):
     name: minecraft:end_rod
+    facing: east
   End Rod (Facing South):
     name: minecraft:end_rod
+    facing: west
   End Rod (Facing Up):
     name: minecraft:end_rod
+    facing: up
   End Rod (Facing West):
     name: minecraft:end_rod
+    facing: north
   End Stone:
     name: minecraft:end_stone
   End Stone Bricks:
@@ -900,24 +906,34 @@ blocks:
     name: minecraft:heavy_weighted_pressure_plate
   Hopper (Output Facing Down, Disabled):
     name: minecraft:hopper
+    facing: down
   Hopper (Output Facing East, Disabled):
     name: minecraft:hopper
+    facing: south
   Hopper (Output Facing North, Disabled):
     name: minecraft:hopper
+    facing: east
   Hopper (Output Facing West, Disabled):
     name: minecraft:hopper
+    facing: north
   Hopper (Output Facing Down, Activated):
     name: minecraft:hopper
+    facing: down
   Hopper (Output Facing East, Activated):
     name: minecraft:hopper
+    facing: south
   Hopper (Output Facing North, Activated):
     name: minecraft:hopper
+    facing: east
   Hopper (Output Facing South, Activated):
     name: minecraft:hopper
+    facing: west
   Hopper (Output Facing South, Disabled):
     name: minecraft:hopper
+    facing: west
   Hopper (Output Facing West, Activated):
     name: minecraft:hopper
+    facing: north
   Ice:
     name: minecraft:ice
   Chiseled Stone Brick Monster Egg:
@@ -2287,26 +2303,29 @@ blocks:
     name: minecraft:stone_bricks
   Stone Button (Facing Down, Inactive):
     name: minecraft:stone_button
+    facing: down
   Stone Button (Facing Up, Active):
     name: minecraft:stone_button
+    facing: up
   Stone Button (Facing Up, Inactive):
     name: minecraft:stone_button
+    facing: up
   Stone Button (Facing East, Inactive):
     name: minecraft:stone_button
     face: wall
-    facing: west
+    facing: south
   Stone Button (Facing North, Inactive):
     name: minecraft:stone_button
     face: wall
-    facing: south
+    facing: east
   Stone Button (Facing South, Inactive):
     name: minecraft:stone_button
     face: wall
-    facing: north
+    facing: west
   Stone Button (Facing West, Inactive):
     name: minecraft:stone_button
     face: wall
-    facing: east
+    facing: north
   Stone Pressure Plate (Active):
     name: minecraft:stone_pressure_plate
   Stone Pressure Plate (Unactive):
@@ -2505,20 +2524,28 @@ blocks:
     age: '0'
   Bed (North, Empty, Foot of the bed):
     name: minecraft:white_bed
+    part: foot
   Bed (North, Empty, Head of the bed):
     name: minecraft:white_bed
+    part: head
   Bed (South, Empty, Foot of the bed):
     name: minecraft:white_bed
+    part: foot
   Bed (South, Empty, Head of the bed):
     name: minecraft:white_bed
+    part: head
   Bed (East, Empty, Foot of the bed):
     name: minecraft:white_bed
+    part: foot
   Bed (East, Empty, Head of the bed):
     name: minecraft:white_bed
+    part: head
   Bed (West, Empty, Foot of the bed):
     name: minecraft:white_bed
+    part: foot
   Bed (West, Empty, Head of the bed):
     name: minecraft:white_bed
+    part: head
   White Carpet:
     name: minecraft:white_carpet
   White Stained Glass:
