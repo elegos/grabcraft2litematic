@@ -2400,13 +2400,13 @@ blocks:
     facing: south
   Trapped Chest (Facing East):
     name: minecraft:trapped_chest
-    facing: north
+    facing: south
   Trapped Chest (Facing North):
     name: minecraft:trapped_chest
-    facing: west
+    facing: east
   Trapped Chest (Facing South):
     name: minecraft:trapped_chest
-    facing: north
+    facing: west
   Trapped Chest (Facing West):
     name: minecraft:trapped_chest
     facing: north
