@@ -1,4 +1,4 @@
-version: 12
+version: 16
 blocks:
   Acacia Door (Lower, Facing East, Closed):
     name: minecraft:acacia_door
@@ -78,24 +78,32 @@ blocks:
     facing: north
   Acacia Wood Stairs (East, Upside-down):
     name: minecraft:acacia_stairs
+    facing: south
+    half: top
   Acacia Wood Stairs (North, Normal):
     name: minecraft:acacia_stairs
     half: bottom
     facing: east
   Acacia Wood Stairs (North, Upside-down):
     name: minecraft:acacia_stairs
+    half: top
+    facing: east
   Acacia Wood Stairs (South, Normal):
     name: minecraft:acacia_stairs
     half: bottom
     facing: west
   Acacia Wood Stairs (South, Upside-down):
     name: minecraft:acacia_stairs
+    facing: west
+    half: top
   Acacia Wood Stairs (West, Normal):
     name: minecraft:acacia_stairs
     half: bottom
     facing: south
   Acacia Wood Stairs (West, Upside-down):
     name: minecraft:acacia_stairs
+    facing: north
+    half: top
   Acacia Wood, Facing East/West:
     name: minecraft:acacia_wood
     axis: x
@@ -315,7 +323,7 @@ blocks:
   Brick Stairs (East, Upside-down):
     name: minecraft:brick_stairs
     half: top
-    facing: south
+    facing: east
   Brick Stairs (North, Normal):
     name: minecraft:brick_stairs
     half: bottom
@@ -323,7 +331,7 @@ blocks:
   Brick Stairs (North, Upside-down):
     name: minecraft:brick_stairs
     half: top
-    facing: east
+    facing: north
   Brick Stairs (South, Normal):
     name: minecraft:brick_stairs
     half: bottom
@@ -331,7 +339,7 @@ blocks:
   Brick Stairs (South, Upside-down):
     name: minecraft:brick_stairs
     half: top
-    facing: west
+    facing: south
   Brick Stairs (West, Normal):
     name: minecraft:brick_stairs
     half: bottom
@@ -339,7 +347,7 @@ blocks:
   Brick Stairs (West, Upside-down):
     name: minecraft:brick_stairs
     half: top
-    facing: north
+    facing: west
   Bricks:
     name: minecraft:bricks
   Brown Carpet:
@@ -462,35 +470,35 @@ blocks:
   Cobblestone Stairs (East, Normal):
     name: minecraft:cobblestone_stairs
     half: bottom
-    facing: north
+    facing: east
   Cobblestone Stairs (East, Upside-down):
     name: minecraft:cobblestone_stairs
     half: top
-    facing: south
+    facing: east
   Cobblestone Stairs (North, Normal):
     name: minecraft:cobblestone_stairs
     half: bottom
-    facing: east
+    facing: north
   Cobblestone Stairs (North, Upside-down):
     name: minecraft:cobblestone_stairs
     half: top
-    facing: east
+    facing: north
   Cobblestone Stairs (South, Normal):
     name: minecraft:cobblestone_stairs
     half: bottom
-    facing: west
+    facing: south
   Cobblestone Stairs (South, Upside-down):
     name: minecraft:cobblestone_stairs
     half: top
-    facing: west
+    facing: south
   Cobblestone Stairs (West, Normal):
     name: minecraft:cobblestone_stairs
     half: bottom
-    facing: south
+    facing: west
   Cobblestone Stairs (West, Upside-down):
     name: minecraft:cobblestone_stairs
     half: top
-    facing: north
+    facing: west
   Cobblestone Wall:
     name: minecraft:cobblestone_wall
   Cobweb:
@@ -1048,7 +1056,8 @@ blocks:
     name: minecraft:iron_ore
   Iron Trapdoor (East from block, Closed, Bottom half):
     name: minecraft:iron_trapdoor
-    facing: south
+    facing: west
+    half: bottom
     open: 'false'
   Iron Trapdoor (East from block, Closed, Top Half):
     name: minecraft:iron_trapdoor
@@ -1056,7 +1065,8 @@ blocks:
     open: 'false'
   Iron Trapdoor (East from block, Open, Bottom half):
     name: minecraft:iron_trapdoor
-    facing: south
+    facing: west
+    half: bottom
     open: 'true'
   Iron Trapdoor (East from block, Open, Top Half):
     name: minecraft:iron_trapdoor
@@ -1065,6 +1075,7 @@ blocks:
   Iron Trapdoor (North from block, Closed, Bottom half):
     name: minecraft:iron_trapdoor
     facing: east
+    half: bottom
     open: 'false'
   Iron Trapdoor (North from block, Closed, Top Half):
     name: minecraft:iron_trapdoor
@@ -1073,6 +1084,7 @@ blocks:
   Iron Trapdoor (North from block, Open, Bottom half):
     name: minecraft:iron_trapdoor
     facing: east
+    half: bottom
     open: 'true'
   Iron Trapdoor (North from block, Open, Top Half):
     name: minecraft:iron_trapdoor
@@ -1080,7 +1092,8 @@ blocks:
     open: 'true'
   Iron Trapdoor (South from block, Closed, Bottom half):
     name: minecraft:iron_trapdoor
-    facing: west
+    facing: south
+    half: bottom
     open: 'false'
   Iron Trapdoor (South from block, Closed, Top Half):
     name: minecraft:iron_trapdoor
@@ -1088,7 +1101,8 @@ blocks:
     open: 'false'
   Iron Trapdoor (South from block, Open, Bottom half):
     name: minecraft:iron_trapdoor
-    facing: west
+    facing: south
+    half: bottom
     open: 'true'
   Iron Trapdoor (South from block, Open, Top Half):
     name: minecraft:iron_trapdoor
@@ -1200,24 +1214,32 @@ blocks:
     facing: north
   Jungle Wood Stairs (East, Upside-down):
     name: minecraft:jungle_stairs
+    facing: south
+    half: top
   Jungle Wood Stairs (North, Normal):
     name: minecraft:jungle_stairs
     half: bottom
     facing: east
   Jungle Wood Stairs (North, Upside-down):
     name: minecraft:jungle_stairs
+    half: top
+    facing: east
   Jungle Wood Stairs (South, Normal):
     name: minecraft:jungle_stairs
     half: bottom
     facing: west
   Jungle Wood Stairs (South, Upside-down):
     name: minecraft:jungle_stairs
+    facing: west
+    half: top
   Jungle Wood Stairs (West, Normal):
     name: minecraft:jungle_stairs
     half: bottom
     facing: south
   Jungle Wood Stairs (West, Upside-down):
     name: minecraft:jungle_stairs
+    facing: north
+    half: top
   Jungle Wood (facing east/west):
     name: minecraft:jungle_wood
   Jungle Wood (facing north/south):
@@ -1382,24 +1404,32 @@ blocks:
     facing: north
   Nether Brick Stairs (East, Upside-down):
     name: minecraft:nether_brick_stairs
+    facing: east
+    half: top
   Nether Brick Stairs (North, Normal):
     name: minecraft:nether_brick_stairs
     half: bottom
     facing: east
   Nether Brick Stairs (North, Upside-down):
     name: minecraft:nether_brick_stairs
+    half: top
+    facing: north
   Nether Brick Stairs (South, Normal):
     name: minecraft:nether_brick_stairs
     half: bottom
     facing: west
   Nether Brick Stairs (South, Upside-down):
     name: minecraft:nether_brick_stairs
+    facing: south
+    half: top
   Nether Brick Stairs (West, Normal):
     name: minecraft:nether_brick_stairs
     half: bottom
     facing: south
   Nether Brick Stairs (West, Upside-down):
     name: minecraft:nether_brick_stairs
+    facing: west
+    half: top
   Nether Brick:
     name: minecraft:nether_bricks
   Nether Portal (Axis X - Oriented East-West):
@@ -1625,8 +1655,8 @@ blocks:
     facing: north
   Wooden Trapdoor (East from block, Closed, Bottom half):
     name: minecraft:oak_trapdoor
+    facing: west
     half: bottom
-    facing: south
     open: 'false'
   Wooden Trapdoor (East from block, Closed, Top Half):
     name: minecraft:oak_trapdoor
@@ -1635,8 +1665,8 @@ blocks:
     open: 'false'
   Wooden Trapdoor (East from block, Open, Bottom half):
     name: minecraft:oak_trapdoor
+    facing: west
     half: bottom
-    facing: south
     open: 'true'
   Wooden Trapdoor (East from block, Open, Top Half):
     name: minecraft:oak_trapdoor
@@ -1645,8 +1675,8 @@ blocks:
     open: 'true'
   Wooden Trapdoor (North from block, Closed, Bottom half):
     name: minecraft:oak_trapdoor
-    half: bottom
     facing: east
+    half: bottom
     open: 'false'
   Wooden Trapdoor (North from block, Closed, Top Half):
     name: minecraft:oak_trapdoor
@@ -1655,8 +1685,8 @@ blocks:
     open: 'false'
   Wooden Trapdoor (North from block, Open, Bottom half):
     name: minecraft:oak_trapdoor
-    half: bottom
     facing: east
+    half: bottom
     open: 'true'
   Wooden Trapdoor (North from block, Open, Top Half):
     name: minecraft:oak_trapdoor
@@ -1665,8 +1695,8 @@ blocks:
     open: 'true'
   Wooden Trapdoor (South from block, Closed, Bottom half):
     name: minecraft:oak_trapdoor
+    facing: south
     half: bottom
-    facing: west
     open: 'false'
   Wooden Trapdoor (South from block, Closed, Top Half):
     name: minecraft:oak_trapdoor
@@ -1675,8 +1705,8 @@ blocks:
     open: 'false'
   Wooden Trapdoor (South from block, Open, Bottom half):
     name: minecraft:oak_trapdoor
+    facing: south
     half: bottom
-    facing: west
     open: 'true'
   Wooden Trapdoor (South from block, Open, Top Half):
     name: minecraft:oak_trapdoor
@@ -1950,7 +1980,7 @@ blocks:
   Quartz Stairs (East, Upside-down):
     name: minecraft:quartz_stairs
     half: top
-    facing: south
+    facing: east
   Quartz Stairs (North, Normal):
     name: minecraft:quartz_stairs
     half: bottom
@@ -1958,7 +1988,7 @@ blocks:
   Quartz Stairs (North, Upside-down):
     name: minecraft:quartz_stairs
     half: top
-    facing: east
+    facing: north
   Quartz Stairs (South, Normal):
     name: minecraft:quartz_stairs
     half: bottom
@@ -1966,7 +1996,7 @@ blocks:
   Quartz Stairs (South, Upside-down):
     name: minecraft:quartz_stairs
     half: top
-    facing: west
+    facing: south
   Quartz Stairs (West, Normal):
     name: minecraft:quartz_stairs
     half: bottom
@@ -1974,7 +2004,7 @@ blocks:
   Quartz Stairs (West, Upside-down):
     name: minecraft:quartz_stairs
     half: top
-    facing: north
+    facing: west
   Rail:
     name: minecraft:rail
   Rail (curved; north and east):
@@ -2043,24 +2073,32 @@ blocks:
     facing: north
   Red Sandstone Stairs (East, Upside-down):
     name: minecraft:red_sandstone_stairs
+    facing: east
+    half: top
   Red Sandstone Stairs (North, Normal):
     name: minecraft:red_sandstone_stairs
     half: bottom
     facing: east
   Red Sandstone Stairs (North, Upside-down):
     name: minecraft:red_sandstone_stairs
+    half: top
+    facing: north
   Red Sandstone Stairs (South, Normal):
     name: minecraft:red_sandstone_stairs
     half: bottom
     facing: west
   Red Sandstone Stairs (South, Upside-down):
     name: minecraft:red_sandstone_stairs
+    facing: south
+    half: top
   Red Sandstone Stairs (West, Normal):
     name: minecraft:red_sandstone_stairs
     half: bottom
     facing: south
   Red Sandstone Stairs (West, Upside-down):
     name: minecraft:red_sandstone_stairs
+    facing: west
+    half: top
   Red Stained Glass:
     name: minecraft:red_stained_glass
   Red Stained Glass Pane:
@@ -2215,7 +2253,7 @@ blocks:
   Sandstone Stairs (East, Upside-down):
     name: minecraft:sandstone_stairs
     half: top
-    facing: south
+    facing: east
   Sandstone Stairs (North, Normal):
     name: minecraft:sandstone_stairs
     half: bottom
@@ -2223,7 +2261,7 @@ blocks:
   Sandstone Stairs (North, Upside-down):
     name: minecraft:sandstone_stairs
     half: top
-    facing: east
+    facing: north
   Sandstone Stairs (South, Normal):
     name: minecraft:sandstone_stairs
     half: bottom
@@ -2231,7 +2269,7 @@ blocks:
   Sandstone Stairs (South, Upside-down):
     name: minecraft:sandstone_stairs
     half: top
-    facing: west
+    facing: south
   Sandstone Stairs (West, Normal):
     name: minecraft:sandstone_stairs
     half: bottom
@@ -2239,7 +2277,7 @@ blocks:
   Sandstone Stairs (West, Upside-down):
     name: minecraft:sandstone_stairs
     half: top
-    facing: north
+    facing: west
   Sea Lantern:
     name: minecraft:sea_lantern
   Slime Block:
@@ -2294,27 +2332,35 @@ blocks:
   Spruce Foor (Lower, Facing East, Closed):
     name: minecraft:spruce_door
     facing: south
+    open: 'false'
   Spruce Foor (Lower, Facing East, Opened):
     name: minecraft:spruce_door
     facing: south
+    open: 'true'
   Spruce Foor (Lower, Facing North, Closed):
     name: minecraft:spruce_door
     facing: east
+    open: 'false'
   Spruce Foor (Lower, Facing North, Opened):
     name: minecraft:spruce_door
     facing: east
+    open: 'true'
   Spruce Foor (Lower, Facing South, Closed):
     name: minecraft:spruce_door
     facing: west
+    open: 'false'
   Spruce Foor (Lower, Facing South, Opened):
     name: minecraft:spruce_door
     facing: west
+    open: 'true'
   Spruce Foor (Lower, Facing West, Closed):
     name: minecraft:spruce_door
     facing: north
+    open: 'false'
   Spruce Foor (Lower, Facing West, Opened):
     name: minecraft:spruce_door
     facing: north
+    open: 'true'
   Spruce Fence:
     name: minecraft:spruce_fence
   Spruce Fence Gate (Facing East, Closed):
@@ -2436,7 +2482,7 @@ blocks:
   Stone Brick Stairs (East, Upside-down):
     name: minecraft:stone_brick_stairs
     half: top
-    facing: south
+    facing: east
   Stone Brick Stairs (North, Normal):
     name: minecraft:stone_brick_stairs
     half: bottom
@@ -2444,7 +2490,7 @@ blocks:
   Stone Brick Stairs (North, Upside-down):
     name: minecraft:stone_brick_stairs
     half: top
-    facing: east
+    facing: north
   Stone Brick Stairs (South, Normal):
     name: minecraft:stone_brick_stairs
     half: bottom
@@ -2452,7 +2498,7 @@ blocks:
   Stone Brick Stairs (South, Upside-down):
     name: minecraft:stone_brick_stairs
     half: top
-    facing: west
+    facing: south
   Stone Brick Stairs (West):
     name: minecraft:stone_brick_stairs
     half: bottom
@@ -2460,7 +2506,7 @@ blocks:
   Stone Brick Stairs (West, Upside-down):
     name: minecraft:stone_brick_stairs
     half: top
-    facing: north
+    facing: west
   Stone Bricks:
     name: minecraft:stone_bricks
   Stone Button (Facing Down, Inactive):

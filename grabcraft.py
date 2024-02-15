@@ -25,26 +25,22 @@ def get_blockmap():
         data = yaml.load(blockmap_file.read_text(), Loader=yaml.loader.BaseLoader)
 
         # WIP fixes
-        if data['version'] != '12':
+        if data['version'] != '16':
             for name, block in data['blocks'].items():
-                if 'Stairs (South, Normal)' in name.lower(): block['facing'] = 'east'
-                if 'Stairs (North, Upside-down)' in name.lower():
-                    block['facing'] = 'east'
-                    block['half'] = 'top'
-                if 'Stairs (West, Normal)' in name.lower(): block['facing'] = 'south'
-                if 'Stairs (East, Upside-down)' in name.lower():
-                    block['facing'] = 'south'
-                    block['half'] = 'top'
-                if 'Stairs (North, Normal)' in name.lower(): block['facing'] = 'west'
-                if 'Stairs (South, Upside-down)' in name.lower():
+                if 'Cobblestone Stairs (West, Normal)' in name:
                     block['facing'] = 'west'
-                    block['half'] = 'top'
-                if 'Stairs (East, Normal)' in name.lower(): block['facing'] = 'north'
-                if 'Stairs (West, Upside-down)' in name.lower():
+                    block['half'] = 'bottom'
+                if 'Cobblestone Stairs (East, Normal)' in name:
+                    block['facing'] = 'east'
+                    block['half'] = 'bottom'
+                if 'Cobblestone Stairs (South, Normal)' in name:
+                    block['facing'] = 'south'
+                    block['half'] = 'bottom'
+                if 'Cobblestone Stairs (North, Normal)' in name:
                     block['facing'] = 'north'
-                    block['half'] = 'top'
+                    block['half'] = 'bottom'
 
-            data['version'] = 12
+            data['version'] = 16
             yaml.dump(data, blockmap_file.open('w'), sort_keys=False)
 
         _BLOCKMAP = data['blocks']
@@ -184,9 +180,39 @@ def fix_door_facing(coord: Coordinates, block: dict, blocks: dict[Coordinates, d
         lower_block = blocks.get(Coordinates(x=coord.x, y=coord.y - 1, z=coord.z))
         if lower_block is None:
             return
-        block['facing'] = lower_block.get('facing')
-        block['half'] = 'upper'
+
         lower_block['hinge'] = block['hinge']
+
+        block['facing'] = lower_block.get('facing')
+        block['open'] = lower_block.get('open')
+        block['half'] = 'upper'
+
+def fix_double_chests(coord: Coordinates, block: dict, blocks: dict[Coordinates, dict]):
+    facing = block.get('facing')
+    if 'chest' not in block['name'] or facing is None or 'type' in block:
+        return
+    
+    neighbours = []
+    n_neighbour_coords = Coordinates(coord.y, coord.x, coord.z - 1)
+    s_neighbour_coords = Coordinates(coord.y, coord.x, coord.z + 1)
+    e_neighbour_coords = Coordinates(coord.y, coord.x + 1, coord.z)
+    w_neighbour_coords = Coordinates(coord.y, coord.x - 1, coord.z)
+
+    if facing == 'east': neighbours = [blocks.get(n_neighbour_coords), blocks.get(s_neighbour_coords)]
+    elif facing == 'west': neighbours = [blocks.get(s_neighbour_coords), blocks.get(n_neighbour_coords)]
+    elif facing == 'north': neighbours = [blocks.get(w_neighbour_coords), blocks.get(e_neighbour_coords)]
+    elif facing == 'south': neighbours = [blocks.get(e_neighbour_coords), blocks.get(w_neighbour_coords)]
+
+    left_neighbour = neighbours[0]
+    right_neighbour = neighbours[1]
+
+    if left_neighbour and left_neighbour['_grabcraft_name'] == block['_grabcraft_name']:
+        left_neighbour['type'] = 'left'
+        block['type'] = 'right'
+    elif right_neighbour and right_neighbour['_grabcraft_name'] == block['_grabcraft_name']:
+        right_neighbour['type'] = 'right'
+        block['type'] = 'left'
+
 
 def get_definition(url: str):
     grab_def = download_definition(url)
@@ -202,5 +228,6 @@ def get_definition(url: str):
     # second run to fix missing data
     for coord, block in blocks.items():
         fix_door_facing(coord, block, blocks)
+        fix_double_chests(coord, block, blocks)
 
     return GenericDefinition(title=grab_def.title, author=grab_def.author, blocks=blocks)
