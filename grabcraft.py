@@ -25,17 +25,26 @@ def get_blockmap():
         data = yaml.load(blockmap_file.read_text(), Loader=yaml.loader.BaseLoader)
 
         # WIP fixes
-        if data['version'] != '8':
+        if data['version'] != '12':
             for name, block in data['blocks'].items():
-                if 'chest' in name.lower() and 'facing' in block:
-                    block['facing'] = {
-                        'south': 'north',
-                        'north': 'south',
-                        'west': 'east',
-                        'east': 'west',
-                    }[block['facing']]
+                if 'Stairs (South, Normal)' in name.lower(): block['facing'] = 'east'
+                if 'Stairs (North, Upside-down)' in name.lower():
+                    block['facing'] = 'east'
+                    block['half'] = 'top'
+                if 'Stairs (West, Normal)' in name.lower(): block['facing'] = 'south'
+                if 'Stairs (East, Upside-down)' in name.lower():
+                    block['facing'] = 'south'
+                    block['half'] = 'top'
+                if 'Stairs (North, Normal)' in name.lower(): block['facing'] = 'west'
+                if 'Stairs (South, Upside-down)' in name.lower():
+                    block['facing'] = 'west'
+                    block['half'] = 'top'
+                if 'Stairs (East, Normal)' in name.lower(): block['facing'] = 'north'
+                if 'Stairs (West, Upside-down)' in name.lower():
+                    block['facing'] = 'north'
+                    block['half'] = 'top'
 
-            data['version'] = 8
+            data['version'] = 12
             yaml.dump(data, blockmap_file.open('w'), sort_keys=False)
 
         _BLOCKMAP = data['blocks']
