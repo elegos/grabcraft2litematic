@@ -11,6 +11,8 @@ pyyaml = "*"
 beautifulsoup4 = "*"
 
 [dev-packages]
+pytest = "*"
+autopep8 = "*"
 
 [requires]
 python_version = "3.12"

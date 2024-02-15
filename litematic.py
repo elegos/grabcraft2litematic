@@ -21,5 +21,5 @@ def grabcraft2region(definition: GenericDefinition) -> Region:
         except Exception as e:
             print(e)
             raise e
-    
+
     return region

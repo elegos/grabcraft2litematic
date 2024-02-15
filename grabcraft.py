@@ -30,9 +30,10 @@ class GrabcraftDefinition:
     cardinals: Cardinals
 
 
-CARDINALS = { 'N': 'north', 'E': 'east', 'S': 'south', 'W': 'west' }
+CARDINALS = {'N': 'north', 'E': 'east', 'S': 'south', 'W': 'west'}
 
 _BLOCKMAP = None
+
 
 def get_blockmap():
     global _BLOCKMAP
@@ -45,11 +46,12 @@ def get_blockmap():
 
     return _BLOCKMAP
 
+
 def download_definition(url: str) -> GrabcraftDefinition:
     response = requests.get(url)
     if response.status_code > 299:
         raise Exception(f"Failed to download definition: {response.status_code}")
-    
+
     raw_html = response.text
     html = BeautifulSoup(raw_html, 'html.parser')
 
@@ -72,18 +74,19 @@ def download_definition(url: str) -> GrabcraftDefinition:
     matches = blocks_regex.search(raw_html)
     if matches is None:
         raise Exception("Failed to find definition URL")
-    
+
     definition_url = matches.group(1)
     response = requests.get(definition_url)
     if response.status_code > 299:
         raise Exception(f"Failed to download definition: {response.status_code}")
-    
+
     return GrabcraftDefinition(
         title=title,
         author=author,
         cardinals=Cardinals(**blueprint_cardinals),
         blocks_data=json.loads(re.sub('^[^{]+', '', response.text)),
     )
+
 
 def get_grabcraft_blocks(schema: dict) -> dict[Coordinates, dict]:
     result: dict[Coordinates, dict] = {}
@@ -96,13 +99,14 @@ def get_grabcraft_blocks(schema: dict) -> dict[Coordinates, dict]:
                 element = block[element_key]
                 coordinates = Coordinates(x=int(element['x']), y=int(element['y']), z=int(element['z']))
                 result[coordinates] = element
-    
+
     return dict(sorted(result.items(), key=lambda tpl: f'{tpl[0].y:3d}{tpl[0].x:3d}{tpl[0].z:3d}'))
+
 
 def grabcraft_blockmap_data(result: dict, cardinals: Cardinals) -> dict:
     blockmap = get_blockmap()
 
-    result = { **blockmap[result['name']] } if result['name'] in blockmap else { 'name': f'GRABCRAFT:{result["name"]}' }
+    result = {**blockmap[result['name']]} if result['name'] in blockmap else {'name': f'GRABCRAFT:{result["name"]}'}
 
     # Facing normalize
     if 'facing' in result:
@@ -110,17 +114,19 @@ def grabcraft_blockmap_data(result: dict, cardinals: Cardinals) -> dict:
 
     return result
 
+
 def grabcraft_to_minecraft_orientation(block_name: str) -> dict[str, any]:
     if 'north' in block_name:
-        return { 'facing': 'east' }
+        return {'facing': 'east'}
     elif 'south' in block_name:
-        return { 'facing': 'west' }
+        return {'facing': 'west'}
     elif 'east' in block_name:
-        return { 'facing': 'south' }
+        return {'facing': 'south'}
     elif 'west' in block_name:
-        return { 'facing': 'north' }
+        return {'facing': 'north'}
 
     return {}
+
 
 def grabcraft_to_minecraft_stairs(block_name: str) -> dict[str, any]:
     extended_args = {}
@@ -129,13 +135,14 @@ def grabcraft_to_minecraft_stairs(block_name: str) -> dict[str, any]:
             extended_args['half'] = 'top'
         else:
             extended_args['half'] = 'bottom'
-        
+
         if 'west' in block_name:
             extended_args['facing'] = 'south'
         elif 'east' in block_name:
             extended_args['facing'] = 'north'
-    
+
     return extended_args
+
 
 def grabcraft_to_minecraft_slabs(block_name: str) -> dict[str, any]:
     extended_args = {}
@@ -146,8 +153,9 @@ def grabcraft_to_minecraft_slabs(block_name: str) -> dict[str, any]:
             extended_args['type'] = 'name'
         elif 'double' in block_name:
             extended_args['type'] = 'double'
-    
+
     return extended_args
+
 
 def grabcraft_to_minecraft_trapdoors(block_name: str) -> dict[str, any]:
     extended_args = {}
@@ -156,12 +164,12 @@ def grabcraft_to_minecraft_trapdoors(block_name: str) -> dict[str, any]:
             extended_args['open'] = 'false'
         else:
             extended_args['open'] = 'true'
-        
+
         if 'bottom half' in block_name:
             extended_args['half'] = 'bottom'
         else:
             extended_args['half'] = 'top'
-        
+
         if 'west from block' in block_name:
             extended_args['facing'] = 'south'
         elif 'east from block' in block_name:
@@ -170,8 +178,9 @@ def grabcraft_to_minecraft_trapdoors(block_name: str) -> dict[str, any]:
             extended_args['facing'] = 'west'
         elif 'south from block' in block_name:
             extended_args['facing'] = 'north'
-    
+
     return extended_args
+
 
 def grabcraft_to_minecraft_wallsigns(block_name: str) -> dict[str, any]:
     extended_args = {}
@@ -184,8 +193,9 @@ def grabcraft_to_minecraft_wallsigns(block_name: str) -> dict[str, any]:
             extended_args['facing'] = 'west'
         elif 'west' in block_name:
             extended_args['facing'] = 'east'
-    
+
     return extended_args
+
 
 def fix_door_facing(coord: Coordinates, block: dict, blocks: dict[Coordinates, dict]):
     name = block['_grabcraft_name'].lower()
@@ -200,21 +210,26 @@ def fix_door_facing(coord: Coordinates, block: dict, blocks: dict[Coordinates, d
         block['open'] = lower_block.get('open')
         block['half'] = 'upper'
 
+
 def fix_double_chests(coord: Coordinates, block: dict, blocks: dict[Coordinates, dict]):
     facing = block.get('facing')
     if 'chest' not in block['name'] or facing is None or 'type' in block:
         return
-    
+
     neighbours = []
     n_neighbour_coords = Coordinates(coord.y, coord.x, coord.z - 1)
     s_neighbour_coords = Coordinates(coord.y, coord.x, coord.z + 1)
     e_neighbour_coords = Coordinates(coord.y, coord.x + 1, coord.z)
     w_neighbour_coords = Coordinates(coord.y, coord.x - 1, coord.z)
 
-    if facing == 'east': neighbours = [blocks.get(n_neighbour_coords), blocks.get(s_neighbour_coords)]
-    elif facing == 'west': neighbours = [blocks.get(s_neighbour_coords), blocks.get(n_neighbour_coords)]
-    elif facing == 'north': neighbours = [blocks.get(w_neighbour_coords), blocks.get(e_neighbour_coords)]
-    elif facing == 'south': neighbours = [blocks.get(e_neighbour_coords), blocks.get(w_neighbour_coords)]
+    if facing == 'east':
+        neighbours = [blocks.get(n_neighbour_coords), blocks.get(s_neighbour_coords)]
+    elif facing == 'west':
+        neighbours = [blocks.get(s_neighbour_coords), blocks.get(n_neighbour_coords)]
+    elif facing == 'north':
+        neighbours = [blocks.get(w_neighbour_coords), blocks.get(e_neighbour_coords)]
+    elif facing == 'south':
+        neighbours = [blocks.get(e_neighbour_coords), blocks.get(w_neighbour_coords)]
 
     left_neighbour = neighbours[0]
     right_neighbour = neighbours[1]
@@ -237,7 +252,7 @@ def get_definition(url: str):
             '_grabcraft_name': block['name'],
             **grabcraft_blockmap_data(block, grab_def.cardinals),
         }
-    
+
     # second run to fix missing data
     for coord, block in blocks.items():
         fix_door_facing(coord, block, blocks)
