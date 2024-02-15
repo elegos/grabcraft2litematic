@@ -1,19 +1,36 @@
 from dataclasses import dataclass
-import json
 from pathlib import Path
+import json
 import re
 import os
 
+from bs4 import BeautifulSoup
 import requests
 import yaml
 
 from common import Coordinates, GenericDefinition
+
+
+@dataclass
+class Cardinals:
+    north: str
+    east: str
+    south: str
+    west: str
+
+    def get(self, cardinal: str) -> str:
+        return getattr(self, cardinal) if hasattr(self, cardinal) else cardinal
+
 
 @dataclass
 class GrabcraftDefinition:
     title: str
     author: str
     blocks_data: dict
+    cardinals: Cardinals
+
+
+CARDINALS = { 'N': 'north', 'E': 'east', 'S': 'south', 'W': 'west' }
 
 _BLOCKMAP = None
 
@@ -24,25 +41,6 @@ def get_blockmap():
         blockmap_file = Path(os.getcwd()).joinpath('', 'blockmap.yaml')
         data = yaml.load(blockmap_file.read_text(), Loader=yaml.loader.BaseLoader)
 
-        # WIP fixes
-        if data['version'] != '16':
-            for name, block in data['blocks'].items():
-                if 'Cobblestone Stairs (West, Normal)' in name:
-                    block['facing'] = 'west'
-                    block['half'] = 'bottom'
-                if 'Cobblestone Stairs (East, Normal)' in name:
-                    block['facing'] = 'east'
-                    block['half'] = 'bottom'
-                if 'Cobblestone Stairs (South, Normal)' in name:
-                    block['facing'] = 'south'
-                    block['half'] = 'bottom'
-                if 'Cobblestone Stairs (North, Normal)' in name:
-                    block['facing'] = 'north'
-                    block['half'] = 'bottom'
-
-            data['version'] = 16
-            yaml.dump(data, blockmap_file.open('w'), sort_keys=False)
-
         _BLOCKMAP = data['blocks']
 
     return _BLOCKMAP
@@ -52,22 +50,26 @@ def download_definition(url: str) -> GrabcraftDefinition:
     if response.status_code > 299:
         raise Exception(f"Failed to download definition: {response.status_code}")
     
-    html = response.text
+    raw_html = response.text
+    html = BeautifulSoup(raw_html, 'html.parser')
 
-    title_regex = re.compile(r'id="content-title"[^>]+>([^<]+)', re.MULTILINE)
-    matches = title_regex.search(html)
-    if matches is None:
-        raise Exception("Failed to find design title")
-    title = matches[1].strip()
+    blueprint_cardinals = {
+        'north': CARDINALS[html.find('span', {'id': 'south'}).contents[0]],
+        'east': CARDINALS[html.find('span', {'id': 'west'}).contents[0]],
+        'south': CARDINALS[html.find('span', {'id': 'north'}).contents[0]],
+        'west': CARDINALS[html.find('span', {'id': 'east'}).contents[0]],
+    }
+
+    title = str(html.find('h1', {'id': 'content-title'}).contents[0])
 
     author_regex = re.compile(r'Author: ([^<]+)', re.MULTILINE)
-    matches = author_regex.search(html.replace('&nbsp;', ' '))
+    matches = author_regex.search(raw_html.replace('&nbsp;', ' '))
     if matches is None:
         raise Exception("Failed to find design's author")
     author = matches[1].strip()
 
     blocks_regex = re.compile(r'(https?://[^.]+?\.grabcraft\.com/js/RenderObject/myRenderObject_[^.]+?\.js)', re.MULTILINE)
-    matches = blocks_regex.search(html)
+    matches = blocks_regex.search(raw_html)
     if matches is None:
         raise Exception("Failed to find definition URL")
     
@@ -76,7 +78,12 @@ def download_definition(url: str) -> GrabcraftDefinition:
     if response.status_code > 299:
         raise Exception(f"Failed to download definition: {response.status_code}")
     
-    return GrabcraftDefinition(title=title, author=author, blocks_data=json.loads(re.sub('^[^{]+', '', response.text)))
+    return GrabcraftDefinition(
+        title=title,
+        author=author,
+        cardinals=Cardinals(**blueprint_cardinals),
+        blocks_data=json.loads(re.sub('^[^{]+', '', response.text)),
+    )
 
 def get_grabcraft_blocks(schema: dict) -> dict[Coordinates, dict]:
     result: dict[Coordinates, dict] = {}
@@ -92,10 +99,16 @@ def get_grabcraft_blocks(schema: dict) -> dict[Coordinates, dict]:
     
     return dict(sorted(result.items(), key=lambda tpl: f'{tpl[0].y:3d}{tpl[0].x:3d}{tpl[0].z:3d}'))
 
-def grabcraft_blockmap_data(data: dict) -> str:
+def grabcraft_blockmap_data(result: dict, cardinals: Cardinals) -> dict:
     blockmap = get_blockmap()
 
-    return blockmap[data['name']] if data['name'] in blockmap else { 'name': f'GRABCRAFT:{data["name"]}' }
+    result = { **blockmap[result['name']] } if result['name'] in blockmap else { 'name': f'GRABCRAFT:{result["name"]}' }
+
+    # Facing normalize
+    if 'facing' in result:
+        result['facing'] = cardinals.get(result['facing'])
+
+    return result
 
 def grabcraft_to_minecraft_orientation(block_name: str) -> dict[str, any]:
     if 'north' in block_name:
@@ -222,7 +235,7 @@ def get_definition(url: str):
     for coord, block in raw_blocks.items():
         blocks[coord] = {
             '_grabcraft_name': block['name'],
-            **grabcraft_blockmap_data(block),
+            **grabcraft_blockmap_data(block, grab_def.cardinals),
         }
     
     # second run to fix missing data

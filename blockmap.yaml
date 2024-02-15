@@ -1,36 +1,36 @@
-version: 16
+version: 20
 blocks:
   Acacia Door (Lower, Facing East, Closed):
     name: minecraft:acacia_door
-    facing: north
+    facing: east
     open: 'false'
   Acacia Door (Lower, Facing East, Opened):
     name: minecraft:acacia_door
-    facing: north
+    facing: east
     open: 'true'
   Acacia Door (Lower, Facing North, Closed):
     name: minecraft:acacia_door
-    facing: west
+    facing: north
     open: 'false'
   Acacia Door (Lower, Facing North, Opened):
     name: minecraft:acacia_door
-    facing: west
+    facing: north
     open: 'true'
   Acacia Door (Lower, Facing South, Closed):
     name: minecraft:acacia_door
-    facing: east
+    facing: south
     open: 'false'
   Acacia Door (Lower, Facing South, Opened):
     name: minecraft:acacia_door
-    facing: east
+    facing: south
     open: 'true'
   Acacia Door (Lower, Facing West, Closed):
     name: minecraft:acacia_door
-    facing: south
+    facing: west
     open: 'false'
   Acacia Door (Lower, Facing West, Opened):
     name: minecraft:acacia_door
-    facing: south
+    facing: west
     open: 'true'
   Acacia Door (Upper, Hinge Left, Powered):
     name: minecraft:acacia_door
@@ -48,8 +48,12 @@ blocks:
     name: minecraft:acacia_fence
   Acacia Fence Gate (Facing North, Closed):
     name: minecraft:acacia_fence_gate
+    facing: north
+    open: 'false'
   Acacia Fence Gate (Facing West, Closed):
     name: minecraft:acacia_fence_gate
+    facing: west
+    open: 'false'
   Acacia Leaves:
     name: minecraft:acacia_leaves
   Acacia Leaves (No Decay):
@@ -58,6 +62,7 @@ blocks:
     name: minecraft:acacia_leaves
   Acacia Wood, Facing North/South:
     name: minecraft:acacia_log
+    facing: north
   Acacia Wood (No axis):
     name: minecraft:acacia_log
   Acacia Wood:
@@ -75,62 +80,73 @@ blocks:
   Acacia Wood Stairs (East, Normal):
     name: minecraft:acacia_stairs
     half: bottom
-    facing: north
+    facing: east
   Acacia Wood Stairs (East, Upside-down):
     name: minecraft:acacia_stairs
-    facing: south
+    facing: east
     half: top
   Acacia Wood Stairs (North, Normal):
     name: minecraft:acacia_stairs
     half: bottom
-    facing: east
+    facing: north
   Acacia Wood Stairs (North, Upside-down):
     name: minecraft:acacia_stairs
     half: top
-    facing: east
+    facing: north
   Acacia Wood Stairs (South, Normal):
     name: minecraft:acacia_stairs
     half: bottom
-    facing: west
+    facing: south
   Acacia Wood Stairs (South, Upside-down):
     name: minecraft:acacia_stairs
-    facing: west
+    facing: south
     half: top
   Acacia Wood Stairs (West, Normal):
     name: minecraft:acacia_stairs
     half: bottom
-    facing: south
+    facing: west
   Acacia Wood Stairs (West, Upside-down):
     name: minecraft:acacia_stairs
-    facing: north
+    facing: west
     half: top
   Acacia Wood, Facing East/West:
     name: minecraft:acacia_wood
     axis: x
+    facing: east
   Activator Rail (Flat North-South, Not Active):
     name: minecraft:activator_rail
+    facing: north
   Activator Rail (Flat West-East, Not Active):
     name: minecraft:activator_rail
+    facing: west
   Allium:
     name: minecraft:allium
   Andesite:
     name: minecraft:andesite
   Very Damaged Anvil (East/West):
     name: minecraft:anvil
+    facing: east
   Very Damaged Anvil (North/South):
     name: minecraft:anvil
+    facing: north
   Very Damaged Anvil (South/North):
     name: minecraft:anvil
+    facing: south
   Very Damaged Anvil (West/East):
     name: minecraft:anvil
+    facing: west
   Slightly Damaged Anvil (East/West):
     name: minecraft:anvil
+    facing: east
   Slightly Damaged Anvil (North/South):
     name: minecraft:anvil
+    facing: north
   Slightly Damaged Anvil (South/North):
     name: minecraft:anvil
+    facing: south
   Slightly Damaged Anvil (West/East):
     name: minecraft:anvil
+    facing: west
   Anvil (East/West):
     name: minecraft:anvil
     facing: east
@@ -153,31 +169,31 @@ blocks:
     name: minecraft:bedrock
   Birch Door (Lower, Facing East, Closed):
     name: minecraft:birch_door
-    facing: north
+    facing: east
     open: 'false'
   Birch Door (Lower, Facing East, Opened):
     name: minecraft:birch_door
-    facing: north
+    facing: east
     open: 'true'
   Birch Door (Lower, Facing North, Closed):
     name: minecraft:birch_door
-    facing: west
+    facing: north
     open: 'false'
   Birch Door (Lower, Facing North, Opened):
     name: minecraft:birch_door
-    facing: west
+    facing: north
     open: 'true'
   Birch Door (Lower, Facing South, Closed):
     name: minecraft:birch_door
-    facing: east
+    facing: south
     open: 'false'
   Birch Door (Lower, Facing South, Opened):
     name: minecraft:birch_door
-    facing: east
+    facing: south
     open: 'true'
   Birch Door (Lower, Facing West, Closed):
     name: minecraft:birch_door
-    facing: south
+    facing: west
     open: 'false'
   Birch Door (Upper, Hinge Left, Powered):
     name: minecraft:birch_door
@@ -199,12 +215,20 @@ blocks:
     name: minecraft:birch_fence
   Birch Fence Gate (Facing East, Closed):
     name: minecraft:birch_fence_gate
+    facing: east
+    open: 'false'
   Birch Fence Gate (Facing North, Closed):
     name: minecraft:birch_fence_gate
+    facing: north
+    open: 'false'
   Birch Fence Gate (Facing South, Closed):
     name: minecraft:birch_fence_gate
+    facing: south
+    open: 'false'
   Birch Fence Gate (Facing West, Closed):
     name: minecraft:birch_fence_gate
+    facing: west
+    open: 'false'
   Birch Leaves:
     name: minecraft:birch_leaves
   Birch Leaves (No Decay):
@@ -215,8 +239,10 @@ blocks:
     name: minecraft:birch_log
   Birch Wood (facing east/west):
     name: minecraft:birch_log
+    facing: east
   Birch Wood (facing north/south):
     name: minecraft:birch_log
+    facing: north
   Birch Wood (only bark):
     name: minecraft:birch_log
   Birch Wood Plank:
@@ -235,35 +261,35 @@ blocks:
   Birch Wood Stairs (East, Normal):
     name: minecraft:birch_stairs
     half: bottom
-    facing: north
+    facing: east
   Birch Wood Stairs (East, Upside-down):
     name: minecraft:birch_stairs
     half: top
-    facing: south
+    facing: east
   Birch Wood Stairs (North, Normal):
     name: minecraft:birch_stairs
     half: bottom
-    facing: east
+    facing: north
   Birch Wood Stairs (North, Upside-down):
     name: minecraft:birch_stairs
     half: top
-    facing: east
+    facing: north
   Birch Wood Stairs (South, Normal):
     name: minecraft:birch_stairs
     half: bottom
-    facing: west
+    facing: south
   Birch Wood Stairs (South, Upside-down):
     name: minecraft:birch_stairs
     half: top
-    facing: west
+    facing: south
   Birch Wood Stairs (West, Normal):
     name: minecraft:birch_stairs
     half: bottom
-    facing: south
+    facing: west
   Birch Wood Stairs (West, Upside-down):
     name: minecraft:birch_stairs
     half: top
-    facing: north
+    facing: west
   Black Carpet:
     name: minecraft:black_carpet
   Black Stained Glass:
@@ -288,8 +314,10 @@ blocks:
     name: minecraft:blue_wool
   Bone Block (Oriented east-west):
     name: minecraft:bone_block
+    facing: east
   Bone Block (Oriented north-south):
     name: minecraft:bone_block
+    facing: north
   Bone Block (Oriented vertically):
     name: minecraft:bone_block
   Bookshelf:
@@ -319,7 +347,7 @@ blocks:
   Brick Stairs (East, Normal):
     name: minecraft:brick_stairs
     half: bottom
-    facing: north
+    facing: east
   Brick Stairs (East, Upside-down):
     name: minecraft:brick_stairs
     half: top
@@ -327,7 +355,7 @@ blocks:
   Brick Stairs (North, Normal):
     name: minecraft:brick_stairs
     half: bottom
-    facing: east
+    facing: north
   Brick Stairs (North, Upside-down):
     name: minecraft:brick_stairs
     half: top
@@ -335,7 +363,7 @@ blocks:
   Brick Stairs (South, Normal):
     name: minecraft:brick_stairs
     half: bottom
-    facing: west
+    facing: south
   Brick Stairs (South, Upside-down):
     name: minecraft:brick_stairs
     half: top
@@ -343,7 +371,7 @@ blocks:
   Brick Stairs (West, Normal):
     name: minecraft:brick_stairs
     half: bottom
-    facing: south
+    facing: west
   Brick Stairs (West, Upside-down):
     name: minecraft:brick_stairs
     half: top
@@ -428,16 +456,16 @@ blocks:
     name: minecraft:chest
   Chest (East):
     name: minecraft:chest
-    facing: south
+    facing: east
   Chest (North):
     name: minecraft:chest
-    facing: east
+    facing: north
   Chest (South):
     name: minecraft:chest
-    facing: west
+    facing: south
   Chest (West):
     name: minecraft:chest
-    facing: north
+    facing: west
   Chiseled Quartz Block:
     name: minecraft:chiseled_quartz_block
   Chiseled Red Sandstone:
@@ -513,24 +541,33 @@ blocks:
     name: minecraft:cocoa
   Command block (facing east):
     name: minecraft:command_block
+    facing: east
   Command block (facing north):
     name: minecraft:command_block
+    facing: north
   Command block (facing south):
     name: minecraft:command_block
+    facing: south
   Command block (facing up):
     name: minecraft:command_block
   Command block (facing west):
     name: minecraft:command_block
+    facing: west
   Redstone Comparator (Facing East, Unset, Powered):
     name: minecraft:comparator
+    facing: east
   Redstone Comparator (Facing East, Unset, Unpowered ):
     name: minecraft:comparator
+    facing: east
   Redstone Comparator (Facing North, Unset, Unpowered ):
     name: minecraft:comparator
+    facing: north
   Redstone Comparator (Facing South, Unset, Unpowered ):
     name: minecraft:comparator
+    facing: south
   Redstone Comparator (Facing West, Substraction mode, Powered:
     name: minecraft:comparator
+    facing: west
   Cracked Stone Bricks:
     name: minecraft:cracked_stone_bricks
   Crafting Table:
@@ -549,35 +586,35 @@ blocks:
     name: minecraft:dandelion
   Dark Oak Door (Lower, Facing East, Closed):
     name: minecraft:dark_oak_door
-    facing: north
+    facing: east
     open: 'false'
   Dark Oak Door (Lower, Facing East, Opened):
     name: minecraft:dark_oak_door
-    facing: north
+    facing: east
     open: 'true'
   Dark Oak Door (Lower, Facing North, Closed):
     name: minecraft:dark_oak_door
-    facing: west
+    facing: north
     open: 'false'
   Dark Oak Door (Lower, Facing North, Opened):
     name: minecraft:dark_oak_door
-    facing: west
+    facing: north
     open: 'true'
   Dark Oak Door (Lower, Facing South, Closed):
     name: minecraft:dark_oak_door
-    facing: east
+    facing: south
     open: 'false'
   Dark Oak Door (Lower, Facing South, Opened):
     name: minecraft:dark_oak_door
-    facing: east
+    facing: south
     open: 'true'
   Dark Oak Door (Lower, Facing West, Closed):
     name: minecraft:dark_oak_door
-    facing: south
+    facing: west
     open: 'false'
   Dark Oak Door (Lower, Facing West, Opened):
     name: minecraft:dark_oak_door
-    facing: south
+    facing: west
     open: 'true'
   Dark Oak Door (Upper, Hinge Left, Powered):
     name: minecraft:dark_oak_door
@@ -599,20 +636,36 @@ blocks:
     name: minecraft:dark_oak_fence
   Dark Oak Fence Gate (Facing East, Closed):
     name: minecraft:dark_oak_fence_gate
+    facing: east
+    open: 'false'
   Dark Oak Fence Gate (Facing East, Opened):
     name: minecraft:dark_oak_fence_gate
+    facing: east
+    open: 'true'
   Dark Oak Fence Gate (Facing North, Closed):
     name: minecraft:dark_oak_fence_gate
+    facing: north
+    open: 'false'
   Dark Oak Fence Gate (Facing North, Opened):
     name: minecraft:dark_oak_fence_gate
+    facing: north
+    open: 'true'
   Dark Oak Fence Gate (Facing South, Closed):
     name: minecraft:dark_oak_fence_gate
+    facing: south
+    open: 'false'
   Dark Oak Fence Gate (Facing South, Opened):
     name: minecraft:dark_oak_fence_gate
+    facing: south
+    open: 'true'
   Dark Oak Fence Gate (Facing West, Closed):
     name: minecraft:dark_oak_fence_gate
+    facing: west
+    open: 'false'
   Dark Oak Fence Gate (Facing West, Opened):
     name: minecraft:dark_oak_fence_gate
+    facing: west
+    open: 'true'
   Dark Oak Leaves:
     name: minecraft:dark_oak_leaves
   Dark Oak Leaves (Check Decay and No Decay):
@@ -623,8 +676,10 @@ blocks:
     name: minecraft:dark_oak_log
   Dark Oak Wood, Facing East/West:
     name: minecraft:dark_oak_log
+    facing: east
   Dark Oak Wood, Facing North/South:
     name: minecraft:dark_oak_log
+    facing: north
   Dark Oak Wood (No Axis):
     name: minecraft:dark_oak_log
   Dark Oak Wood Plank:
@@ -649,35 +704,35 @@ blocks:
   Dark Oak Wood Stairs (East, Normal):
     name: minecraft:dark_oak_stairs
     half: bottom
-    facing: north
+    facing: east
   Dark Oak Wood Stairs (East, Upside-down):
     name: minecraft:dark_oak_stairs
     half: top
-    facing: south
+    facing: east
   Dark Oak Wood Stairs (North, Normal):
     name: minecraft:dark_oak_stairs
     half: bottom
-    facing: east
+    facing: north
   Dark Oak Wood Stairs (North, Upside-down):
     name: minecraft:dark_oak_stairs
     half: top
-    facing: east
+    facing: north
   Dark Oak Wood Stairs (South, Normal):
     name: minecraft:dark_oak_stairs
     half: bottom
-    facing: west
+    facing: south
   Dark Oak Wood Stairs (South, Upside-down):
     name: minecraft:dark_oak_stairs
     half: top
-    facing: west
+    facing: south
   Dark Oak Wood Stairs (West, Normal):
     name: minecraft:dark_oak_stairs
     half: bottom
-    facing: south
+    facing: west
   Dark Oak Wood Stairs (West, Upside-down):
     name: minecraft:dark_oak_stairs
     half: top
-    facing: north
+    facing: west
   Dark Prismarine:
     name: minecraft:dark_prismarine
   Daylight Sensor (Power level 0):
@@ -734,40 +789,54 @@ blocks:
     name: minecraft:dispenser
   Dispenser (Facing East, Unactive):
     name: minecraft:dispenser
+    facing: east
   Dispenser (Facing North, Activated):
     name: minecraft:dispenser
+    facing: north
   Dispenser (Facing South, Activated):
     name: minecraft:dispenser
+    facing: south
   Dispenser (Facing Up, Unactive):
     name: minecraft:dispenser
   Dispenser (Facing West, Activated):
     name: minecraft:dispenser
+    facing: west
   Dispenser (Facing West, Unactive):
     name: minecraft:dispenser
+    facing: west
   Dispenser (Facing North, Unactive):
     name: minecraft:dispenser
+    facing: north
   Dispenser (Facing South, Unactive):
     name: minecraft:dispenser
+    facing: south
   Dragon Egg:
     name: minecraft:dragon_egg
   Dropper (Facing Down, Unactive):
     name: minecraft:dropper
   Dropper (Facing East, Activated):
     name: minecraft:dropper
+    facing: east
   Dropper (Facing East, Unactive):
     name: minecraft:dropper
+    facing: east
   Dropper (Facing North, Activated):
     name: minecraft:dropper
+    facing: north
   Dropper (Facing North, Unactive):
     name: minecraft:dropper
+    facing: north
   Dropper (Facing Up, Unactive):
     name: minecraft:dropper
   Dropper (Facing West, Activated):
     name: minecraft:dropper
+    facing: west
   Dropper (Facing West, Unactive):
     name: minecraft:dropper
+    facing: west
   Dropper (Facing South, Unactive):
     name: minecraft:dropper
+    facing: south
   Emerald Block:
     name: minecraft:emerald_block
   Emerald Ore:
@@ -797,35 +866,35 @@ blocks:
     facing: down
   End Rod (Facing East):
     name: minecraft:end_rod
-    facing: south
+    facing: east
   End Rod (Facing North):
     name: minecraft:end_rod
-    facing: east
+    facing: north
   End Rod (Facing South):
     name: minecraft:end_rod
-    facing: west
+    facing: south
   End Rod (Facing Up):
     name: minecraft:end_rod
     facing: up
   End Rod (Facing West):
     name: minecraft:end_rod
-    facing: north
+    facing: west
   End Stone:
     name: minecraft:end_stone
   End Stone Bricks:
     name: minecraft:end_stone_bricks
   Ender Chest (Facing East):
     name: minecraft:ender_chest
-    facing: south
+    facing: east
   Ender Chest (Facing North):
     name: minecraft:ender_chest
-    facing: east
+    facing: north
   Ender Chest (Facing South):
     name: minecraft:ender_chest
-    facing: west
+    facing: south
   Ender Chest (Facing West):
     name: minecraft:ender_chest
-    facing: north
+    facing: west
   Farmland (Dry Land):
     name: minecraft:farmland
     moisture: '0'
@@ -959,31 +1028,31 @@ blocks:
     facing: down
   Hopper (Output Facing East, Disabled):
     name: minecraft:hopper
-    facing: south
+    facing: east
   Hopper (Output Facing North, Disabled):
     name: minecraft:hopper
-    facing: east
+    facing: north
   Hopper (Output Facing West, Disabled):
     name: minecraft:hopper
-    facing: north
+    facing: west
   Hopper (Output Facing Down, Activated):
     name: minecraft:hopper
     facing: down
   Hopper (Output Facing East, Activated):
     name: minecraft:hopper
-    facing: south
+    facing: east
   Hopper (Output Facing North, Activated):
     name: minecraft:hopper
-    facing: east
+    facing: north
   Hopper (Output Facing South, Activated):
     name: minecraft:hopper
-    facing: west
+    facing: south
   Hopper (Output Facing South, Disabled):
     name: minecraft:hopper
-    facing: west
+    facing: south
   Hopper (Output Facing West, Activated):
     name: minecraft:hopper
-    facing: north
+    facing: west
   Ice:
     name: minecraft:ice
   Chiseled Stone Brick Monster Egg:
@@ -1006,23 +1075,23 @@ blocks:
     name: minecraft:iron_block
   Iron Door (Lower, Facing East, Opened):
     name: minecraft:iron_door
-    facing: north
+    facing: east
     open: 'true'
   Iron Door (Lower, Facing North, Opened):
     name: minecraft:iron_door
-    facing: west
+    facing: north
     open: 'true'
   Iron Door (Lower, Facing South, Closed):
     name: minecraft:iron_door
-    facing: east
+    facing: south
     open: 'false'
   Iron Door (Lower, Facing South, Opened):
     name: minecraft:iron_door
-    facing: east
+    facing: south
     open: 'true'
   Iron Door (Lower, Facing West, Opened):
     name: minecraft:iron_door
-    facing: south
+    facing: west
     open: 'true'
   Iron Door (Upper, Hinge Left, Powered):
     name: minecraft:iron_door
@@ -1034,15 +1103,15 @@ blocks:
     open: 'false'
   Iron Door (Lower, Facing East, Closed):
     name: minecraft:iron_door
-    facing: north
+    facing: east
     open: 'false'
   Iron Door (Lower, Facing West, Closed):
     name: minecraft:iron_door
-    facing: south
+    facing: west
     open: 'false'
   Iron Door (Lower, Facing North, Closed):
     name: minecraft:iron_door
-    facing: west
+    facing: north
     open: 'false'
   Iron Door (Upper, Hinge Right, Unpowered):
     name: minecraft:iron_door
@@ -1061,7 +1130,8 @@ blocks:
     open: 'false'
   Iron Trapdoor (East from block, Closed, Top Half):
     name: minecraft:iron_trapdoor
-    facing: south
+    facing: west
+    half: top
     open: 'false'
   Iron Trapdoor (East from block, Open, Bottom half):
     name: minecraft:iron_trapdoor
@@ -1070,7 +1140,8 @@ blocks:
     open: 'true'
   Iron Trapdoor (East from block, Open, Top Half):
     name: minecraft:iron_trapdoor
-    facing: south
+    facing: west
+    half: top
     open: 'true'
   Iron Trapdoor (North from block, Closed, Bottom half):
     name: minecraft:iron_trapdoor
@@ -1081,6 +1152,7 @@ blocks:
     name: minecraft:iron_trapdoor
     facing: east
     open: 'false'
+    half: top
   Iron Trapdoor (North from block, Open, Bottom half):
     name: minecraft:iron_trapdoor
     facing: east
@@ -1090,6 +1162,7 @@ blocks:
     name: minecraft:iron_trapdoor
     facing: east
     open: 'true'
+    half: top
   Iron Trapdoor (South from block, Closed, Bottom half):
     name: minecraft:iron_trapdoor
     facing: south
@@ -1097,8 +1170,9 @@ blocks:
     open: 'false'
   Iron Trapdoor (South from block, Closed, Top Half):
     name: minecraft:iron_trapdoor
-    facing: west
+    facing: south
     open: 'false'
+    half: top
   Iron Trapdoor (South from block, Open, Bottom half):
     name: minecraft:iron_trapdoor
     facing: south
@@ -1106,67 +1180,76 @@ blocks:
     open: 'true'
   Iron Trapdoor (South from block, Open, Top Half):
     name: minecraft:iron_trapdoor
-    facing: west
+    facing: south
     open: 'true'
+    half: top
   Iron Trapdoor (West from block, Closed, Bottom half):
     name: minecraft:iron_trapdoor
     facing: north
+    half: bottom
     open: 'false'
   Iron Trapdoor (West from block, Closed, Top Half):
     name: minecraft:iron_trapdoor
     facing: north
+    half: top
     open: 'false'
   Iron Trapdoor (West from block, Open, Bottom half):
     name: minecraft:iron_trapdoor
     facing: north
+    half: bottom
     open: 'true'
   Iron Trapdoor (West from block, Open, Top Half):
     name: minecraft:iron_trapdoor
     facing: north
+    half: top
     open: 'true'
   Jack-o-Lantern (Facing East):
     name: minecraft:jack_o_lantern
+    facing: east
   Jack-o-Lantern (Facing North):
     name: minecraft:jack_o_lantern
+    facing: north
   Jack-o-Lantern (Facing South):
     name: minecraft:jack_o_lantern
+    facing: south
   Jack-o-Lantern (Facing West):
     name: minecraft:jack_o_lantern
+    facing: west
   Jukebox (Disc inside):
     name: minecraft:jukebox
   Jukebox:
     name: minecraft:jukebox
   Jungle Door (Lower, Facing East, Closed):
     name: minecraft:jungle_door
-    facing: north
+    facing: east
     open: 'false'
   Jungle Door (Lower, Facing East, Opened):
     name: minecraft:jungle_door
-    facing: north
+    facing: east
     open: 'true'
   Jungle Door (Lower, Facing North, Closed):
     name: minecraft:jungle_door
-    facing: west
+    facing: north
     open: 'false'
   Jungle Door (Lower, Facing North, Opened):
     name: minecraft:jungle_door
-    facing: west
+    facing: north
     open: 'true'
   Jungle Door (Lower, Facing South, Closed):
     name: minecraft:jungle_door
-    facing: east
+    facing: south
     open: 'false'
   Jungle Door (Lower, Facing South, Opened):
     name: minecraft:jungle_door
-    facing: east
+    facing: south
     open: 'true'
   Jungle Door (Lower, Facing West, Closed):
     name: minecraft:jungle_door
-    facing: south
+    facing: west
     open: 'false'
   Jungle Door (Lower, Facing West, Opened):
     name: minecraft:jungle_door
-    facing: south
+    facing: west
     open: 'true'
   Jungle Door (Upper, Hinge Left, Unpowered):
     name: minecraft:jungle_door
@@ -1180,16 +1263,28 @@ blocks:
     name: minecraft:jungle_fence
   Jungle Fence Gate (Facing East, Closed):
     name: minecraft:jungle_fence_gate
+    facing: east
+    open: 'false'
   Jungle Fence Gate (Facing East, Opened):
     name: minecraft:jungle_fence_gate
+    facing: east
+    open: 'true'
   Jungle Fence Gate (Facing North, Closed):
     name: minecraft:jungle_fence_gate
+    facing: north
+    open: 'false'
   Jungle Fence Gate (Facing South, Closed):
     name: minecraft:jungle_fence_gate
+    facing: south
+    open: 'false'
   Jungle Fence Gate (Facing West, Closed):
     name: minecraft:jungle_fence_gate
+    facing: west
+    open: 'false'
   Jungle Fence Gate (Facing West, Opened):
     name: minecraft:jungle_fence_gate
+    facing: west
+    open: 'true'
   Jungle Leaves:
     name: minecraft:jungle_leaves
   Jungle Leaves (Check Decay):
@@ -1211,55 +1306,57 @@ blocks:
   Jungle Wood Stairs (East, Normal):
     name: minecraft:jungle_stairs
     half: bottom
-    facing: north
+    facing: east
   Jungle Wood Stairs (East, Upside-down):
     name: minecraft:jungle_stairs
-    facing: south
+    facing: east
     half: top
   Jungle Wood Stairs (North, Normal):
     name: minecraft:jungle_stairs
     half: bottom
-    facing: east
+    facing: north
   Jungle Wood Stairs (North, Upside-down):
     name: minecraft:jungle_stairs
     half: top
-    facing: east
+    facing: north
   Jungle Wood Stairs (South, Normal):
     name: minecraft:jungle_stairs
     half: bottom
-    facing: west
+    facing: south
   Jungle Wood Stairs (South, Upside-down):
     name: minecraft:jungle_stairs
-    facing: west
+    facing: south
     half: top
   Jungle Wood Stairs (West, Normal):
     name: minecraft:jungle_stairs
     half: bottom
-    facing: south
+    facing: west
   Jungle Wood Stairs (West, Upside-down):
     name: minecraft:jungle_stairs
-    facing: north
+    facing: west
     half: top
   Jungle Wood (facing east/west):
     name: minecraft:jungle_wood
+    facing: east
   Jungle Wood (facing north/south):
     name: minecraft:jungle_wood
+    facing: north
   Jungle Wood (only bark):
     name: minecraft:jungle_wood
   Jungle Wood:
     name: minecraft:jungle_wood
   Ladder (facing east):
     name: minecraft:ladder
-    facing: south
+    facing: east
   Ladder (facing north):
     name: minecraft:ladder
-    facing: east
+    facing: north
   Ladder (facing south):
     name: minecraft:ladder
-    facing: west
+    facing: south
   Ladder (facing west):
     name: minecraft:ladder
-    facing: north
+    facing: west
   Lapis Lazuli Block:
     name: minecraft:lapis_block
   Lapis Lazuli Ore:
@@ -1286,12 +1383,16 @@ blocks:
     name: minecraft:lava
   Lever (On Block Side Facing East, Active):
     name: minecraft:lever
+    facing: east
   Lever (On Block Side Facing North, Active):
     name: minecraft:lever
+    facing: north
   Lever (On Block Side Facing South, Active):
     name: minecraft:lever
+    facing: south
   Lever (On Block Side Facing West, Active):
     name: minecraft:lever
+    facing: west
   Lever (On Block Top Points East When Off, Active):
     name: minecraft:lever
   Lever (On Block Bottom Points East When Off, Active):
@@ -1304,12 +1405,16 @@ blocks:
     name: minecraft:lever
   Lever (On Block Side Facing East, Not Active):
     name: minecraft:lever
+    facing: east
   Lever (On Block Side Facing North, Not Active):
     name: minecraft:lever
+    facing: north
   Lever (On Block Side Facing South, Not Active):
     name: minecraft:lever
+    facing: south
   Lever (On Block Side Facing West, Not Active):
     name: minecraft:lever
+    facing: west
   Lever (On Block Top Points East When Off, Not Active):
     name: minecraft:lever
   Lever (On Block Top Points South When Off, Active):
@@ -1401,7 +1506,7 @@ blocks:
   Nether Brick Stairs (East, Normal):
     name: minecraft:nether_brick_stairs
     half: bottom
-    facing: north
+    facing: east
   Nether Brick Stairs (East, Upside-down):
     name: minecraft:nether_brick_stairs
     facing: east
@@ -1409,7 +1514,7 @@ blocks:
   Nether Brick Stairs (North, Normal):
     name: minecraft:nether_brick_stairs
     half: bottom
-    facing: east
+    facing: north
   Nether Brick Stairs (North, Upside-down):
     name: minecraft:nether_brick_stairs
     half: top
@@ -1417,7 +1522,7 @@ blocks:
   Nether Brick Stairs (South, Normal):
     name: minecraft:nether_brick_stairs
     half: bottom
-    facing: west
+    facing: south
   Nether Brick Stairs (South, Upside-down):
     name: minecraft:nether_brick_stairs
     facing: south
@@ -1425,7 +1530,7 @@ blocks:
   Nether Brick Stairs (West, Normal):
     name: minecraft:nether_brick_stairs
     half: bottom
-    facing: south
+    facing: west
   Nether Brick Stairs (West, Upside-down):
     name: minecraft:nether_brick_stairs
     facing: west
@@ -1453,30 +1558,30 @@ blocks:
   Wooden Button (Facing East, Inactive):
     name: minecraft:oak_button
     face: wall
-    facing: west
+    facing: east
   Wooden Button (Facing North, Inactive):
     name: minecraft:oak_button
     face: wall
-    facing: south
+    facing: north
   Wooden Button (Facing South, Inactive):
     name: minecraft:oak_button
     face: wall
-    facing: north
+    facing: south
   Wooden Button (Facing West, Inactive):
     name: minecraft:oak_button
     face: wall
-    facing: east
+    facing: west
   Oak Door (Facing East, Opened):
     name: minecraft:oak_door
-    facing: north
+    facing: east
     open: 'true'
   Oak Door (Facing North, Opened):
     name: minecraft:oak_door
-    facing: west
+    facing: north
     open: 'true'
   Oak Door (Facing South, Opened):
     name: minecraft:oak_door
-    facing: east
+    facing: south
     open: 'true'
   Oak Door (Hinge Left, Powered, Upper):
     name: minecraft:oak_door
@@ -1492,35 +1597,35 @@ blocks:
     open: 'false'
   Oak Door (Facing East, Closed, Lower):
     name: minecraft:oak_door
-    facing: north
+    facing: east
     open: 'false'
   Oak Door (Facing East, Opened, Lower):
     name: minecraft:oak_door
-    facing: north
+    facing: east
     open: 'true'
   Oak Door (Facing North, Opened, Lower):
     name: minecraft:oak_door
-    facing: west
+    facing: north
     open: 'true'
   Oak Door (Facing South, Opened, Lower):
     name: minecraft:oak_door
-    facing: east
+    facing: south
     open: 'true'
   Oak Door (Facing West, Opened, Lower):
     name: minecraft:oak_door
-    facing: south
+    facing: west
     open: 'true'
   Oak Door (Facing North, Closed, Lower):
     name: minecraft:oak_door
-    facing: west
+    facing: north
     open: 'false'
   Oak Door (Facing South, Closed, Lower):
     name: minecraft:oak_door
-    facing: east
+    facing: south
     open: 'false'
   Oak Door (Facing West, Closed, Lower):
     name: minecraft:oak_door
-    facing: south
+    facing: west
     open: 'false'
   Oak Door (Hinge Left, Unpowered, Upper:
     name: minecraft:oak_door
@@ -1534,27 +1639,35 @@ blocks:
     name: minecraft:oak_fence
   Oak Fence Gate (Facing East, Opened):
     name: minecraft:oak_fence_gate
+    facing: east
+    open: 'true'
   Oak Fence Gate (Facing North, Opened):
     name: minecraft:oak_fence_gate
+    facing: north
+    open: 'true'
   Oak Fence Gate (Facing South, Opened):
     name: minecraft:oak_fence_gate
+    facing: south
+    open: 'true'
   Oak Fence Gate (Facing West, Opened):
     name: minecraft:oak_fence_gate
+    facing: west
+    open: 'true'
   Oak Fence Gate (Facing East, Closed):
     name: minecraft:oak_fence_gate
-    facing: west
+    facing: east
     open: 'false'
   Oak Fence Gate (Facing North, Closed):
     name: minecraft:oak_fence_gate
-    facing: south
+    facing: north
     open: 'false'
   Oak Fence Gate (Facing South, Closed):
     name: minecraft:oak_fence_gate
-    facing: north
+    facing: south
     open: 'false'
   Oak Fence Gate (Facing West, Closed):
     name: minecraft:oak_fence_gate
-    facing: east
+    facing: west
     open: 'false'
   Oak Leaves:
     name: minecraft:oak_leaves
@@ -1570,9 +1683,11 @@ blocks:
   Oak Wood (facing east/west):
     name: minecraft:oak_log
     axis: x
+    facing: east
   Oak Wood (facing north/south):
     name: minecraft:oak_log
     axis: z
+    facing: north
   Oak Wood Plank:
     name: minecraft:oak_planks
   Wooden Pressure Plate (Active):
@@ -1624,35 +1739,35 @@ blocks:
   Oak Wood Stairs (East, Normal):
     name: minecraft:oak_stairs
     half: bottom
-    facing: north
+    facing: east
   Oak Wood Stairs (East, Upside-down):
     name: minecraft:oak_stairs
     half: top
-    facing: south
+    facing: east
   Oak Wood Stairs (North, Normal):
     name: minecraft:oak_stairs
     half: bottom
-    facing: east
+    facing: north
   Oak Wood Stairs (North, Upside-down):
     name: minecraft:oak_stairs
     half: top
-    facing: east
+    facing: north
   Oak Wood Stairs (South, Normal):
     name: minecraft:oak_stairs
     half: bottom
-    facing: west
+    facing: south
   Oak Wood Stairs (South, Upside-down):
     name: minecraft:oak_stairs
     half: top
-    facing: west
+    facing: south
   Oak Wood Stairs (West, Normal):
     name: minecraft:oak_stairs
     half: bottom
-    facing: south
+    facing: west
   Oak Wood Stairs (West, Upside-down):
     name: minecraft:oak_stairs
     half: top
-    facing: north
+    facing: west
   Wooden Trapdoor (East from block, Closed, Bottom half):
     name: minecraft:oak_trapdoor
     facing: west
@@ -1660,8 +1775,8 @@ blocks:
     open: 'false'
   Wooden Trapdoor (East from block, Closed, Top Half):
     name: minecraft:oak_trapdoor
+    facing: west
     half: top
-    facing: south
     open: 'false'
   Wooden Trapdoor (East from block, Open, Bottom half):
     name: minecraft:oak_trapdoor
@@ -1670,8 +1785,8 @@ blocks:
     open: 'true'
   Wooden Trapdoor (East from block, Open, Top Half):
     name: minecraft:oak_trapdoor
+    facing: west
     half: top
-    facing: south
     open: 'true'
   Wooden Trapdoor (North from block, Closed, Bottom half):
     name: minecraft:oak_trapdoor
@@ -1680,8 +1795,8 @@ blocks:
     open: 'false'
   Wooden Trapdoor (North from block, Closed, Top Half):
     name: minecraft:oak_trapdoor
-    half: top
     facing: east
+    half: top
     open: 'false'
   Wooden Trapdoor (North from block, Open, Bottom half):
     name: minecraft:oak_trapdoor
@@ -1690,8 +1805,8 @@ blocks:
     open: 'true'
   Wooden Trapdoor (North from block, Open, Top Half):
     name: minecraft:oak_trapdoor
-    half: top
     facing: east
+    half: top
     open: 'true'
   Wooden Trapdoor (South from block, Closed, Bottom half):
     name: minecraft:oak_trapdoor
@@ -1701,7 +1816,7 @@ blocks:
   Wooden Trapdoor (South from block, Closed, Top Half):
     name: minecraft:oak_trapdoor
     half: top
-    facing: west
+    facing: south
     open: 'false'
   Wooden Trapdoor (South from block, Open, Bottom half):
     name: minecraft:oak_trapdoor
@@ -1711,7 +1826,7 @@ blocks:
   Wooden Trapdoor (South from block, Open, Top Half):
     name: minecraft:oak_trapdoor
     half: top
-    facing: west
+    facing: south
     open: 'true'
   Wooden Trapdoor (West from block, Closed, Bottom half):
     name: minecraft:oak_trapdoor
@@ -1784,52 +1899,68 @@ blocks:
     name: minecraft:pink_wool
   Piston (Facing east, Not Extended):
     name: minecraft:piston
+    facing: east
   Piston (Facing west, Not Extended):
     name: minecraft:piston
+    facing: west
   Piston (Facing down, Extended):
     name: minecraft:piston
   Piston (Facing down, Not Extended):
     name: minecraft:piston
   Piston (Facing east, Extended):
     name: minecraft:piston
+    facing: east
   Piston (Facing north, Extended):
     name: minecraft:piston
+    facing: north
   Piston (Facing north, Not Extended):
     name: minecraft:piston
+    facing: north
   Piston (Facing south, Extended):
     name: minecraft:piston
+    facing: south
   Piston (Facing south, Not Extended):
     name: minecraft:piston
+    facing: south
   Piston (Facing up, Extended):
     name: minecraft:piston
   Piston (Facing up, Not Extended):
     name: minecraft:piston
   Piston (Facing west, Extended):
     name: minecraft:piston
+    facing: west
   Piston Head (Facing down, Extended):
     name: minecraft:piston_head
   Piston Head (Facing down, Not Extended):
     name: minecraft:piston_head
   Piston Head (Facing east, Extended):
     name: minecraft:piston_head
+    facing: east
   Piston Head (Facing east, Not Extended):
     name: minecraft:piston_head
+    facing: east
   Piston Head (Facing north, Extended):
     name: minecraft:piston_head
+    facing: north
   Piston Head (Facing north, Not Extended):
     name: minecraft:piston_head
+    facing: north
   Piston Head (Facing south, Extended):
     name: minecraft:piston_head
+    facing: south
   Piston Head (Facing south, Not Extended):
     name: minecraft:piston_head
+    facing: south
   Piston Head (Facing up, Extended):
     name: minecraft:piston_head
   Piston Head (Facing up, Not Extended):
     name: minecraft:piston_head
   Piston Head (Facing west, Extended):
     name: minecraft:piston_head
+    facing: west
   Piston Head (Facing west, Not Extended):
     name: minecraft:piston_head
+    facing: west
   Piston (6-sided piston2, Extended):
     name: minecraft:piston_head
   Piston Extension (Facing up, Extended):
@@ -1842,12 +1973,16 @@ blocks:
     name: minecraft:player_head
   Mob Head (On a Wall Facing East):
     name: minecraft:player_head
+    facing: east
   Mob Head (On a Wall Facing North):
     name: minecraft:player_head
+    facing: north
   Mob Head (On a Wall Facing South):
     name: minecraft:player_head
+    facing: south
   Mob Head (On a Wall Facing West):
     name: minecraft:player_head
+    facing: west
   Mob Head (On The Floor):
     name: minecraft:player_head
   Podzol:
@@ -1918,12 +2053,16 @@ blocks:
     name: minecraft:prismarine_bricks
   Pumpkin (Facing North):
     name: minecraft:pumpkin
+    facing: north
   Pumpkin (Facing West):
     name: minecraft:pumpkin
+    facing: west
   Pumpkin (Facing East):
     name: minecraft:pumpkin
+    facing: east
   Pumpkin (Facing South):
     name: minecraft:pumpkin
+    facing: south
   Pumpkin Stem (Seventh Stage of Growth):
     name: minecraft:pumpkin_stem
   Purple Carpet:
@@ -1947,15 +2086,15 @@ blocks:
   Purpur Stairs (East, Normal):
     name: minecraft:purpur_stairs
     half: bottom
-    facing: north
+    facing: east
   Purpur Stairs (South, Normal):
     name: minecraft:purpur_stairs
     half: bottom
-    facing: west
+    facing: south
   Purpur Stairs (West, Normal):
     name: minecraft:purpur_stairs
     half: bottom
-    facing: south
+    facing: west
   Quartz Block:
     name: minecraft:quartz_block
   Pillar Quartz Block:
@@ -1976,7 +2115,7 @@ blocks:
   Quartz Stairs (East, Normal):
     name: minecraft:quartz_stairs
     half: bottom
-    facing: north
+    facing: east
   Quartz Stairs (East, Upside-down):
     name: minecraft:quartz_stairs
     half: top
@@ -1984,7 +2123,7 @@ blocks:
   Quartz Stairs (North, Normal):
     name: minecraft:quartz_stairs
     half: bottom
-    facing: east
+    facing: north
   Quartz Stairs (North, Upside-down):
     name: minecraft:quartz_stairs
     half: top
@@ -1992,7 +2131,7 @@ blocks:
   Quartz Stairs (South, Normal):
     name: minecraft:quartz_stairs
     half: bottom
-    facing: west
+    facing: south
   Quartz Stairs (South, Upside-down):
     name: minecraft:quartz_stairs
     half: top
@@ -2000,7 +2139,7 @@ blocks:
   Quartz Stairs (West, Normal):
     name: minecraft:quartz_stairs
     half: bottom
-    facing: south
+    facing: west
   Quartz Stairs (West, Upside-down):
     name: minecraft:quartz_stairs
     half: top
@@ -2070,7 +2209,7 @@ blocks:
   Red Sandstone Stairs (East, Normal):
     name: minecraft:red_sandstone_stairs
     half: bottom
-    facing: north
+    facing: east
   Red Sandstone Stairs (East, Upside-down):
     name: minecraft:red_sandstone_stairs
     facing: east
@@ -2078,7 +2217,7 @@ blocks:
   Red Sandstone Stairs (North, Normal):
     name: minecraft:red_sandstone_stairs
     half: bottom
-    facing: east
+    facing: north
   Red Sandstone Stairs (North, Upside-down):
     name: minecraft:red_sandstone_stairs
     half: top
@@ -2086,7 +2225,7 @@ blocks:
   Red Sandstone Stairs (South, Normal):
     name: minecraft:red_sandstone_stairs
     half: bottom
-    facing: west
+    facing: south
   Red Sandstone Stairs (South, Upside-down):
     name: minecraft:red_sandstone_stairs
     facing: south
@@ -2094,7 +2233,7 @@ blocks:
   Red Sandstone Stairs (West, Normal):
     name: minecraft:red_sandstone_stairs
     half: bottom
-    facing: south
+    facing: west
   Red Sandstone Stairs (West, Upside-down):
     name: minecraft:red_sandstone_stairs
     facing: west
@@ -2119,26 +2258,34 @@ blocks:
     name: minecraft:redstone_ore
   Redstone Torch (off) (Facing East):
     name: minecraft:redstone_torch
+    facing: east
   Redstone Torch (off) (Facing North):
     name: minecraft:redstone_torch
+    facing: north
   Redstone Torch (off) (Facing South):
     name: minecraft:redstone_torch
+    facing: south
   Redstone Torch (off) (Facing Up):
     name: minecraft:redstone_torch
   Redstone Torch (off) (Facing West):
     name: minecraft:redstone_torch
+    facing: west
   Redstone Torch (on) ():
     name: minecraft:redstone_torch
   Redstone Torch (on) (Facing East):
     name: minecraft:redstone_torch
+    facing: east
   Redstone Torch (on) (Facing North):
     name: minecraft:redstone_torch
+    facing: north
   Redstone Torch (on) (Facing South):
     name: minecraft:redstone_torch
+    facing: south
   Redstone Torch (on) (Facing Up):
     name: minecraft:redstone_torch
   Redstone Torch (on) (Facing West):
     name: minecraft:redstone_torch
+    facing: west
   Redstone Wire (Power:0):
     name: minecraft:redstone_wire
   Redstone Wire (Power:10):
@@ -2173,64 +2320,94 @@ blocks:
     name: minecraft:redstone_wire
   Redstone Repeater Block (off) (Facing East, Delay of 1 tick):
     name: minecraft:repeater
+    facing: east
   Redstone Repeater Block (off) (Facing East, Delay of 2 ticks:
     name: minecraft:repeater
+    facing: east
   Redstone Repeater Block (off) (Facing East, Delay of 3 ticks:
     name: minecraft:repeater
+    facing: east
   Redstone Repeater Block (off) (Facing East, Delay of 4 ticks:
     name: minecraft:repeater
+    facing: east
   Redstone Repeater Block (off) (Facing North, Delay of 1 tick:
     name: minecraft:repeater
+    facing: north
   Redstone Repeater Block (off) (Facing North, Delay of 2 tick:
     name: minecraft:repeater
+    facing: north
   Redstone Repeater Block (off) (Facing North, Delay of 3 tick:
     name: minecraft:repeater
+    facing: north
   Redstone Repeater Block (off) (Facing North, Delay of 4 tick:
     name: minecraft:repeater
+    facing: north
   Redstone Repeater Block (off) (Facing South, Delay of 1 tick:
     name: minecraft:repeater
+    facing: south
   Redstone Repeater Block (off) (Facing South, Delay of 2 tick:
     name: minecraft:repeater
+    facing: south
   Redstone Repeater Block (off) (Facing South, Delay of 3 tick:
     name: minecraft:repeater
+    facing: south
   Redstone Repeater Block (off) (Facing South, Delay of 4 tick:
     name: minecraft:repeater
+    facing: south
   Redstone Repeater Block (off) (Facing West, Delay of 1 tick):
     name: minecraft:repeater
+    facing: west
   Redstone Repeater Block (off) (Facing West, Delay of 2 ticks:
     name: minecraft:repeater
+    facing: west
   Redstone Repeater Block (off) (Facing West, Delay of 3 ticks:
     name: minecraft:repeater
+    facing: west
   Redstone Repeater Block (off) (Facing West, Delay of 4 ticks:
     name: minecraft:repeater
+    facing: west
   Redstone Repeater Block (on) (Facing East, Delay of 1 tick):
     name: minecraft:repeater
+    facing: east
   Redstone Repeater Block (on) (Facing East, Delay of 3 ticks):
     name: minecraft:repeater
+    facing: east
   Redstone Repeater Block (on) (Facing East, Delay of 4 ticks):
     name: minecraft:repeater
+    facing: east
   Redstone Repeater Block (on) (Facing North, Delay of 1 tick):
     name: minecraft:repeater
+    facing: north
   Redstone Repeater Block (on) (Facing North, Delay of 2 ticks:
     name: minecraft:repeater
+    facing: north
   Redstone Repeater Block (on) (Facing North, Delay of 3 ticks:
     name: minecraft:repeater
+    facing: north
   Redstone Repeater Block (on) (Facing North, Delay of 4 ticks:
     name: minecraft:repeater
+    facing: north
   Redstone Repeater Block (on) (Facing South, Delay of 1 tick):
     name: minecraft:repeater
+    facing: south
   Redstone Repeater Block (on) (Facing South, Delay of 3 ticks:
     name: minecraft:repeater
+    facing: south
   Redstone Repeater Block (on) (Facing South, Delay of 4 ticks:
     name: minecraft:repeater
+    facing: south
   Redstone Repeater Block (on) (Facing West, Delay of 1 tick):
     name: minecraft:repeater
+    facing: west
   Redstone Repeater Block (on) (Facing West, Delay of 2 ticks):
     name: minecraft:repeater
+    facing: west
   Redstone Repeater Block (on) (Facing West, Delay of 3 ticks):
     name: minecraft:repeater
+    facing: west
   Redstone Repeater Block (on) (Facing West, Delay of 4 ticks):
     name: minecraft:repeater
+    facing: west
   Flower (Rose Bush, Lower):
     name: minecraft:rose_bush
   Sand:
@@ -2249,7 +2426,7 @@ blocks:
   Sandstone Stairs (East, Normal):
     name: minecraft:sandstone_stairs
     half: bottom
-    facing: north
+    facing: east
   Sandstone Stairs (East, Upside-down):
     name: minecraft:sandstone_stairs
     half: top
@@ -2257,7 +2434,7 @@ blocks:
   Sandstone Stairs (North, Normal):
     name: minecraft:sandstone_stairs
     half: bottom
-    facing: east
+    facing: north
   Sandstone Stairs (North, Upside-down):
     name: minecraft:sandstone_stairs
     half: top
@@ -2265,7 +2442,7 @@ blocks:
   Sandstone Stairs (South, Normal):
     name: minecraft:sandstone_stairs
     half: bottom
-    facing: west
+    facing: south
   Sandstone Stairs (South, Upside-down):
     name: minecraft:sandstone_stairs
     half: top
@@ -2273,7 +2450,7 @@ blocks:
   Sandstone Stairs (West, Normal):
     name: minecraft:sandstone_stairs
     half: bottom
-    facing: south
+    facing: west
   Sandstone Stairs (West, Upside-down):
     name: minecraft:sandstone_stairs
     half: top
@@ -2331,56 +2508,74 @@ blocks:
     open: 'false'
   Spruce Foor (Lower, Facing East, Closed):
     name: minecraft:spruce_door
-    facing: south
+    facing: east
     open: 'false'
   Spruce Foor (Lower, Facing East, Opened):
     name: minecraft:spruce_door
-    facing: south
+    facing: east
     open: 'true'
   Spruce Foor (Lower, Facing North, Closed):
     name: minecraft:spruce_door
-    facing: east
+    facing: north
     open: 'false'
   Spruce Foor (Lower, Facing North, Opened):
     name: minecraft:spruce_door
-    facing: east
+    facing: north
     open: 'true'
   Spruce Foor (Lower, Facing South, Closed):
     name: minecraft:spruce_door
-    facing: west
+    facing: south
     open: 'false'
   Spruce Foor (Lower, Facing South, Opened):
     name: minecraft:spruce_door
-    facing: west
+    facing: south
     open: 'true'
   Spruce Foor (Lower, Facing West, Closed):
     name: minecraft:spruce_door
-    facing: north
+    facing: west
     open: 'false'
   Spruce Foor (Lower, Facing West, Opened):
     name: minecraft:spruce_door
-    facing: north
+    facing: west
     open: 'true'
   Spruce Fence:
     name: minecraft:spruce_fence
   Spruce Fence Gate (Facing East, Closed):
     name: minecraft:spruce_fence_gate
+    facing: east
+    open: 'false'
   Spruce Fence Gate (Facing East, Opened):
     name: minecraft:spruce_fence_gate
+    facing: east
+    open: 'true'
   Spruce Fence Gate (Facing North, Closed):
     name: minecraft:spruce_fence_gate
+    facing: north
+    open: 'false'
   Spruce Fence Gate (Facing North, Opened):
     name: minecraft:spruce_fence_gate
+    facing: north
+    open: 'true'
   Spruce Fence Gate (Facing South, Closed):
     name: minecraft:spruce_fence_gate
+    facing: south
+    open: 'false'
   Spruce Fence Gate (Facing South, Opened):
     name: minecraft:spruce_fence_gate
+    facing: south
+    open: 'true'
   Spruce Fence Gate (Facing West, Closed):
     name: minecraft:spruce_fence_gate
+    facing: west
+    open: 'false'
   Spruce Fence Gate (Facing West, Opened):
     name: minecraft:spruce_fence_gate
+    facing: west
+    open: 'true'
   Spruce Fence Gate (In Wall, Facing North, Opened):
     name: minecraft:spruce_fence_gate
+    facing: north
+    open: 'true'
   Spruce Leaves:
     name: minecraft:spruce_leaves
   Spruce Leaves (No Decay):
@@ -2403,41 +2598,43 @@ blocks:
   Spruce Wood Stairs (East, Normal):
     name: minecraft:spruce_stairs
     half: bottom
-    facing: north
+    facing: east
   Spruce Wood Stairs (East, Upside-down):
     name: minecraft:spruce_stairs
     half: top
-    facing: south
+    facing: east
   Spruce Wood Stairs (North, Normal):
     name: minecraft:spruce_stairs
     half: bottom
-    facing: east
+    facing: north
   Spruce Wood Stairs (North, Upside-down):
     name: minecraft:spruce_stairs
     half: top
-    facing: east
+    facing: north
   Spruce Wood Stairs (South, Normal):
     name: minecraft:spruce_stairs
     half: bottom
-    facing: west
+    facing: south
   Spruce Wood Stairs (South, Upside-down):
     name: minecraft:spruce_stairs
     half: top
-    facing: west
+    facing: south
   Spruce Wood Stairs (West, Normal):
     name: minecraft:spruce_stairs
     half: bottom
-    facing: south
+    facing: west
   Spruce Wood Stairs (West, Upside-down):
     name: minecraft:spruce_stairs
     half: top
-    facing: north
+    facing: west
   Spruce Wood:
     name: minecraft:spruce_wood
   'Spruce wood (facing east/west) ':
     name: minecraft:spruce_wood
+    facing: east
   Spruce Wood (facing north/south):
     name: minecraft:spruce_wood
+    facing: north
   Spruce Wood (only bark):
     name: minecraft:spruce_wood
   Sticky Piston (Facing down, Extended):
@@ -2446,24 +2643,32 @@ blocks:
     name: minecraft:sticky_piston
   Sticky Piston (Facing east, Extended):
     name: minecraft:sticky_piston
+    facing: east
   Sticky Piston (Facing east, Not Extended):
     name: minecraft:sticky_piston
+    facing: east
   Sticky Piston (Facing north, Extended):
     name: minecraft:sticky_piston
+    facing: north
   Sticky Piston (Facing north, Not Extended):
     name: minecraft:sticky_piston
+    facing: north
   Sticky Piston (Facing south, Extended):
     name: minecraft:sticky_piston
+    facing: south
   Sticky Piston (Facing south, Not Extended):
     name: minecraft:sticky_piston
+    facing: south
   Sticky Piston (Facing up, Extended):
     name: minecraft:sticky_piston
   Sticky Piston (Facing up, Not Extended):
     name: minecraft:sticky_piston
   Sticky Piston (Facing west, Extended):
     name: minecraft:sticky_piston
+    facing: west
   Sticky Piston (Facing west, Not Extended):
     name: minecraft:sticky_piston
+    facing: west
   Stone:
     name: minecraft:stone
   Stone Brick Slab (Upper):
@@ -2478,7 +2683,7 @@ blocks:
   Stone Brick Stairs (East):
     name: minecraft:stone_brick_stairs
     half: bottom
-    facing: south
+    facing: east
   Stone Brick Stairs (East, Upside-down):
     name: minecraft:stone_brick_stairs
     half: top
@@ -2486,7 +2691,7 @@ blocks:
   Stone Brick Stairs (North, Normal):
     name: minecraft:stone_brick_stairs
     half: bottom
-    facing: east
+    facing: north
   Stone Brick Stairs (North, Upside-down):
     name: minecraft:stone_brick_stairs
     half: top
@@ -2494,7 +2699,7 @@ blocks:
   Stone Brick Stairs (South, Normal):
     name: minecraft:stone_brick_stairs
     half: bottom
-    facing: west
+    facing: south
   Stone Brick Stairs (South, Upside-down):
     name: minecraft:stone_brick_stairs
     half: top
@@ -2502,7 +2707,7 @@ blocks:
   Stone Brick Stairs (West):
     name: minecraft:stone_brick_stairs
     half: bottom
-    facing: north
+    facing: west
   Stone Brick Stairs (West, Upside-down):
     name: minecraft:stone_brick_stairs
     half: top
@@ -2521,19 +2726,19 @@ blocks:
   Stone Button (Facing East, Inactive):
     name: minecraft:stone_button
     face: wall
-    facing: south
+    facing: east
   Stone Button (Facing North, Inactive):
     name: minecraft:stone_button
     face: wall
-    facing: east
+    facing: north
   Stone Button (Facing South, Inactive):
     name: minecraft:stone_button
     face: wall
-    facing: west
+    facing: south
   Stone Button (Facing West, Inactive):
     name: minecraft:stone_button
     face: wall
-    facing: north
+    facing: west
   Stone Pressure Plate (Active):
     name: minecraft:stone_pressure_plate
   Stone Pressure Plate (Unactive):
@@ -2593,31 +2798,31 @@ blocks:
     name: minecraft:tnt
   Torch (Facing East):
     name: minecraft:torch
-    facing: south
+    facing: east
   Torch (Facing North):
     name: minecraft:torch
-    facing: west
+    facing: north
   Torch (Facing South):
     name: minecraft:torch
-    facing: east
+    facing: south
   Torch (Facing Up):
     name: minecraft:torch
     facing: north
   Torch (Facing West):
     name: minecraft:torch
-    facing: south
+    facing: west
   Trapped Chest (Facing East):
     name: minecraft:trapped_chest
-    facing: south
+    facing: east
   Trapped Chest (Facing North):
     name: minecraft:trapped_chest
-    facing: east
+    facing: north
   Trapped Chest (Facing South):
     name: minecraft:trapped_chest
-    facing: west
+    facing: south
   Trapped Chest (Facing West):
     name: minecraft:trapped_chest
-    facing: north
+    facing: west
   Tripwire (Unactive, In the Air, Attached to a Circuit, Armed:
     name: minecraft:tripwire
   Tripwire (Unactive, In the Air, Unattached, Armed):
@@ -2626,18 +2831,24 @@ blocks:
     name: minecraft:tripwire
   Tripwire Hook (Facing East):
     name: minecraft:tripwire_hook
+    facing: east
   Tripwire Hook (Facing West):
     name: minecraft:tripwire_hook
+    facing: west
   Tripwire Hook:
     name: minecraft:tripwire_hook
   Tripwire hook (Facing East, Ready, Middle Pos):
     name: minecraft:tripwire_hook
+    facing: east
   Tripwire Hook (Facing North):
     name: minecraft:tripwire_hook
+    facing: north
   Tripwire Hook (Facing North, Ready, Middle Pos):
     name: minecraft:tripwire_hook
+    facing: north
   Tripwire Hook (Facing West, Ready, Middle Pos):
     name: minecraft:tripwire_hook
+    facing: west
   Tripwire Hook (Ready, Middle Pos):
     name: minecraft:tripwire_hook
   Vines ():
