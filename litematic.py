@@ -15,7 +15,11 @@ def grabcraft2region(definition: GenericDefinition) -> Region:
             if prop in info:
                 extended_props[prop] = info[prop]
 
-        block_state = BlockState(info['name'], **extended_props)
-        region.setblock(coordinate.x - 1, coordinate.y - 1, coordinate.z - 1, block_state)
+        try:
+            block_state = BlockState(info['name'], **extended_props)
+            region.setblock(coordinate.x - 1, coordinate.y - 1, coordinate.z - 1, block_state)
+        except Exception as e:
+            print(e)
+            raise e
     
     return region
