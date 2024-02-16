@@ -1,23 +1,37 @@
-# Grabcraft 2 Litematic
+![Grabcraft 2 Litematic logo](./web/static/img/logo.webp)
 
 This script allows to convert a GrabCraft online blueprint into a .litematic file.
 This is done by scraping the GrabCraft's blueprint's page, extracting the information blocks data, converting the type (via blockmap.csv downloaded from the grabcraft2litematic mod's GitHub page) and writing them in a litematic file.
 
 ## Known limitations
 
-GrabCraft does not expose other information than the block, so facing, states and so on so forth are not included.
+GrabCraft does not expose other information than the block's name, so facing, states and so on so forth are not (directly) included.
 
-Most of the static blueprints should not have problems, while the most advanced machineries that require precise facing might suffer the most (if hosted on GrabCraft at all).
+The library attempts to recreate the missing information, and thus the general usage of the tool should be just fine. In case of errors, please open an issue!
 
 ## Usage
 
-Install the requirements (using pipenv) and either run the g2l_cmd.py command line application, or run srv.py via uvicorn
+The most simple way to use the tool is visiting the free web application [official instance](https://grabcraft2litematic.giacomofurlan.name/)!
 
-### pipenv run python g2l_cmd.py
+## Local installation
 
-Options:
+If you don't want to use the hosted service, you can still use the tool either via command line (g2l_cmd.py), or via web app (srv.py via uvicorn).
+
+### Install the dependencies
+
+Install `pipenv` and run `pipenv install`
+
+### CLI
+
+`pipenv run python g2l_cmd.py`
+
+CLI options:
 
     --url, -u: GrabCraft model URL (if not specified, it will be prompted)
     --output-file-name, -o: custom output file name (default: {design's name}.litematic)
 
 **Note**: in case the output file already exists, it will be prompted if you want to override it; if not, the application will exit without saving.
+
+### Web app
+
+`pipenv run uvicorn srv:app`
