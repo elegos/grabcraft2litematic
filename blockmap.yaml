@@ -2943,27 +2943,35 @@ blocks:
     age: '0'
   Bed (North, Empty, Foot of the bed):
     name: minecraft:white_bed
+    facing: north
     part: foot
   Bed (North, Empty, Head of the bed):
     name: minecraft:white_bed
+    facing: north
     part: head
   Bed (South, Empty, Foot of the bed):
     name: minecraft:white_bed
+    facing: south
     part: foot
   Bed (South, Empty, Head of the bed):
     name: minecraft:white_bed
+    facing: south
     part: head
   Bed (East, Empty, Foot of the bed):
     name: minecraft:white_bed
+    facing: east
     part: foot
   Bed (East, Empty, Head of the bed):
     name: minecraft:white_bed
+    facing: east
     part: head
   Bed (West, Empty, Foot of the bed):
     name: minecraft:white_bed
+    facing: west
     part: foot
   Bed (West, Empty, Head of the bed):
     name: minecraft:white_bed
+    facing: west
     part: head
   White Carpet:
     name: minecraft:white_carpet
