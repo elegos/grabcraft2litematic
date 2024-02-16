@@ -13,6 +13,7 @@ class BlockCheck:
     type: str = field(default=None)
     open: str = field(default=None)
     hinge: str = field(default=None)
+    shape: str = field(default=None)
 
 
 def assert_block_state(bp_url: str, elements: list[BlockCheck]):
@@ -23,6 +24,7 @@ def assert_block_state(bp_url: str, elements: list[BlockCheck]):
         assert definition.blocks[Coordinates(*elem.coordinates)].get('facing') == elem.facing
         assert definition.blocks[Coordinates(*elem.coordinates)].get('half') == elem.half
         assert definition.blocks[Coordinates(*elem.coordinates)].get('type') == elem.type
+        assert definition.blocks[Coordinates(*elem.coordinates)].get('shape') == elem.shape
 
 
 # Example of ↑ West, → North, ↓ East, ← South blueprint
@@ -46,8 +48,11 @@ def test_wnes_large_medieval_town_house_1():
             BlockCheck((2, 16, 5), 'minecraft:stone_brick_stairs', 'west', 'bottom'),
             BlockCheck((4, 7, 3), 'minecraft:stone_brick_stairs', 'south', 'top'),
             BlockCheck((6, 4, 5), 'minecraft:stone_brick_stairs', 'east', 'top'),
-            BlockCheck((6, 5, 4), 'minecraft:spruce_stairs', 'north', 'top'),
+            BlockCheck((6, 5, 4), 'minecraft:spruce_stairs', 'north', 'top', shape='inner_left'),
             BlockCheck((6, 5, 5), 'minecraft:spruce_stairs', 'west', 'top'),
+            BlockCheck((8, 15, 4), 'minecraft:birch_stairs', 'north', 'bottom', shape='inner_right'),
+            BlockCheck((15, 6, 5), 'minecraft:oak_stairs', 'north', 'top', shape='outer_left'),
+            BlockCheck((15, 14, 13), 'minecraft:oak_stairs', 'east', 'top', shape='outer_right'),
         ]
     )
 

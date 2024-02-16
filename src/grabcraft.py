@@ -242,6 +242,47 @@ def fix_double_chests(coord: Coordinates, block: dict, blocks: dict[Coordinates,
         block['type'] = 'left'
 
 
+def fix_adiacent_stairs(coord: Coordinates, block: dict, blocks: dict[Coordinates, dict]):
+    if 'stairs' not in block['name']:
+        return
+
+    stair_blocks = {k: b for k, b in blocks.items() if 'stairs' in b['name']}
+
+    adiacent_blocks = {
+        'north': stair_blocks.get(Coordinates(x=coord.x, y=coord.y, z=coord.z - 1)),
+        'east': stair_blocks.get(Coordinates(x=coord.x + 1, y=coord.y, z=coord.z)),
+        'south': stair_blocks.get(Coordinates(x=coord.x, y=coord.y, z=coord.z + 1)),
+        'west': stair_blocks.get(Coordinates(x=coord.x - 1, y=coord.y, z=coord.z)),
+    }
+
+    # no adiacent block is a stair
+    if len(list(filter(lambda x: x is None, adiacent_blocks.values()))) == 4:
+        return
+
+    cardinals = ['north', 'east', 'south', 'west']
+
+    facing = block.get('facing')
+    cardinal_index = cardinals.index(facing)
+    angled_faces = [cardinals[(cardinal_index + 1) % 4], cardinals[(cardinal_index + 3) % 4]]
+    half = block.get('half', 'bottom')
+
+    ahead = adiacent_blocks[facing]
+    behind = adiacent_blocks[cardinals[(cardinal_index - 2) % 4]]
+
+    if ahead and ahead['facing'] in angled_faces:
+        if ahead.get('half', 'bottom') == half:
+            if ahead['facing'] == angled_faces[0]:
+                block['shape'] = 'outer_right'
+            else:
+                block['shape'] = 'outer_left'
+    elif behind and behind['facing'] in angled_faces:
+        if behind.get('half', 'bottom') == half:
+            if behind['facing'] == angled_faces[0]:
+                block['shape'] = 'inner_right'
+            else:
+                block['shape'] = 'inner_left'
+
+
 def get_definition(url: str):
     grab_def = download_definition(url)
     raw_blocks = get_grabcraft_blocks(grab_def.blocks_data)
@@ -257,5 +298,6 @@ def get_definition(url: str):
     for coord, block in blocks.items():
         fix_door_facing(coord, block, blocks)
         fix_double_chests(coord, block, blocks)
+        fix_adiacent_stairs(coord, block, blocks)
 
     return GenericDefinition(title=grab_def.title, author=grab_def.author, blocks=blocks)
