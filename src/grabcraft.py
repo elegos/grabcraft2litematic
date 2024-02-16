@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 import requests
 import yaml
 
-from common import Coordinates, GenericDefinition
+from src.common import Coordinates, GenericDefinition
 
 
 @dataclass

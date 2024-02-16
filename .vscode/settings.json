@@ -3,5 +3,8 @@
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "ms-python.autopep8"
     },
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+    "python.testing.pytestArgs": [],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
 }

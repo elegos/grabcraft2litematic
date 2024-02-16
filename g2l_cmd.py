@@ -2,11 +2,10 @@ from argparse import ArgumentParser
 from pathlib import Path
 import re
 import sys
-from common import get_max_size
-from litemapy import BlockState, Region
+from src.common import get_max_size
 
-import grabcraft
-from litematic import grabcraft2region
+from src import grabcraft
+from src.litematic import grabcraft2region
 
 args = ArgumentParser()
 args.add_argument('--url', '-u', help='GrabCraft model URL', required=False)
@@ -40,5 +39,5 @@ if Path(__file__).parent.joinpath(file_name).exists():
 
 print('Writing Litematic...')
 region \
-    .as_schematic(name = definition.title, author=definition.author) \
+    .as_schematic(name=definition.title, author=definition.author) \
     .save(args.output_file_name or f'{definition.title}.litematic')

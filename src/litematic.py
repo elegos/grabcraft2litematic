@@ -1,6 +1,6 @@
 from litemapy import BlockState, Region
 
-from common import GenericDefinition, get_max_size
+from src.common import GenericDefinition, get_max_size
 
 
 def grabcraft2region(definition: GenericDefinition) -> Region:
