@@ -1,36 +1,36 @@
-version: 20
+version: 21
 blocks:
   Acacia Door (Lower, Facing East, Closed):
     name: minecraft:acacia_door
-    facing: east
+    facing: west
     open: 'false'
   Acacia Door (Lower, Facing East, Opened):
     name: minecraft:acacia_door
-    facing: east
+    facing: west
     open: 'true'
   Acacia Door (Lower, Facing North, Closed):
     name: minecraft:acacia_door
-    facing: north
+    facing: south
     open: 'false'
   Acacia Door (Lower, Facing North, Opened):
     name: minecraft:acacia_door
-    facing: north
+    facing: south
     open: 'true'
   Acacia Door (Lower, Facing South, Closed):
     name: minecraft:acacia_door
-    facing: south
+    facing: north
     open: 'false'
   Acacia Door (Lower, Facing South, Opened):
     name: minecraft:acacia_door
-    facing: south
+    facing: north
     open: 'true'
   Acacia Door (Lower, Facing West, Closed):
     name: minecraft:acacia_door
-    facing: west
+    facing: east
     open: 'false'
   Acacia Door (Lower, Facing West, Opened):
     name: minecraft:acacia_door
-    facing: west
+    facing: east
     open: 'true'
   Acacia Door (Upper, Hinge Left, Powered):
     name: minecraft:acacia_door
@@ -169,31 +169,31 @@ blocks:
     name: minecraft:bedrock
   Birch Door (Lower, Facing East, Closed):
     name: minecraft:birch_door
-    facing: east
+    facing: west
     open: 'false'
   Birch Door (Lower, Facing East, Opened):
     name: minecraft:birch_door
-    facing: east
+    facing: west
     open: 'true'
   Birch Door (Lower, Facing North, Closed):
     name: minecraft:birch_door
-    facing: north
+    facing: south
     open: 'false'
   Birch Door (Lower, Facing North, Opened):
     name: minecraft:birch_door
-    facing: north
+    facing: south
     open: 'true'
   Birch Door (Lower, Facing South, Closed):
     name: minecraft:birch_door
-    facing: south
+    facing: north
     open: 'false'
   Birch Door (Lower, Facing South, Opened):
     name: minecraft:birch_door
-    facing: south
+    facing: north
     open: 'true'
   Birch Door (Lower, Facing West, Closed):
     name: minecraft:birch_door
-    facing: west
+    facing: east
     open: 'false'
   Birch Door (Upper, Hinge Left, Powered):
     name: minecraft:birch_door
@@ -586,35 +586,35 @@ blocks:
     name: minecraft:dandelion
   Dark Oak Door (Lower, Facing East, Closed):
     name: minecraft:dark_oak_door
-    facing: east
+    facing: west
     open: 'false'
   Dark Oak Door (Lower, Facing East, Opened):
     name: minecraft:dark_oak_door
-    facing: east
+    facing: west
     open: 'true'
   Dark Oak Door (Lower, Facing North, Closed):
     name: minecraft:dark_oak_door
-    facing: north
+    facing: south
     open: 'false'
   Dark Oak Door (Lower, Facing North, Opened):
     name: minecraft:dark_oak_door
-    facing: north
+    facing: south
     open: 'true'
   Dark Oak Door (Lower, Facing South, Closed):
     name: minecraft:dark_oak_door
-    facing: south
+    facing: north
     open: 'false'
   Dark Oak Door (Lower, Facing South, Opened):
     name: minecraft:dark_oak_door
-    facing: south
+    facing: north
     open: 'true'
   Dark Oak Door (Lower, Facing West, Closed):
     name: minecraft:dark_oak_door
-    facing: west
+    facing: east
     open: 'false'
   Dark Oak Door (Lower, Facing West, Opened):
     name: minecraft:dark_oak_door
-    facing: west
+    facing: east
     open: 'true'
   Dark Oak Door (Upper, Hinge Left, Powered):
     name: minecraft:dark_oak_door
@@ -1075,23 +1075,23 @@ blocks:
     name: minecraft:iron_block
   Iron Door (Lower, Facing East, Opened):
     name: minecraft:iron_door
-    facing: east
+    facing: west
     open: 'true'
   Iron Door (Lower, Facing North, Opened):
     name: minecraft:iron_door
-    facing: north
+    facing: south
     open: 'true'
   Iron Door (Lower, Facing South, Closed):
     name: minecraft:iron_door
-    facing: south
+    facing: north
     open: 'false'
   Iron Door (Lower, Facing South, Opened):
     name: minecraft:iron_door
-    facing: south
+    facing: north
     open: 'true'
   Iron Door (Lower, Facing West, Opened):
     name: minecraft:iron_door
-    facing: west
+    facing: east
     open: 'true'
   Iron Door (Upper, Hinge Left, Powered):
     name: minecraft:iron_door
@@ -1103,15 +1103,15 @@ blocks:
     open: 'false'
   Iron Door (Lower, Facing East, Closed):
     name: minecraft:iron_door
-    facing: east
+    facing: west
     open: 'false'
   Iron Door (Lower, Facing West, Closed):
     name: minecraft:iron_door
-    facing: west
+    facing: east
     open: 'false'
   Iron Door (Lower, Facing North, Closed):
     name: minecraft:iron_door
-    facing: north
+    facing: south
     open: 'false'
   Iron Door (Upper, Hinge Right, Unpowered):
     name: minecraft:iron_door
@@ -1221,35 +1221,35 @@ blocks:
     name: minecraft:jukebox
   Jungle Door (Lower, Facing East, Closed):
     name: minecraft:jungle_door
-    facing: east
+    facing: west
     open: 'false'
   Jungle Door (Lower, Facing East, Opened):
     name: minecraft:jungle_door
-    facing: east
+    facing: west
     open: 'true'
   Jungle Door (Lower, Facing North, Closed):
     name: minecraft:jungle_door
-    facing: north
+    facing: south
     open: 'false'
   Jungle Door (Lower, Facing North, Opened):
     name: minecraft:jungle_door
-    facing: north
+    facing: south
     open: 'true'
   Jungle Door (Lower, Facing South, Closed):
     name: minecraft:jungle_door
-    facing: south
+    facing: north
     open: 'false'
   Jungle Door (Lower, Facing South, Opened):
     name: minecraft:jungle_door
-    facing: south
+    facing: north
     open: 'true'
   Jungle Door (Lower, Facing West, Closed):
     name: minecraft:jungle_door
-    facing: west
+    facing: east
     open: 'false'
   Jungle Door (Lower, Facing West, Opened):
     name: minecraft:jungle_door
-    facing: west
+    facing: east
     open: 'true'
   Jungle Door (Upper, Hinge Left, Unpowered):
     name: minecraft:jungle_door
@@ -1850,19 +1850,19 @@ blocks:
     open: 'true'
   Wall Sign, north:
     name: minecraft:oak_wall_sign
-    facing: east
+    facing: north
   Wall Sign, south:
     name: minecraft:oak_wall_sign
-    facing: west
+    facing: south
   Wall Sign, west:
     name: minecraft:oak_wall_sign
-    facing: north
+    facing: west
   Wall Sign, east:
     name: minecraft:oak_wall_sign
-    facing: south
+    facing: east
   Wall-mounted Sign Block west-northwest:
     name: minecraft:oak_wall_sign
-    facing: north
+    facing: east
   Oak Wood (only bark):
     name: minecraft:oak_wood
   Obsidian:
