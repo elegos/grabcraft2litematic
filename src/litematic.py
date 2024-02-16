@@ -9,7 +9,7 @@ def grabcraft2region(definition: GenericDefinition) -> Region:
 
     for coordinate, info in definition.blocks.items():
         # WIP: improve with BlockState properties
-        props = ['facing', 'half', 'type', 'open', 'hinge', 'part']
+        props = ['facing', 'half', 'type', 'open', 'hinge', 'part', 'shape']
         extended_props = {}
         for prop in props:
             if prop in info:
