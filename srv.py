@@ -6,11 +6,12 @@ from fastapi import FastAPI, Response, status
 from fastapi.responses import StreamingResponse
 from fastapi.staticfiles import StaticFiles
 
-from grabcraft import get_definition
-from litematic import grabcraft2region
+from src.grabcraft import get_definition
+from src.litematic import grabcraft2region
 
 
 app = FastAPI()
+
 
 @app.get('/api/convert')
 async def g2l(grabcraft_url: str, response: Response):
