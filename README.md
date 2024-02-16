@@ -1,13 +1,7 @@
 ![Grabcraft 2 Litematic logo](./web/static/img/logo.webp)
 
 This script allows to convert a GrabCraft online blueprint into a .litematic file.
-This is done by scraping the GrabCraft's blueprint's page, extracting the information blocks data, converting the type (via blockmap.csv downloaded from the grabcraft2litematic mod's GitHub page) and writing them in a litematic file.
-
-## Known limitations
-
-GrabCraft does not expose other information than the block's name, so facing, states and so on so forth are not (directly) included.
-
-The library attempts to recreate the missing information, and thus the general usage of the tool should be just fine. In case of errors, please open an issue!
+This is done by scraping the GrabCraft's blueprint's page, extracting the information blocks data, converting them in actual block states (parsing the GrabCraft's block's name) and writing them in a litematic file, ready to be used with the [Litematica mod](https://github.com/maruohon/litematica).
 
 ## Usage
 
@@ -35,3 +29,9 @@ CLI options:
 ### Web app
 
 `pipenv run uvicorn srv:app`
+
+## Known limitations
+
+GrabCraft does not expose other information than the block's name, so facing, states and so on so forth are not (directly) included.
+
+The library attempts to recreate the missing information, and thus the general usage of the tool should be just fine. In case of errors, please open an issue!
