@@ -1,4 +1,4 @@
-version: 21
+version: 22
 blocks:
   Acacia Door (Lower, Facing East, Closed):
     name: minecraft:acacia_door
@@ -1573,15 +1573,15 @@ blocks:
     facing: west
   Oak Door (Facing East, Opened):
     name: minecraft:oak_door
-    facing: east
+    facing: west
     open: 'true'
   Oak Door (Facing North, Opened):
     name: minecraft:oak_door
-    facing: north
+    facing: south
     open: 'true'
   Oak Door (Facing South, Opened):
     name: minecraft:oak_door
-    facing: south
+    facing: north
     open: 'true'
   Oak Door (Hinge Left, Powered, Upper):
     name: minecraft:oak_door
@@ -1597,35 +1597,35 @@ blocks:
     open: 'false'
   Oak Door (Facing East, Closed, Lower):
     name: minecraft:oak_door
-    facing: east
+    facing: west
     open: 'false'
   Oak Door (Facing East, Opened, Lower):
     name: minecraft:oak_door
-    facing: east
+    facing: west
     open: 'true'
   Oak Door (Facing North, Opened, Lower):
     name: minecraft:oak_door
-    facing: north
+    facing: south
     open: 'true'
   Oak Door (Facing South, Opened, Lower):
     name: minecraft:oak_door
-    facing: south
+    facing: north
     open: 'true'
   Oak Door (Facing West, Opened, Lower):
     name: minecraft:oak_door
-    facing: west
+    facing: east
     open: 'true'
   Oak Door (Facing North, Closed, Lower):
     name: minecraft:oak_door
-    facing: north
+    facing: south
     open: 'false'
   Oak Door (Facing South, Closed, Lower):
     name: minecraft:oak_door
-    facing: south
+    facing: north
     open: 'false'
   Oak Door (Facing West, Closed, Lower):
     name: minecraft:oak_door
-    facing: west
+    facing: east
     open: 'false'
   Oak Door (Hinge Left, Unpowered, Upper:
     name: minecraft:oak_door
