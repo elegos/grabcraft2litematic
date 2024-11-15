@@ -1,4 +1,5 @@
-version: 22
+version: 23
+# version 23: add Wall-Mounted Banner (all facings)
 blocks:
   Acacia Door (Lower, Facing East, Closed):
     name: minecraft:acacia_door
@@ -1848,6 +1849,18 @@ blocks:
     half: top
     facing: north
     open: 'true'
+  Wall-Mounted Banner (east):
+    name: minecraft:banner_white
+    facing: west
+  Wall-Mounted Banner (north):
+    name: minecraft:banner_white
+    facing: west
+  Wall-Mounted Banner (south):
+    name: minecraft:banner_white
+    facing: west
+  Wall-Mounted Banner (west):
+    name: minecraft:banner_white
+    facing: west
   Wall Sign, north:
     name: minecraft:oak_wall_sign
     facing: north
