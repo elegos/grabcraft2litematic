@@ -38,7 +38,7 @@ def store_request(url: str, request: Request):
     elif 'Android' in user_agent:
         operating_system = 'Android'
 
-    with StatsDB(str(Path(__file__).parent.joinpath('stats.db'))) as stats_db:
+    with StatsDB(str(Path(__file__).parent.joinpath('db', 'stats.db'))) as stats_db:
         stats_db.track_request(
             url=url,
             ip_address=request.client.host,
