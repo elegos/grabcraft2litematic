@@ -1,0 +1,8 @@
+services:
+  g2l:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - ./db:/appdaemon/db
+    ports:
+      - 8123:8000
